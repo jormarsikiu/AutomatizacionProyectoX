@@ -32,5 +32,4 @@ String botonIniciar = 'jQuery(\'.btn-block\').click()'
 
 CustomKeywords.'jquery.jquery_generic.execJS'(botonIniciar)
 
-WebUI.waitForPageLoad(8)
 

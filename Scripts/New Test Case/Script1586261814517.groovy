@@ -14,42 +14,6 @@ import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
-import org.openqa.selenium.Keys as Keys
-
-WebUI.click(findTestObject('Object Repository/Page_Panel Security/ap_menu_settings'))
-
-WebUI.click(findTestObject('Object Repository/Page_Panel Security/ap_menu_administration'))
-
-WebUI.click(findTestObject('Object Repository/Page_Panel Security/ap_menu_application'))
-
-String crear_aplication = "jQuery('#IdFormCreateApplication').click()"
-CustomKeywords.'jquery.jquery_generic.execJS'(crear_aplication)
-
-String entitycode = "jQuery('#EntityCode').val('123')"
-CustomKeywords.'jquery.jquery_generic.execJS'(entitycode)
-
-
-
-/*
- * 
-String ApplicationName = "jQuery('#ApplicationName').val('Aplicacion Prueba Automatizada')"
-CustomKeywords.'jquery.jquery_generic.execJS'(ApplicationName)
-
-String ShortName = "jQuery('#ShortName').val('Prueba Automatizada')"
-CustomKeywords.'jquery.jquery_generic.execJS'(ShortName)
-
-String Version = "jQuery('#Version').val('V1.0')"
-CustomKeywords.'jquery.jquery_generic.execJS'(Version)
-
-String ColorFondo = "jQuery('#Style').val('FFFFF')"
-CustomKeywords.'jquery.jquery_generic.execJS'(ColorFondo)
-
-String Url = "jQuery('#Url').val('/Area/PruebaAutomatizada/')"
-CustomKeywords.'jquery.jquery_generic.execJS'(Url)
-
-String TipoAplicacion = "jQuery('#select2-ApplicationType-container').val('/Area/PruebaAutomatizada/')"
-CustomKeywords.'jquery.jquery_generic.execJS'(TipoAplicacion)
-*/
 
 /*Dayana tomar elementos de selects*/
 /*
@@ -73,9 +37,9 @@ WebUI.click(findTestObject('Object Repository/Page_Panel Administration/ap_input
 
 WebUI.click(findTestObject('Object Repository/Page_Panel Administration/ap_input_span_Music'))
 
-WebUI.click(findTestObject('Object Repository/Page_Panel Administration/ap_input_small'))*/
+WebUI.click(findTestObject('Object Repository/Page_Panel Administration/ap_input_small'))
 
-//WebUI.click(findTestObject('Object Repository/Page_Panel Administration/ap_button_Limpiar'))
+WebUI.click(findTestObject('Object Repository/Page_Panel Administration/ap_button_Limpiar'))
 
-//WebUI.closeBrowser()
-
+WebUI.closeBrowser()
+*/

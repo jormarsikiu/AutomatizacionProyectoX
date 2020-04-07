@@ -5,17 +5,17 @@
    <tag></tag>
    <defaultProfile>true</defaultProfile>
    <GlobalVariableEntity>
-      <description></description>
+      <description>Login</description>
       <initValue>'http://35.196.201.168:9007/'</initValue>
       <name>web</name>
    </GlobalVariableEntity>
    <GlobalVariableEntity>
-      <description></description>
+      <description>Login</description>
       <initValue>'Pruebas@corpalcione.com'</initValue>
       <name>user</name>
    </GlobalVariableEntity>
    <GlobalVariableEntity>
-      <description></description>
+      <description>Login</description>
       <initValue>'Pa$$w0rd'</initValue>
       <name>password</name>
    </GlobalVariableEntity>

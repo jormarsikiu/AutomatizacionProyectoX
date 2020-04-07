@@ -28,17 +28,17 @@ Fin de Variables del Formulario */
 
 WebUI.waitForPageLoad(20)
 
-WebUI.click(findTestObject('Object Repository/Page_Panel Security/ap_menu_settings'))
+//Open Setting-Addministration-Aplication
+String menu_crear_aplication = "JQuery(\'a[href*=\'Application/Index\']\')[0].click()"
+CustomKeywords.'jquery.jquery_generic.execJS'(menu_crear_aplication)
 
-WebUI.click(findTestObject('Object Repository/Page_Panel Security/ap_menu_administration'))
-
-WebUI.click(findTestObject('Object Repository/Page_Panel Security/ap_menu_application'))
-
+//Open form Application
 String crear_aplication = "jQuery('#IdFormCreateApplication').click()"
 CustomKeywords.'jquery.jquery_generic.execJS'(crear_aplication)
 
 WebUI.delay(3)
 
+//Full Form
 String entitycode_ca = "jQuery(\'#EntityCode\').val('$entitycode')"
 CustomKeywords.'jquery.jquery_generic.execJS'(entitycode_ca)
 
@@ -65,3 +65,10 @@ CustomKeywords.'jquery.jquery_generic.execJS'(tipoaplicacion_ca)
 String icon_ca = "jQuery(\'.select2-search__field\').val('$icono').click()"
 CustomKeywords.'jquery.jquery_generic.execJS'(icon_ca)
 
+
+/*WebUI.click(findTestObject('Object Repository/Page_Panel Security/ap_menu_settings'))
+ 
+ WebUI.click(findTestObject('Object Repository/Page_Panel Security/ap_menu_administration'))
+ 
+ WebUI.click(findTestObject('Object Repository/Page_Panel Security/ap_menu_application'))
+ */

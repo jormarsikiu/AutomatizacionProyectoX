@@ -41,6 +41,13 @@
       <name>corporation</name>
    </variable>
    <variable>
+      <defaultValue>'C:\\\\Users\\\\kaizen\\\\git\\\\AutomatizacionProyectoX\\\\Image\\\\1.png'</defaultValue>
+      <description>Ruta de la Imagen</description>
+      <id>53c3a994-aeca-463c-85b0-33d6a4e22f91</id>
+      <masked>false</masked>
+      <name>rutaImage</name>
+   </variable>
+   <variable>
       <defaultValue>'fa-glass'</defaultValue>
       <description>fa-music, fa-search, fa-heart, fa-star, .....</description>
       <id>9407c4b3-80bc-4946-9663-b2aca555f210</id>

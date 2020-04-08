@@ -17,13 +17,13 @@ import internal.GlobalVariable as GlobalVariable
 
 WebUI.waitForPageLoad(20)
 
-//**********Open Setting-Addministration-Aplication***********************//
-String menu_crear_aplication = '''$("a[href*='society/Index']")[0].click()'''
-CustomKeywords.'jquery.jquery_generic.execJS'(menu_crear_aplication)
+//**********Open Setting-Addministration-Society***********************//
+String menu_crear_society = '''$("a[href*='society/Index']")[0].click()'''
+CustomKeywords.'jquery.jquery_generic.execJS'(menu_crear_society)
 
-//********************Open form Application**********************//
-String crear_aplication = "jQuery('#IdFormCreateSociety').click()"
-CustomKeywords.'jquery.jquery_generic.execJS'(crear_aplication)
+//********************Open form Society**********************//
+String form_crear_society = "jQuery('#IdFormCreateSociety').click()"
+CustomKeywords.'jquery.jquery_generic.execJS'(form_crear_society)
 
 WebUI.delay(3)
 
@@ -44,8 +44,7 @@ CustomKeywords.'jquery.jquery_generic.execJS'(comercial_s)
 String corporation_s = "jQuery(\'#SocietyFormModel_Corporation\').val('$corporation')"
 CustomKeywords.'jquery.jquery_generic.execJS'(corporation_s)
 
-Strint ruta =  'C:\\Users\\kaizen\\git\\AutomatizacionProyectoX\\Image\\1.png'
-WebUI.uploadFile(findTestObject('#File'), ruta)
+WebUI.uploadFile(findTestObject('#File'), rutaImage)
 
 String icon_s = "jQuery(\'#SocietyFormModel_Icon\').val('$icon').change()"
 CustomKeywords.'jquery.jquery_generic.execJS'(icon_s)

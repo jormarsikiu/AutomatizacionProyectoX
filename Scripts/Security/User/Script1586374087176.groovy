@@ -21,7 +21,7 @@ WebUI.waitForPageLoad(20)
 String menu_crear_user = '''$("a[href*='user/Index']")[0].click()'''
 CustomKeywords.'jquery.jquery_generic.execJS'(menu_crear_user)
 
-//********************Open form Application**********************//
+//********************Open form User**********************//
 String form_crear_user = "jQuery('#IdFormCreateUser').click()"
 CustomKeywords.'jquery.jquery_generic.execJS'(form_crear_user)
 

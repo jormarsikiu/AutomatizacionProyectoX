@@ -18,19 +18,18 @@ import org.openqa.selenium.Keys as Keys
 
 WebUI.waitForPageLoad(20)
 
-//Open Setting-Addministration-Aplication
+//**********Open Setting-Addministration-Aplication***********************//
 String menu_crear_aplication = '''$("a[href*='Application/Index']")[0].click()'''
 CustomKeywords.'jquery.jquery_generic.execJS'(menu_crear_aplication)
 
-//Open form Application
+//********************Open form Application**********************//
 String crear_aplication = "jQuery('#IdFormCreateApplication').click()"
 CustomKeywords.'jquery.jquery_generic.execJS'(crear_aplication)
 
 WebUI.delay(3)
 
-//Full Form
+//****************************Full Form 1*****************************************//
 
-/*Obligatory Cels*/
 String entitycode_ca = "jQuery(\'#EntityCode\').val('$entitycode')"
 CustomKeywords.'jquery.jquery_generic.execJS'(entitycode_ca)
 
@@ -64,9 +63,3 @@ String botonGuardar= '''$('.btn-outline-success').click()'''
 CustomKeywords.'jquery.jquery_generic.execJS'(botonGuardar)
 */
 
-/*WebUI.click(findTestObject('Object Repository/Page_Panel Security/ap_menu_settings'))
- 
- WebUI.click(findTestObject('Object Repository/Page_Panel Security/ap_menu_administration'))
- 
- WebUI.click(findTestObject('Object Repository/Page_Panel Security/ap_menu_application'))
- */

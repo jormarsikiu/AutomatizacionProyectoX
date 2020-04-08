@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestCaseEntity>
    <description></description>
-   <name>Secuence</name>
+   <name>Secuence_Security</name>
    <tag></tag>
    <comment></comment>
    <testCaseGuid>f0ef29ce-a1b8-4c35-87cd-38487dd5c795</testCaseGuid>

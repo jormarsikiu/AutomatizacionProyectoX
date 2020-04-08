@@ -14,19 +14,8 @@ import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
-import org.openqa.selenium.Keys as Keys
 
-WebUI.openBrowser(GlobalVariable.web)
+WebUI.callTestCase(findTestCase('Login'), [:], FailureHandling.STOP_ON_FAILURE)
 
-WebUI.click(findTestObject('Object Repository/Page_Login/lg_accept_cookies'))
-
-String user = "jQuery('#UserName').val('$GlobalVariable.user')"
-CustomKeywords.'jquery.jquery_generic.execJS'(user)
-
-String pass = "jQuery('#Password').val('$GlobalVariable.password')"
-CustomKeywords.'jquery.jquery_generic.execJS'(pass)
-
-String botonIniciar = 'jQuery(\'.btn-block\').click()'
-CustomKeywords.'jquery.jquery_generic.execJS'(botonIniciar)
-
+WebUI.callTestCase(findTestCase('Business/Business_Partner'), [:], FailureHandling.STOP_ON_FAILURE)
 

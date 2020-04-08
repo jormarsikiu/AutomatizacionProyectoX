@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestCaseEntity>
    <description></description>
-   <name>Create_Aplication</name>
+   <name>Aplication</name>
    <tag></tag>
    <comment></comment>
    <testCaseGuid>7c081fad-4575-4c8d-a514-666a9d2f6299</testCaseGuid>
@@ -52,13 +52,13 @@
       <description></description>
       <id>e0fe6a84-8635-4687-a96b-6c3e72cfaf50</id>
       <masked>false</masked>
-      <name>tipoaplicacion</name>
+      <name>typeaplication</name>
    </variable>
    <variable>
       <defaultValue>''</defaultValue>
       <description></description>
       <id>dc54335f-fb60-4ab6-bb16-61f261c84b49</id>
       <masked>false</masked>
-      <name>icono</name>
+      <name>icon</name>
    </variable>
 </TestCaseEntity>

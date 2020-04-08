@@ -15,4 +15,15 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 
-print($variable)
+//Open Top Menu
+String botonmenu = 'jQuery(\'.ti-layout-menu-v\').parent().click()'
+CustomKeywords.'jquery.jquery_generic.execJS'(botonmenu)
+
+//Select Bussiness Menu
+String botonBussiness = '''$("a[href*='/dashboard/Business/index/MAP-003']")[0].click()'''
+CustomKeywords.'jquery.jquery_generic.execJS'(botonBussiness)
+
+
+//Open WareHouse Menu
+String botonWareHouse= '''$("a[href*='/Management/WareHouse']")[0].click()'''
+CustomKeywords.'jquery.jquery_generic.execJS'(botonWareHouse)

@@ -16,20 +16,10 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
-/*Variables del Formulario 
-String entitycode_ca = '123'
-String applicationname_ca = 'Aplicacion Prueba Automatizada'
-String shortname_ca = 'Prueba Automatizada'
-String version_ca = 'V1.0'
-String colorfondo_ca = 'FFFFF'
-String url_ca = '/Area/PruebaAutomatizada/'
-String tipoaplicacion_ca = 'Web'
-Fin de Variables del Formulario */
-
 WebUI.waitForPageLoad(20)
 
 //Open Setting-Addministration-Aplication
-String menu_crear_aplication = "JQuery(\'a[href*=\'Application/Index\']\')[0].click()"
+String menu_crear_aplication = '''$("a[href*='Application/Index']")[0].click()'''
 CustomKeywords.'jquery.jquery_generic.execJS'(menu_crear_aplication)
 
 //Open form Application
@@ -39,6 +29,8 @@ CustomKeywords.'jquery.jquery_generic.execJS'(crear_aplication)
 WebUI.delay(3)
 
 //Full Form
+
+/*Obligatory Cels*/
 String entitycode_ca = "jQuery(\'#EntityCode\').val('$entitycode')"
 CustomKeywords.'jquery.jquery_generic.execJS'(entitycode_ca)
 
@@ -57,14 +49,20 @@ CustomKeywords.'jquery.jquery_generic.execJS'(colorfondo_ca)
 String url_ca = "jQuery(\'#Url\').val('$url')"
 CustomKeywords.'jquery.jquery_generic.execJS'(url_ca)
 
-//WebUI.uploadFile(findTestObject('#File'), 'D:\\test-photo.png')
+/*Opcional Cels*/
+Strint ruta =  'C:\\Users\\kaizen\\git\\AutomatizacionProyectoX\\Image\\1.png'
+WebUI.uploadFile(findTestObject('#File'), ruta)
 
-String tipoaplicacion_ca = "jQuery(\'.select2-search__field\').val('$tipoaplicacion').click()"
+String tipoaplicacion_ca = "jQuery(\'.select2-search__field\').val('$typeaplication').click()"
 CustomKeywords.'jquery.jquery_generic.execJS'(tipoaplicacion_ca)
 
-String icon_ca = "jQuery(\'.select2-search__field\').val('$icono').click()"
+String icon_ca = "jQuery(\'.select2-search__field\').val('$icon').click()"
 CustomKeywords.'jquery.jquery_generic.execJS'(icon_ca)
 
+/*
+String botonGuardar= '''$('.btn-outline-success').click()'''
+CustomKeywords.'jquery.jquery_generic.execJS'(botonGuardar)
+*/
 
 /*WebUI.click(findTestObject('Object Repository/Page_Panel Security/ap_menu_settings'))
  

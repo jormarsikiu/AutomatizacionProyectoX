@@ -15,8 +15,37 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 
+//Open Top Menu
 String botonmenu = 'jQuery(\'.ti-layout-menu-v\').parent().click()'
 CustomKeywords.'jquery.jquery_generic.execJS'(botonmenu)
 
-String botonbusiness = 'jQuery(\'.ti-layout-menu-v\').parent().click()'
-CustomKeywords.'jquery.jquery_generic.execJS'(botonbusiness)
+//Select Bussiness Menu
+String botonBussiness = '''$("a[href*='/dashboard/Business/index/MAP-003']")[0].click()'''
+CustomKeywords.'jquery.jquery_generic.execJS'(botonBussiness)
+
+//Open Bussiness Partner Menu
+String botonBusinessPartner = '''$("a[href*='/Management/BusinessPartner']")[0].click()'''
+CustomKeywords.'jquery.jquery_generic.execJS'(botonBusinessPartner)
+
+//Create Bussiness Partner Menu
+String createBusinessPartner = '''$("a[href*='/Management/BusinessPartner/Form']")[0].click()'''
+CustomKeywords.'jquery.jquery_generic.execJS'(createBusinessPartner)
+
+//Full Form - Address
+
+String code_bp = "jQuery(\'#PartnerCode\').val('$Code')" 
+CustomKeywords.'jquery.jquery_generic.execJS'(code_bp)
+
+String taxCode_bp = "jQuery(\'#TaxCode\').val('$taxCode')" 
+CustomKeywords.'jquery.jquery_generic.execJS'(taxCode_bp)
+
+String pname_bp = "jQuery(\'#PartnerName\').val('$partnerName')" 
+CustomKeywords.'jquery.jquery_generic.execJS'(pname_bp)
+
+String shortname_bp = "jQuery(\'#ShortName\').val('$shortName')" 
+CustomKeywords.'jquery.jquery_generic.execJS'(shortname_bp)
+
+String comercial_bp = "jQuery(\'#ComercialActivity\').val('$comercialActivity')" 
+CustomKeywords.'jquery.jquery_generic.execJS'(comercial_bp)
+
+

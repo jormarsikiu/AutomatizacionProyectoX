@@ -14,19 +14,16 @@ import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
-import org.openqa.selenium.Keys as Keys
 
-WebUI.openBrowser(GlobalVariable.web)
+//Open Top Menu
+String botonmenu = 'jQuery(\'.ti-layout-menu-v\').parent().click()'
+CustomKeywords.'jquery.jquery_generic.execJS'(botonmenu)
 
-WebUI.click(findTestObject('Object Repository/Page_Login/lg_accept_cookies'))
+//Select Bussiness Menu
+String botonBussiness = '''$("a[href*='/dashboard/Business/index/MAP-003']")[0].click()'''
+CustomKeywords.'jquery.jquery_generic.execJS'(botonBussiness)
 
-String user = "jQuery('#UserName').val('$GlobalVariable.user')"
-CustomKeywords.'jquery.jquery_generic.execJS'(user)
-
-String pass = "jQuery('#Password').val('$GlobalVariable.password')"
-CustomKeywords.'jquery.jquery_generic.execJS'(pass)
-
-String botonIniciar = 'jQuery(\'.btn-block\').click()'
-CustomKeywords.'jquery.jquery_generic.execJS'(botonIniciar)
-
+//Open Item Menu
+String botonItem= '''$("a[href*='/Management/Item']")[0].click()'''
+CustomKeywords.'jquery.jquery_generic.execJS'(botonItem)
 

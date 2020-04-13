@@ -24,7 +24,7 @@
       <description>TEXTO</description>
       <id>42b59760-899b-481a-83bb-a50bba487efc</id>
       <masked>false</masked>
-      <name>avatar_u</name>
+      <name>avatar</name>
    </variable>
    <variable>
       <defaultValue>'test@pruebas.com'</defaultValue>

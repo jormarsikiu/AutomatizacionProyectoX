@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestCaseEntity>
    <description></description>
-   <name>Society</name>
+   <name>Create_Society</name>
    <tag></tag>
    <comment></comment>
    <testCaseGuid>0d007b0b-1c6e-4fe9-95a3-01dafe28b706</testCaseGuid>
@@ -55,29 +55,29 @@
       <name>icon</name>
    </variable>
    <variable>
-      <defaultValue>'CO'</defaultValue>
+      <defaultValue>'VE'</defaultValue>
       <description>CO, VE</description>
       <id>d04c8269-46fc-4a3e-86a8-b4428e1bf32f</id>
       <masked>false</masked>
       <name>countryCode</name>
    </variable>
    <variable>
-      <defaultValue>''</defaultValue>
-      <description></description>
+      <defaultValue>'VE-1'</defaultValue>
+      <description>ID</description>
       <id>a17ea650-0cd2-47e7-add4-c6d103c02705</id>
       <masked>false</masked>
       <name>countyCode</name>
    </variable>
    <variable>
-      <defaultValue>''</defaultValue>
-      <description></description>
+      <defaultValue>'ANZO'</defaultValue>
+      <description>ID</description>
       <id>4223db9c-a7a0-4a4b-9f9b-83478b9c2c27</id>
       <masked>false</masked>
       <name>stateCode</name>
    </variable>
    <variable>
-      <defaultValue>''</defaultValue>
-      <description></description>
+      <defaultValue>'BAR-02'</defaultValue>
+      <description>ID</description>
       <id>e58d277e-77ac-403c-b2d0-5575d57f7ac9</id>
       <masked>false</masked>
       <name>townshipCode</name>

@@ -1,10 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestCaseEntity>
    <description></description>
-   <name>Business_Partner</name>
+   <name>Create_Business_Partner</name>
    <tag></tag>
    <comment></comment>
    <testCaseGuid>b0321b75-7aec-4785-b4b6-78a1c8868317</testCaseGuid>
+   <variable>
+      <defaultValue>'MBP01-01'</defaultValue>
+      <description>Provider =  MBP01-01, Client = MBP01-02</description>
+      <id>c3d59f5b-01aa-4784-aba4-c7f161a70a9e</id>
+      <masked>false</masked>
+      <name>entityCode</name>
+   </variable>
    <variable>
       <defaultValue>'123'</defaultValue>
       <description></description>

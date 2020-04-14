@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestCaseEntity>
    <description></description>
-   <name>Secuence_Security</name>
+   <name>Create_WareHouse</name>
    <tag></tag>
    <comment></comment>
-   <testCaseGuid>f0ef29ce-a1b8-4c35-87cd-38487dd5c795</testCaseGuid>
+   <testCaseGuid>9d7c1915-a6f8-40ca-9f75-38e9427b8fab</testCaseGuid>
 </TestCaseEntity>

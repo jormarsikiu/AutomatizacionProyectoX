@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestCaseEntity>
    <description></description>
-   <name>User</name>
+   <name>Create_User</name>
    <tag></tag>
    <comment></comment>
    <testCaseGuid>65f56662-bbcf-4a3c-8f0c-0696d72d04c7</testCaseGuid>
@@ -27,7 +27,7 @@
       <name>avatar</name>
    </variable>
    <variable>
-      <defaultValue>'test@pruebas.com'</defaultValue>
+      <defaultValue>'automated.test@grupokaizen.net'</defaultValue>
       <description>EMAIL</description>
       <id>ad4e10cd-e739-4109-b995-49b7de99bbb0</id>
       <masked>false</masked>

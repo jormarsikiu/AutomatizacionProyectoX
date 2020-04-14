@@ -15,37 +15,50 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 
-//Open Top Menu
+//************************Open Top Menu**********************************************//
+WebUI.callTestCase(findTestCase('Login'), [:], FailureHandling.STOP_ON_FAILURE)
 String botonmenu = 'jQuery(\'.ti-layout-menu-v\').parent().click()'
 CustomKeywords.'jquery.jquery_generic.execJS'(botonmenu)
 
-//Select Bussiness Menu
-String botonBussiness = '''$("a[href*='/dashboard/Business/index/MAP-003']")[0].click()'''
+//************************Select Bussiness Menu*************************************//
+String botonBussiness = '$("a[href*=\'/dashboard/Business/index/MAP-003\']")[0].click()'
+
 CustomKeywords.'jquery.jquery_generic.execJS'(botonBussiness)
 
-//Open Bussiness Partner Menu
-String botonBusinessPartner = '''$("a[href*='/Management/BusinessPartner']")[0].click()'''
+//************************Open Bussiness Partner Menu***********************************//
+String botonBusinessPartner = '$("a[href*=\'/Management/BusinessPartner\']")[0].click()'
+
 CustomKeywords.'jquery.jquery_generic.execJS'(botonBusinessPartner)
 
-//Create Bussiness Partner Menu
-String createBusinessPartner = '''$("a[href*='/Management/BusinessPartner/Form']")[0].click()'''
+//************************Create Bussiness Partner Menu*************************************//
+String createBusinessPartner = '$("a[href*=\'/Management/BusinessPartner/Form\']")[0].click()'
+
 CustomKeywords.'jquery.jquery_generic.execJS'(createBusinessPartner)
 
-//Full Form - Address
 
-String code_bp = "jQuery(\'#PartnerCode\').val('$Code')" 
+//****************************Full Form 1 Address*****************************************//
+
+String entity_bp = "jQuery('#EntityTypeCode').val('$entityCode').change()"
+
+CustomKeywords.'jquery.jquery_generic.execJS'(entity_bp)
+
+String code_bp = "jQuery('#PartnerCode').val('$code')"
+
 CustomKeywords.'jquery.jquery_generic.execJS'(code_bp)
 
-String taxCode_bp = "jQuery(\'#TaxCode\').val('$taxCode')" 
+String taxCode_bp = "jQuery('#TaxCode').val('$taxCode')"
+
 CustomKeywords.'jquery.jquery_generic.execJS'(taxCode_bp)
 
-String pname_bp = "jQuery(\'#PartnerName\').val('$partnerName')" 
-CustomKeywords.'jquery.jquery_generic.execJS'(pname_bp)
+/*String pname_bp = "jQuery('#PartnerName').val('$partnerName')"
 
-String shortname_bp = "jQuery(\'#ShortName\').val('$shortName')" 
+CustomKeywords.'jquery.jquery_generic.execJS'(pname_bp)*/
+
+String shortname_bp = "jQuery('#ShortName').val('$shortName')"
+
 CustomKeywords.'jquery.jquery_generic.execJS'(shortname_bp)
 
-String comercial_bp = "jQuery(\'#ComercialActivity\').val('$comercialActivity')" 
-CustomKeywords.'jquery.jquery_generic.execJS'(comercial_bp)
+String comercial_bp = "jQuery('#ComercialActivity').val('$comercialActivity')"
 
+CustomKeywords.'jquery.jquery_generic.execJS'(comercial_bp)
 

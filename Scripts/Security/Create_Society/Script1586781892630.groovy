@@ -15,6 +15,8 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 
+WebUI.callTestCase(findTestCase('Login'), [:], FailureHandling.STOP_ON_FAILURE)
+
 WebUI.waitForPageLoad(20)
 
 //**********Open Setting-Addministration-Society***********************//
@@ -25,14 +27,16 @@ CustomKeywords.'jquery.jquery_generic.execJS'(menu_crear_society)
 String form_crear_society = "jQuery('#IdFormCreateSociety').click()"
 CustomKeywords.'jquery.jquery_generic.execJS'(form_crear_society)
 
-WebUI.delay(3)
+WebUI.delay(10)
+
+
 
 //****************************Full Form 1*****************************************//
 
-String code_s = "jQuery(\'#SocietyFormModel_EntityCode\').val('$code')"
+String code_s = "jQuery('#SocietyFormModel_EntityCode').val('$code')"
 CustomKeywords.'jquery.jquery_generic.execJS'(code_s)
 
-String societyName_s = "jQuery(\'#SocietyFormModel_SocietyName\').val('$societyName')"
+String societyName_s = "jQuery('#SocietyFormModel_SocietyName').val('$societyName')"
 CustomKeywords.'jquery.jquery_generic.execJS'(societyName_s)
 
 String shortName_s = "jQuery(\'#SocietyFormModel_ShortName\').val('$shortName')"
@@ -44,7 +48,7 @@ CustomKeywords.'jquery.jquery_generic.execJS'(comercial_s)
 String corporation_s = "jQuery(\'#SocietyFormModel_Corporation\').val('$corporation')"
 CustomKeywords.'jquery.jquery_generic.execJS'(corporation_s)
 
-WebUI.uploadFile(findTestObject('#File'), rutaImage)
+WebUI.uploadFile(findTestObject('Object Repository/Page_Panel Security/File'), rutaImage)
 
 String icon_s = "jQuery(\'#SocietyFormModel_Icon\').val('$icon').change()"
 CustomKeywords.'jquery.jquery_generic.execJS'(icon_s)
@@ -74,7 +78,6 @@ CustomKeywords.'jquery.jquery_generic.execJS'(townshipCode_s)
 String zip_s = "jQuery(\'#SocietyFormModel_ZipCode\').val('$zipcode')" 
 CustomKeywords.'jquery.jquery_generic.execJS'(zip_s)
 
-String next = '''$("a[href*='next']")[0].click()'''
 CustomKeywords.'jquery.jquery_generic.execJS'(next)
 
 //****************************Full Form 3*****************************************//

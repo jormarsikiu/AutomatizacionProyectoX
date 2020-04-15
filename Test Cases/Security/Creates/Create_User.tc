@@ -6,14 +6,14 @@
    <comment></comment>
    <testCaseGuid>65f56662-bbcf-4a3c-8f0c-0696d72d04c7</testCaseGuid>
    <variable>
-      <defaultValue>'Maria'</defaultValue>
+      <defaultValue>'Test'</defaultValue>
       <description>TEXTO</description>
       <id>8b92f940-5223-44c7-b4e1-199970a46972</id>
       <masked>false</masked>
       <name>firstName</name>
    </variable>
    <variable>
-      <defaultValue>'Perez'</defaultValue>
+      <defaultValue>'Automatizado'</defaultValue>
       <description>TEXTO</description>
       <id>a8fb3bf2-a5a5-4ea2-ab94-e5f119a993d4</id>
       <masked>false</masked>
@@ -48,22 +48,29 @@
       <name>confirmPassword</name>
    </variable>
    <variable>
-      <defaultValue>'4635436434'</defaultValue>
+      <defaultValue>'04149724568'</defaultValue>
       <description>NUMEROS</description>
       <id>3ec20f79-5ad2-4e00-99e2-aebfa5ced413</id>
       <masked>false</masked>
       <name>phone</name>
    </variable>
    <variable>
+      <defaultValue>'0'</defaultValue>
+      <description>Activo = 1, Inactivo = 0</description>
+      <id>dc3736a4-f883-4c8b-87aa-f0fdcb6bf2b3</id>
+      <masked>false</masked>
+      <name>status</name>
+   </variable>
+   <variable>
       <defaultValue>'921692382'</defaultValue>
-      <description>Root = 921692382, Standar Role = 1766855204</description>
+      <description>ID (Root = 921692382, Standar Role = 1766855204)</description>
       <id>195a4f2b-4626-47a1-8780-c6bc98a69748</id>
       <masked>false</masked>
       <name>idRole</name>
    </variable>
    <variable>
       <defaultValue>'73628552'</defaultValue>
-      <description>Alcione = 73628552, Kaizen = 73628553</description>
+      <description>ID (Alcione = 73628552, Kaizen = 73628553)</description>
       <id>9a7237e0-02c6-4280-a9e1-b784a9013d8d</id>
       <masked>false</masked>
       <name>idsociety</name>

@@ -58,8 +58,7 @@ CustomKeywords.'jquery.jquery_generic.execJS'(tipoaplicacion_ca)
 String icon_ca = "jQuery(\'.select2-search__field\').val('$icon').click()"
 CustomKeywords.'jquery.jquery_generic.execJS'(icon_ca)
 
-/*
 String botonGuardar= '''$('.btn-outline-success').click()'''
 CustomKeywords.'jquery.jquery_generic.execJS'(botonGuardar)
-*/
+
 

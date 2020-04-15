@@ -60,10 +60,11 @@ String phone_u = "jQuery('#PhoneNumber').val('$phone')"
 
 CustomKeywords.'jquery.jquery_generic.execJS'(phone_u)
 
-/*Descomente para desactivar Status
-String status = '''$('#IsActive').click()'''
-CustomKeywords.'jquery.jquery_generic.execJS'(status)
-*/
+if (status == '0'){
+	String status = '''$('#IsActive').click()'''
+	CustomKeywords.'jquery.jquery_generic.execJS'(status)
+}
+
 String next = '$("a[href*=\'next\']")[0].click()'
 
 CustomKeywords.'jquery.jquery_generic.execJS'(next)
@@ -71,16 +72,13 @@ CustomKeywords.'jquery.jquery_generic.execJS'(next)
 //****************************Full Form 2 ROLES *****************************************//
 //Se anade un solo rol
 String role = "jQuery('#' + '$idRole' + '-selectable').click()"
-
 CustomKeywords.'jquery.jquery_generic.execJS'(role)
 
 //****************************Full Form 3 ROLES *****************************************//
 //Se anade una sola sociedad
 String society = "jQuery('#' + '$idsociety' + '-selectable').click()"
-
 CustomKeywords.'jquery.jquery_generic.execJS'(society)
 
 String finish = '$("a[href*=\'finish\']")[0].click()'
-
 CustomKeywords.'jquery.jquery_generic.execJS'(finish)
 

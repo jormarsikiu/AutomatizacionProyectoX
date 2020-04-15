@@ -48,6 +48,13 @@
       <name>comercialActivity</name>
    </variable>
    <variable>
+      <defaultValue>'0'</defaultValue>
+      <description>Activo = 1, Inactivo = 0</description>
+      <id>ccd2545f-c534-4dc5-b24a-0e1c1a85cdff</id>
+      <masked>false</masked>
+      <name>status</name>
+   </variable>
+   <variable>
       <defaultValue>'CO'</defaultValue>
       <description>id</description>
       <id>094e9212-b4e6-4cd4-9159-0a4a4c782e16</id>
@@ -84,14 +91,14 @@
    </variable>
    <variable>
       <defaultValue>'Street 4 -2 '</defaultValue>
-      <description></description>
+      <description>text</description>
       <id>5936de78-244b-4c63-a062-d951afcfc002</id>
       <masked>false</masked>
       <name>address2</name>
    </variable>
    <variable>
       <defaultValue>'Street 4 -2 '</defaultValue>
-      <description></description>
+      <description>text</description>
       <id>021315f4-5526-44da-aad9-5471df7e0710</id>
       <masked>false</masked>
       <name>address3</name>

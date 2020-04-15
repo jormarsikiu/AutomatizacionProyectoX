@@ -55,8 +55,15 @@
       <name>icon</name>
    </variable>
    <variable>
+      <defaultValue>'0'</defaultValue>
+      <description>Activo = 1, Inactivo = 0</description>
+      <id>26ceee3b-5fd1-4e08-bbfb-ecf2d68f1ddf</id>
+      <masked>false</masked>
+      <name>status</name>
+   </variable>
+   <variable>
       <defaultValue>'VE'</defaultValue>
-      <description>CO, VE</description>
+      <description>ID</description>
       <id>d04c8269-46fc-4a3e-86a8-b4428e1bf32f</id>
       <masked>false</masked>
       <name>countryCode</name>

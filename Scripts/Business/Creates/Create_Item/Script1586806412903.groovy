@@ -92,15 +92,32 @@ if (isTaxable == '0'){
 	CustomKeywords.'jquery.jquery_generic.execJS'(isTaxable_bi)
 }
 
-
 //****************************Full Form 1 Grups****************************************//
 String botonform= '''$("a[href*='/Management/Item/_EntityGroups']")[0].click()'''
 CustomKeywords.'jquery.jquery_generic.execJS'(botonform)
 
+//Registro Padre
+String parentGroups_bp = "jQuery('#selectParentGroups').val('$parentGroups').change()"
+CustomKeywords.'jquery.jquery_generic.execJS'(parentGroups_bp)
+
+//Registro hijo
+String childrenGroups_bp = "jQuery('#selectChildrenGroups').val('$childrenGroups').change()"
+CustomKeywords.'jquery.jquery_generic.execJS'(childrenGroups_bp)
+
+//Aceptar
+String butonacept_bp1 = '$(".btn-success")[0].click()'
+CustomKeywords.'jquery.jquery_generic.execJS'(butonacept_bp1)
 
 //****************************Full Form 1 ListPrices*****************************************//
 String botonform= '''$("a[href*='/Management/Item/_PriceList']")[0].click()'''
 CustomKeywords.'jquery.jquery_generic.execJS'(botonform)
+
+String priceListCode_bi = "jQuery('#PriceListCode').val('$priceListCode').change()"
+CustomKeywords.'jquery.jquery_generic.execJS'(priceListCode_bi)
+
+//Aceptar
+String butonacept_bp2 = '$(".btn-success")[1].click()'
+CustomKeywords.'jquery.jquery_generic.execJS'(butonacept_bp2)
 
 //****************************Full Form 1 Adicionales*****************************************//
 

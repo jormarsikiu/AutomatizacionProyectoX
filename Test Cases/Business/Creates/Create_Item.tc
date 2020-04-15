@@ -89,4 +89,46 @@
       <masked>false</masked>
       <name>isTaxable</name>
    </variable>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description>id</description>
+      <id>13ed0567-3bee-4523-8861-1705481b9c61</id>
+      <masked>false</masked>
+      <name>parentGroups</name>
+   </variable>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description>id</description>
+      <id>c46e0402-e1b7-475d-8a15-d523121c0a35</id>
+      <masked>false</masked>
+      <name>childrenGroups</name>
+   </variable>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description>id</description>
+      <id>004d82e8-49f7-4593-89cf-5a02af13a870</id>
+      <masked>false</masked>
+      <name>priceListCode</name>
+   </variable>
+   <variable>
+      <defaultValue>'BA-03'</defaultValue>
+      <description>id</description>
+      <id>b8d8459c-713b-459d-890f-c1e54ad29330</id>
+      <masked>false</masked>
+      <name>attributes1</name>
+   </variable>
+   <variable>
+      <defaultValue>'BA-02'</defaultValue>
+      <description>id</description>
+      <id>30552ef8-fe25-4f95-9515-cb2b85da663d</id>
+      <masked>false</masked>
+      <name>attributes2</name>
+   </variable>
+   <variable>
+      <defaultValue>'8d5d7f49-16bf-44cf-80c6-ad35c63836b8'</defaultValue>
+      <description>id</description>
+      <id>efdaf8bd-729c-4c0b-a9bd-9b8481c82e19</id>
+      <masked>false</masked>
+      <name>warehouse</name>
+   </variable>
 </TestCaseEntity>

@@ -19,20 +19,11 @@ WebUI.callTestCase(findTestCase('Login'), [:], FailureHandling.STOP_ON_FAILURE)
 
 WebUI.waitForPageLoad(20)
 
-//Open Top Menu
-String botonmenu = 'jQuery(\'.ti-layout-menu-v\').parent().click()'
-CustomKeywords.'jquery.jquery_generic.execJS'(botonmenu)
+//**********Open Setting-Addministration-Society***********************//
+String menu_society = '''$("a[href*='society/Index']")[0].click()'''
+CustomKeywords.'jquery.jquery_generic.execJS'(menu_society)
 
-//Select Bussiness Menu
-String botonBussiness = '''$("a[href*='/dashboard/Business/index/MAP-003']")[0].click()'''
-CustomKeywords.'jquery.jquery_generic.execJS'(botonBussiness)
+//********************Open Edit Society**********************//
 
-//Open Item Menu
-String botonItem= '''$("a[href*='/Management/Item']")[0].click()'''
-CustomKeywords.'jquery.jquery_generic.execJS'(botonItem)
-
-//Open Item Form
-String botonform= '''$("a[href*='/Management/Item/_ItemForm']")[0].click()'''
-CustomKeywords.'jquery.jquery_generic.execJS'(botonform)
-
-
+String edit_society = '''$("#SocietiesTable a").filter('[onclick="chargeEditModal('MS-01')"]').click()'''
+CustomKeywords.'jquery.jquery_generic.execJS'(edit_society)

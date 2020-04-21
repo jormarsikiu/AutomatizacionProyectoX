@@ -126,9 +126,11 @@ for(int i=1; i<n_society;i++)
 	CustomKeywords.'jquery.jquery_generic.execJS'(society)
 	
 }
+
+*/
 String finish = '$("a[href*=\'finish\']")[0].click()'
 CustomKeywords.'jquery.jquery_generic.execJS'(finish)
 
 //PROBAR 2 FORMA PARA MAS SOCIEDADES
 
-*/
+

@@ -48,7 +48,7 @@ if (modal == 'block'){
 	String corporation_s = "jQuery('#Corporation').val('$corporation')"	
 	CustomKeywords.'jquery.jquery_generic.execJS'(corporation_s)
 	
-	//WebUI.uploadFile(findTestObject('Object Repository/Page_Panel Security/File'), rutaImage)
+	WebUI.uploadFile(findTestObject('Object Repository/Page_Panel Security/File'), rutaImage)
 	
 	String icon_s = "jQuery('#Icon').val('$icon').change()"	
 	CustomKeywords.'jquery.jquery_generic.execJS'(icon_s)

@@ -60,25 +60,75 @@ String phone_u = "jQuery('#PhoneNumber').val('$phone')"
 
 CustomKeywords.'jquery.jquery_generic.execJS'(phone_u)
 
-if (status == '0'){
-	String status = '''$('#IsActive').click()'''
-	CustomKeywords.'jquery.jquery_generic.execJS'(status)
+if (status == '0') {
+    String status = '$(\'#IsActive\').click()'
+
+    CustomKeywords.'jquery.jquery_generic.execJS'(status)
 }
 
 String next = '$("a[href*=\'next\']")[0].click()'
-
 CustomKeywords.'jquery.jquery_generic.execJS'(next)
 
 //****************************Full Form 2 ROLES *****************************************//
-//Se anade un solo rol
-String role = "jQuery('#' + '$idRole' + '-selectable').click()"
-CustomKeywords.'jquery.jquery_generic.execJS'(role)
+//MAXIMO 2 ROLES
+/*
+if (n_role == '1')
+{
+    String role1 = "jQuery('#' + '$idRole1' + '-selectable').click()"
+    CustomKeywords.'jquery.jquery_generic.execJS'(role1)
+
+}
+else{
+	String role1 = "jQuery('#' + '$idRole1' + '-selectable').click()"
+	CustomKeywords.'jquery.jquery_generic.execJS'(role1)
+	String role2 = "jQuery('#' + '$idRole2' + '-selectable').click()"
+	CustomKeywords.'jquery.jquery_generic.execJS'(role2)
+}
+*/
+
+for(int i=1; i<n_role;i++)
+{
+	String idRole = "idRole"+i
+	print(idRole)
+	String role = "jQuery('#' + '$idRole' + '-selectable').click()"
+	CustomKeywords.'jquery.jquery_generic.execJS'(role)
+	
+}
+
+for(int i=1; i<n_society;i++)
+{
+	String idsociety = "idsociety"+i
+	String society = "jQuery('#' + '$idsociety' + '-selectable').click()"
+	CustomKeywords.'jquery.jquery_generic.execJS'(society)
+	
+}
 
 //****************************Full Form 3 ROLES *****************************************//
-//Se anade una sola sociedad
-String society = "jQuery('#' + '$idsociety' + '-selectable').click()"
-CustomKeywords.'jquery.jquery_generic.execJS'(society)
+//MAXIMO 2 SOCIEDADES
+/*
+if (n_society == '1')
+{
+    String society1 = "jQuery('#' + '$idsociety1' + '-selectable').click()"
+    CustomKeywords.'jquery.jquery_generic.execJS'(society1)
+}
+else{
+	String society1 = "jQuery('#' + '$idsociety1' + '-selectable').click()"
+	CustomKeywords.'jquery.jquery_generic.execJS'(society1)
+	String society2 = "jQuery('#' + '$idsociety2' + '-selectable').click()"
+	CustomKeywords.'jquery.jquery_generic.execJS'(society2)
+}
 
+
+for(int i=1; i<n_society;i++)
+{
+	String idsociety = "idsociety"+i
+	String society = "jQuery('#' + '$idsociety' + '-selectable').click()"
+	CustomKeywords.'jquery.jquery_generic.execJS'(society)
+	
+}
 String finish = '$("a[href*=\'finish\']")[0].click()'
 CustomKeywords.'jquery.jquery_generic.execJS'(finish)
 
+//PROBAR 2 FORMA PARA MAS SOCIEDADES
+
+*/

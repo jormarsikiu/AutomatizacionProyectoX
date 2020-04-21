@@ -62,17 +62,45 @@
       <name>status</name>
    </variable>
    <variable>
+      <defaultValue>'2'</defaultValue>
+      <description>Cantidad de roles. Maximo 2</description>
+      <id>0a03c54d-a4f2-41f0-950b-7966f1c7921f</id>
+      <masked>false</masked>
+      <name>n_role</name>
+   </variable>
+   <variable>
       <defaultValue>'921692382'</defaultValue>
-      <description>ID (Root = 921692382, Standar Role = 1766855204)</description>
+      <description>ID (Root = 921692382, Standar Role = 1766855204) </description>
       <id>195a4f2b-4626-47a1-8780-c6bc98a69748</id>
       <masked>false</masked>
-      <name>idRole</name>
+      <name>idRole1</name>
+   </variable>
+   <variable>
+      <defaultValue>'1766855204'</defaultValue>
+      <description>ID (Root = 921692382, Standar Role = 1766855204)</description>
+      <id>05697291-a3be-4545-b0d8-7eaa1468ac0c</id>
+      <masked>false</masked>
+      <name>idRole2</name>
+   </variable>
+   <variable>
+      <defaultValue>'2'</defaultValue>
+      <description>Cantidad de sociedades. Maximo 2</description>
+      <id>ce2517fe-3101-4e44-8dee-1cfca291c242</id>
+      <masked>false</masked>
+      <name>n_society</name>
    </variable>
    <variable>
       <defaultValue>'73628552'</defaultValue>
       <description>ID (Alcione = 73628552, Kaizen = 73628553)</description>
       <id>9a7237e0-02c6-4280-a9e1-b784a9013d8d</id>
       <masked>false</masked>
-      <name>idsociety</name>
+      <name>idsociety1</name>
+   </variable>
+   <variable>
+      <defaultValue>'73628553'</defaultValue>
+      <description>ID (Alcione = 73628552, Kaizen = 73628553)</description>
+      <id>4cb9409c-eb73-42a9-8751-923a078765ba</id>
+      <masked>false</masked>
+      <name>idsociety2</name>
    </variable>
 </TestCaseEntity>

@@ -104,21 +104,21 @@
       <name>townName</name>
    </variable>
    <variable>
-      <defaultValue>'46546\r\n'</defaultValue>
+      <defaultValue>'Ciudad1'</defaultValue>
       <description>TEXTO</description>
       <id>345a7432-b836-497b-a1a3-64bea362bff2</id>
       <masked>false</masked>
-      <name>fiscalAddress_s</name>
+      <name>fiscalAddress</name>
    </variable>
    <variable>
-      <defaultValue>'8686'</defaultValue>
+      <defaultValue>'Ciudad1'</defaultValue>
       <description>TEXTO</description>
       <id>e53ddd4d-5eae-4c8c-b848-7d7eb9ec77ef</id>
       <masked>false</masked>
       <name>complementaryAddress</name>
    </variable>
    <variable>
-      <defaultValue>'57857'</defaultValue>
+      <defaultValue>'Ciudad1'</defaultValue>
       <description>TEXTO</description>
       <id>318ccdd0-0e5c-43f6-9638-e4dfe2c21e22</id>
       <masked>false</masked>

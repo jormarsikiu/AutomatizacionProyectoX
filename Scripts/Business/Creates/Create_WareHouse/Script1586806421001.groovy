@@ -15,6 +15,9 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 
+WebUI.callTestCase(findTestCase('Login'), [:], FailureHandling.STOP_ON_FAILURE)
+WebUI.waitForPageLoad(20)
+
 //Open Top Menu
 String botonmenu = 'jQuery(\'.ti-layout-menu-v\').parent().click()'
 CustomKeywords.'jquery.jquery_generic.execJS'(botonmenu)
@@ -29,6 +32,8 @@ String botonWareHouse= '''$("a[href*='/Management/WareHouse']")[0].click()'''
 CustomKeywords.'jquery.jquery_generic.execJS'(botonWareHouse)
 
 //****************************Full Form 1 Almacen*****************************************//
+WebUI.delay(5)
+
 //Almacen 
 String wareHouseCode_bp = "jQuery('#WareHouseCode').val('$wareHouseCode')"
 CustomKeywords.'jquery.jquery_generic.execJS'(wareHouseCode_bp)
@@ -51,6 +56,8 @@ if (status == '0'){
 }
 
 //****************************Full Form 1 Direccion*****************************************//
+WebUI.delay(3)
+
 //Open +
 String botonaddress = '$("a[href*=\'/Management/Warehouse/_Address\']")[0].click()'
 CustomKeywords.'jquery.jquery_generic.execJS'(botonaddress)
@@ -108,6 +115,8 @@ CustomKeywords.'jquery.jquery_generic.execJS'(butonacept_bp1)
 //open +
 String botongrups = '$("a[href*=\'/Management/BusinessPartner/_EntityGroups\']")[0].click()'
 CustomKeywords.'jquery.jquery_generic.execJS'(botongrups)
+
+WebUI.delay(3)
 
 //Registro Padre
 String parentGroups_bp = "jQuery('#selectParentGroups').val('$parentGroups').change()"

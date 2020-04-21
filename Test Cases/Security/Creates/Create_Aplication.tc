@@ -7,56 +7,56 @@
    <testCaseGuid>7c081fad-4575-4c8d-a514-666a9d2f6299</testCaseGuid>
    <variable>
       <defaultValue>'123'</defaultValue>
-      <description></description>
+      <description>Text</description>
       <id>579c1a53-ca81-4ba7-ae0a-d9d8855b5760</id>
       <masked>false</masked>
       <name>entitycode</name>
    </variable>
    <variable>
       <defaultValue>'Aplicacion Prueba Automatizada'</defaultValue>
-      <description></description>
+      <description>Text</description>
       <id>003d070a-e879-41c8-a8b4-dfd99c8af2b2</id>
       <masked>false</masked>
       <name>applicationname</name>
    </variable>
    <variable>
       <defaultValue>'Prueba Automatizada'</defaultValue>
-      <description></description>
+      <description>Text</description>
       <id>6d04d659-ea11-42f3-b7f0-25c6b62901ee</id>
       <masked>false</masked>
       <name>shortname</name>
    </variable>
    <variable>
       <defaultValue>'V1.0'</defaultValue>
-      <description></description>
+      <description>Text</description>
       <id>00481896-a64b-4c22-a2ab-fa37316a33a2</id>
       <masked>false</masked>
       <name>version</name>
    </variable>
    <variable>
       <defaultValue>'FFFFF'</defaultValue>
-      <description></description>
+      <description>Text</description>
       <id>85c61976-1741-41a8-ba00-8dc684ce4b36</id>
       <masked>false</masked>
       <name>colorfondo</name>
    </variable>
    <variable>
       <defaultValue>'/Area/PruebaAutomatizada/'</defaultValue>
-      <description></description>
+      <description>Text</description>
       <id>86af8308-359e-49b4-b422-0c5390b36a69</id>
       <masked>false</masked>
       <name>url</name>
    </variable>
    <variable>
       <defaultValue>'Web'</defaultValue>
-      <description></description>
+      <description>Text Select </description>
       <id>e0fe6a84-8635-4687-a96b-6c3e72cfaf50</id>
       <masked>false</masked>
       <name>typeaplication</name>
    </variable>
    <variable>
-      <defaultValue>''</defaultValue>
-      <description></description>
+      <defaultValue>'Car'</defaultValue>
+      <description>Text</description>
       <id>dc54335f-fb60-4ab6-bb16-61f261c84b49</id>
       <masked>false</masked>
       <name>icon</name>

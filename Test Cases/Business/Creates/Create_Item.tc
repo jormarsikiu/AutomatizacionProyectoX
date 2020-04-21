@@ -90,21 +90,21 @@
       <name>isTaxable</name>
    </variable>
    <variable>
-      <defaultValue>''</defaultValue>
+      <defaultValue>'UC-03'</defaultValue>
       <description>id</description>
       <id>13ed0567-3bee-4523-8861-1705481b9c61</id>
       <masked>false</masked>
       <name>parentGroups</name>
    </variable>
    <variable>
-      <defaultValue>''</defaultValue>
+      <defaultValue>'UC-03-01'</defaultValue>
       <description>id</description>
       <id>c46e0402-e1b7-475d-8a15-d523121c0a35</id>
       <masked>false</masked>
       <name>childrenGroups</name>
    </variable>
    <variable>
-      <defaultValue>''</defaultValue>
+      <defaultValue>'PL4'</defaultValue>
       <description>id</description>
       <id>004d82e8-49f7-4593-89cf-5a02af13a870</id>
       <masked>false</masked>

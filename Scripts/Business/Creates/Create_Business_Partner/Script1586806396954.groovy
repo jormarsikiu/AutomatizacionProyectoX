@@ -37,7 +37,7 @@ CustomKeywords.'jquery.jquery_generic.execJS'(botonBusinessPartner)
 String createBusinessPartner = '$("a[href*=\'/Management/BusinessPartner/Form\']")[0].click()'
 CustomKeywords.'jquery.jquery_generic.execJS'(createBusinessPartner)
 
-
+WebUI.waitForPageLoad(20)
 //****************************Full Form 1 Socio de Negocio*****************************************//
 
 String entity_bp = "jQuery('#EntityTypeCode').val('$entityCode').change()"
@@ -49,11 +49,8 @@ CustomKeywords.'jquery.jquery_generic.execJS'(code_bp)
 String taxCode_bp = "jQuery('#TaxCode').val('$taxCode')"
 CustomKeywords.'jquery.jquery_generic.execJS'(taxCode_bp)
 
-String pname_bp = "jQuery('#PartnerName').val('SocioNegocio1')"
+String pname_bp = "jQuery('#PartnerName').val('$partnerName')"
 CustomKeywords.'jquery.jquery_generic.execJS'(pname_bp)
-
-/*String pname_bp = "jQuery('#PartnerName').val('$partnerName')"
-CustomKeywords.'jquery.jquery_generic.execJS'(pname_bp)*/
 
 String shortname_bp = "jQuery(\'#ShortName\').val('$shortName')"
 CustomKeywords.'jquery.jquery_generic.execJS'(shortname_bp)
@@ -68,25 +65,45 @@ if (status == '0'){
 
 //****************************Full Form 1 Address*****************************************//
 //open +
-
 String botonaddress = '$("a[href*=\'/Management/BusinessPartner/_Address\']")[0].click()'
 CustomKeywords.'jquery.jquery_generic.execJS'(botonaddress)
 
+//Tipo
+String type_bp = "jQuery('#AddressEntityTypeCode').val('$type').change()"
+CustomKeywords.'jquery.jquery_generic.execJS'(type_bp)
+
+if (delivery == '1'){
+	String delivery_bp = '''$('#IsDefaultDelivery').click()'''
+	CustomKeywords.'jquery.jquery_generic.execJS'(delivery_bp)
+}
+
 //Pais
-String country_p = "jQuery('#CountryCode').val('$country').change()"
-CustomKeywords.'jquery.jquery_generic.execJS'(country_p)
+String open_country = '''$("#CountryCode").select2("open")'''
+CustomKeywords.'jquery.jquery_generic.execJS'(open_country)
+WebUI.delay(3)
+String select_country = "jQuery('#select2-CountryCode-results li:contains($country)').trigger({type:'mouseup'});"
+CustomKeywords.'jquery.jquery_generic.execJS'(select_country)
 
 //Region
-String county_bp = "jQuery('#CountyCode').val('$county').change()"
-CustomKeywords.'jquery.jquery_generic.execJS'(county_bp)
+String open_county = '''$("#CountyCode").select2("open")'''
+CustomKeywords.'jquery.jquery_generic.execJS'(open_county)
+WebUI.delay(3)
+String select_county = "jQuery('#select2-CountyCode-results li:contains($county)').trigger({type:'mouseup'});"
+CustomKeywords.'jquery.jquery_generic.execJS'(select_county)
 
 //Estado
-String state_bp = "jQuery('#StateCode').val('$state').change()"
-CustomKeywords.'jquery.jquery_generic.execJS'(state_bp)
+String open_state = '''$("#StateCode").select2("open")'''
+CustomKeywords.'jquery.jquery_generic.execJS'(open_state)
+WebUI.delay(3)
+String select_state = "jQuery('#select2-StateCode-results li:contains($state)').trigger({type:'mouseup'});"
+CustomKeywords.'jquery.jquery_generic.execJS'(select_state)
 
 //Municipio
-String townshipCode_bp = "jQuery('#TownshipCode').val('$townshipCode').change()"
-CustomKeywords.'jquery.jquery_generic.execJS'(townshipCode_bp)
+String open_townshipCode = '''$("#TownshipCode").select2("open")'''
+CustomKeywords.'jquery.jquery_generic.execJS'(open_townshipCode)
+WebUI.delay(3)
+String select_stownshipCode = "jQuery('#select2-TownshipCode-results li:contains($townshipCode)').trigger({type:'mouseup'});"
+CustomKeywords.'jquery.jquery_generic.execJS'(select_stownshipCode)
 
 //Direccion1
 String address1_bp = "jQuery('#Address1').val('$address1')"
@@ -100,9 +117,9 @@ CustomKeywords.'jquery.jquery_generic.execJS'(address2_bp)
 String address3_bp = "jQuery('#Address3').val('$address3')"
 CustomKeywords.'jquery.jquery_generic.execJS'(address3_bp)
 
-//Tipo
-String typeCode_bp = "jQuery('#AddressEntityTypeCode').val('$typeCode').change()"
-CustomKeywords.'jquery.jquery_generic.execJS'(typeCode_bp)
+//Ciudad
+String townName_bp = "jQuery('#TownName').val('$townName')"
+CustomKeywords.'jquery.jquery_generic.execJS'(townName_bp)
 
 //Latitud
 String latitude_bp = "jQuery('#Latitude').val('$latitude')"
@@ -127,11 +144,17 @@ String botonaccount = '$("a[href*=\'/Management/BusinessPartner/_Accountings\']"
 CustomKeywords.'jquery.jquery_generic.execJS'(botonaccount)
 
 //Registro Padre
-String parentAccounting_bp = "jQuery('#selectParentAccounting').val('$parentAccounting').change()"
+String open_parentAccounting_bp = '''$("#selectParentAccounting").select2("open")'''
+CustomKeywords.'jquery.jquery_generic.execJS'(open_parentAccounting_bp)
+WebUI.delay(3)
+String parentAccounting_bp = "jQuery('#select2-selectParentAccounting-results li:contains($parentAccounting)').trigger({type:'mouseup'});"
 CustomKeywords.'jquery.jquery_generic.execJS'(parentAccounting_bp)
 
-//Registro hijo
-String childrenAccounting_bp = "jQuery('#selectChildrenAccounting').val('$childrenAccounting').change()"
+//Registro Hijo
+String open_childrenAccounting = '''$("#selectChildrenAccounting").select2("open")'''
+CustomKeywords.'jquery.jquery_generic.execJS'(open_childrenAccounting)
+WebUI.delay(3)
+String childrenAccounting_bp = "jQuery('#select2-selectChildrenAccounting-results li:contains($childrenAccounting)').trigger({type:'mouseup'});"
 CustomKeywords.'jquery.jquery_generic.execJS'(childrenAccounting_bp)
 
 //Aceptar
@@ -139,23 +162,57 @@ String butonacept_bp2 = '$(".btn-success")[1].click()'
 CustomKeywords.'jquery.jquery_generic.execJS'(butonacept_bp2)
 
 
+
 //****************************Full Form 1 Grupos*****************************************//
 //open +
 String botongrups = '$("a[href*=\'/Management/BusinessPartner/_EntityGroups\']")[0].click()'
 CustomKeywords.'jquery.jquery_generic.execJS'(botongrups)
 
-//Registro Padre
-String parentGroups_bp = "jQuery('#selectParentGroups').val('$parentGroups').change()"
-CustomKeywords.'jquery.jquery_generic.execJS'(parentGroups_bp)
+//Registro padre
+String open_parentGroup = '''$("#selectParentGroups").select2("open")'''
+CustomKeywords.'jquery.jquery_generic.execJS'(open_parentGroup)
+WebUI.delay(3)
+String parentGroup_bp = "jQuery('#select2-selectParentGroups-results li:contains($parentGroups)').trigger({type:'mouseup'});"
+CustomKeywords.'jquery.jquery_generic.execJS'(parentGroup_bp)
 
 
 //Registro hijo
-String childrenGroups_bp = "jQuery('#selectChildrenGroups').val('$childrenGroups').change()"
+String open_childrenGroups = '''$("#selectChildrenGroups").select2("open")'''
+CustomKeywords.'jquery.jquery_generic.execJS'(open_childrenGroups)
+WebUI.delay(3)
+String childrenGroups_bp = "jQuery('#select2-selectChildrenGroups-results li:contains($childrenGroups)').trigger({type:'mouseup'});"
 CustomKeywords.'jquery.jquery_generic.execJS'(childrenGroups_bp)
+
+//Aceptar
+String butonacept_bp3 = '$(".btn-success")[2].click()'
+CustomKeywords.'jquery.jquery_generic.execJS'(butonacept_bp3)
 
 
 //****************************Full Form 1 Adicionales*****************************************//
 
+//Atributos de Entidad (Anade 2)
+if (n_attributes=='1')
+{
+	String open_attributes1 = '''$("#selectAttributes").select2("open")'''
+	CustomKeywords.'jquery.jquery_generic.execJS'(open_attributes1)
+	WebUI.delay(3)
+	String attributes_bp1 = "jQuery('#select2-selectAttributes-results li:contains($attributes1)').trigger({type:'mouseup'});"
+	CustomKeywords.'jquery.jquery_generic.execJS'(attributes_bp1)
+}else
+{
+	String open_attributes1 = '''$("#selectAttributes").select2("open")'''
+	CustomKeywords.'jquery.jquery_generic.execJS'(open_attributes1)
+	WebUI.delay(3)
+	String attributes_bp1 = "jQuery('#select2-selectAttributes-results li:contains($attributes1)').trigger({type:'mouseup'});"
+	CustomKeywords.'jquery.jquery_generic.execJS'(attributes_bp1)
+
+	String open_attributes2 = '''$("#selectAttributes").select2("open")'''
+	CustomKeywords.'jquery.jquery_generic.execJS'(open_attributes2)
+	WebUI.delay(3)
+	String attributes_bp2 = "jQuery('#select2-selectAttributes-results li:contains($attributes2)').trigger({type:'mouseup'});"
+	CustomKeywords.'jquery.jquery_generic.execJS'(attributes_bp2)
+}
+	
 //Condicion Comercial
 String businessCondition_bp = "jQuery('#selectBusinessCondition').val('$businessCondition').change()"
 CustomKeywords.'jquery.jquery_generic.execJS'(businessCondition_bp)
@@ -163,14 +220,7 @@ CustomKeywords.'jquery.jquery_generic.execJS'(businessCondition_bp)
 //Impuesto
 String taxes_bp = "jQuery('#selectTaxes').val('$taxes').change()"
 CustomKeywords.'jquery.jquery_generic.execJS'(taxes_bp)
-
-//Atributos de Entidad
-String attributes_bp1 = "jQuery('#selectAttributes').val('$attributes1').change()"
-CustomKeywords.'jquery.jquery_generic.execJS'(attributes_bp1)
-
-String attributes_bp2 = "jQuery('#selectAttributes').val('$attributes2').change()"
-CustomKeywords.'jquery.jquery_generic.execJS'(attributes_bp2)
-
+	
 //Lista de Precios
 String prices_bp = "jQuery('#selectPrices').val('$prices').change()"
 CustomKeywords.'jquery.jquery_generic.execJS'(prices_bp)
@@ -178,7 +228,6 @@ CustomKeywords.'jquery.jquery_generic.execJS'(prices_bp)
 //Guardar
 String butonsave= '$(".pull-right").click()'
 CustomKeywords.'jquery.jquery_generic.execJS'(butonsave)
-
 
 
 

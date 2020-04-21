@@ -93,8 +93,10 @@ if (isTaxable == '0'){
 }
 
 //****************************Full Form 1 Grups****************************************//
-String botonform= '''$("a[href*='/Management/Item/_EntityGroups']")[0].click()'''
-CustomKeywords.'jquery.jquery_generic.execJS'(botonform)
+String botongroups= '''$("a[href*='/Management/Item/_EntityGroups']")[0].click()'''
+CustomKeywords.'jquery.jquery_generic.execJS'(botongroups)
+
+WebUI.delay(10)
 
 //Registro Padre
 String parentGroups_bp = "jQuery('#selectParentGroups').val('$parentGroups').change()"
@@ -109,8 +111,10 @@ String butonacept_bp1 = '$(".btn-success")[0].click()'
 CustomKeywords.'jquery.jquery_generic.execJS'(butonacept_bp1)
 
 //****************************Full Form 1 ListPrices*****************************************//
-String botonform= '''$("a[href*='/Management/Item/_PriceList']")[0].click()'''
-CustomKeywords.'jquery.jquery_generic.execJS'(botonform)
+String botonprices= '''$("a[href*='/Management/Item/_PriceList']")[0].click()'''
+CustomKeywords.'jquery.jquery_generic.execJS'(botonprices)
+
+WebUI.delay(10)
 
 String priceListCode_bi = "jQuery('#PriceListCode').val('$priceListCode').change()"
 CustomKeywords.'jquery.jquery_generic.execJS'(priceListCode_bi)

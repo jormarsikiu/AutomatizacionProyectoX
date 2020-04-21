@@ -40,3 +40,19 @@ else{
 	
 	WebUI.delay(3)
 }
+/*
+
+$("#select2-CountryCode-results li:contains(Venezuela)").trigger({type:'mouseup'});
+$("#select2-CountyCode-results li:contains(Capital)").trigger({type:'mouseup'});
+$("#select2-StateCode-results li:contains(Miranda)").trigger({type:'mouseup'});
+$("#select2-TownshipCode-results li:contains(Municipio Baruta)").trigger({type:'mouseup'});
+
+$("#select2-selectParentAccounting-results li:contains(P Facturation)").trigger({type:'mouseup'});
+$("#select2-selectChildrenAccounting-results li:contains(P Semestraly)").trigger({type:'mouseup'});
+
+$("#select2-selectParentGroups-results li:contains(Unit conversion)").trigger({type:'mouseup'});
+$("#select2-selectChildrenGroups-results li:contains(Energy)").trigger({type:'mouseup'});
+
+$("#select2-selectAttributes-results li:contains(Packaged product)").trigger({type:'mouseup'});
+
+*/

@@ -27,14 +27,14 @@
       <name>taxCode</name>
    </variable>
    <variable>
-      <defaultValue>'SocioNegocio1\r\n'</defaultValue>
+      <defaultValue>'SocioNegocio1'</defaultValue>
       <description>text</description>
       <id>e1a219b8-7faf-4d58-bbdb-cc5ca2e75d00</id>
       <masked>false</masked>
       <name>partnerName</name>
    </variable>
    <variable>
-      <defaultValue>'SocioNegocio1\r\n'</defaultValue>
+      <defaultValue>'SocioNegocio1'</defaultValue>
       <description>text</description>
       <id>6424a66c-bf5b-4812-8143-782540cb77ef</id>
       <masked>false</masked>
@@ -55,29 +55,43 @@
       <name>status</name>
    </variable>
    <variable>
-      <defaultValue>'CO'</defaultValue>
+      <defaultValue>'MA01-01'</defaultValue>
       <description>id</description>
+      <id>9a7f878d-15f6-48a0-a53c-a6a0bafb589b</id>
+      <masked>false</masked>
+      <name>type</name>
+   </variable>
+   <variable>
+      <defaultValue>'1'</defaultValue>
+      <description>Activo = 1, Inactivo = 0</description>
+      <id>2c7560ef-6b04-4f65-b84e-79d5fbfc2433</id>
+      <masked>false</masked>
+      <name>delivery</name>
+   </variable>
+   <variable>
+      <defaultValue>'Venezuela'</defaultValue>
+      <description>Text select2</description>
       <id>094e9212-b4e6-4cd4-9159-0a4a4c782e16</id>
       <masked>false</masked>
       <name>country</name>
    </variable>
    <variable>
-      <defaultValue>'CO-1'</defaultValue>
-      <description>id</description>
+      <defaultValue>'Capital'</defaultValue>
+      <description>Text select2</description>
       <id>5d226363-fabf-4389-8fdf-df53adb32939</id>
       <masked>false</masked>
       <name>county</name>
    </variable>
    <variable>
-      <defaultValue>'BG'</defaultValue>
-      <description>id</description>
+      <defaultValue>'Miranda'</defaultValue>
+      <description>Text select2</description>
       <id>c76f70be-ca0e-4b8b-85ce-1ea282e02f28</id>
       <masked>false</masked>
       <name>state</name>
    </variable>
    <variable>
-      <defaultValue>'BGCC'</defaultValue>
-      <description>id</description>
+      <defaultValue>'Municipio Baruta'</defaultValue>
+      <description>Text select2</description>
       <id>e85c5301-ae50-441d-bf97-c58d6f5a6049</id>
       <masked>false</masked>
       <name>townshipCode</name>
@@ -104,11 +118,11 @@
       <name>address3</name>
    </variable>
    <variable>
-      <defaultValue>'MA01-01'</defaultValue>
-      <description>id </description>
+      <defaultValue>'Caracas'</defaultValue>
+      <description>text</description>
       <id>378b9cca-b33a-45b2-9ed7-232de7d39af5</id>
       <masked>false</masked>
-      <name>typeCode</name>
+      <name>townName</name>
    </variable>
    <variable>
       <defaultValue>'123'</defaultValue>
@@ -132,57 +146,64 @@
       <name>zipcode</name>
    </variable>
    <variable>
-      <defaultValue>''</defaultValue>
-      <description>id</description>
+      <defaultValue>'P Facturation'</defaultValue>
+      <description>Text select2</description>
       <id>158971dc-37da-4c99-8a1a-f9dc46952db1</id>
       <masked>false</masked>
       <name>parentAccounting</name>
    </variable>
    <variable>
-      <defaultValue>''</defaultValue>
-      <description>id</description>
+      <defaultValue>'P Semestraly'</defaultValue>
+      <description>Text select2</description>
       <id>d0ed87d2-8710-4a18-ad38-a781bf22deab</id>
       <masked>false</masked>
       <name>childrenAccounting</name>
    </variable>
    <variable>
-      <defaultValue>''</defaultValue>
-      <description>id</description>
+      <defaultValue>'Unit conversion'</defaultValue>
+      <description>Text select2</description>
       <id>2cfefa4b-a7b0-46fc-9b91-f6cd580409d0</id>
       <masked>false</masked>
       <name>parentGroups</name>
    </variable>
    <variable>
-      <defaultValue>''</defaultValue>
-      <description>id</description>
+      <defaultValue>'Energy'</defaultValue>
+      <description>Text select2</description>
       <id>10c44aa9-e989-4881-b595-8088a1440163</id>
       <masked>false</masked>
       <name>childrenGroups</name>
    </variable>
    <variable>
       <defaultValue>''</defaultValue>
-      <description>id</description>
+      <description>Text select2</description>
       <id>1823c9bc-1fbd-420e-adcf-6b0ed82bc033</id>
       <masked>false</masked>
       <name>businessCondition</name>
    </variable>
    <variable>
       <defaultValue>''</defaultValue>
-      <description>id</description>
+      <description>Text select2</description>
       <id>d39d1743-db57-466a-bce0-98f4de10d66c</id>
       <masked>false</masked>
       <name>taxes</name>
    </variable>
    <variable>
-      <defaultValue>'BA-04'</defaultValue>
-      <description>id</description>
+      <defaultValue>'2'</defaultValue>
+      <description>Maximo 2</description>
+      <id>0a9c401f-0e82-4a1b-983e-2f0dad3d9605</id>
+      <masked>false</masked>
+      <name>n_attributes</name>
+   </variable>
+   <variable>
+      <defaultValue>'Packaged product'</defaultValue>
+      <description>Text select2</description>
       <id>90a134f1-7ec3-489f-b49d-ccf89eedec23</id>
       <masked>false</masked>
       <name>attributes1</name>
    </variable>
    <variable>
-      <defaultValue>'BA-02'</defaultValue>
-      <description>id</description>
+      <defaultValue>'fragile'</defaultValue>
+      <description>Text select2</description>
       <id>11bd820b-87b3-4886-98cd-2c93fa66a2f6</id>
       <masked>false</masked>
       <name>attributes2</name>

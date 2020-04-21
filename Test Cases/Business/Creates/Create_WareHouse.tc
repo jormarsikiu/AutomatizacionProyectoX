@@ -118,14 +118,14 @@
       <name>zipcode</name>
    </variable>
    <variable>
-      <defaultValue>''</defaultValue>
+      <defaultValue>'UC-01'</defaultValue>
       <description></description>
       <id>1d2f0e83-3d50-4947-a4a5-edec2bde382b</id>
       <masked>false</masked>
       <name>parentGroups</name>
    </variable>
    <variable>
-      <defaultValue>''</defaultValue>
+      <defaultValue>'UC-01-04'</defaultValue>
       <description></description>
       <id>12e72071-16d3-4080-a021-6fef8d698a36</id>
       <masked>false</masked>

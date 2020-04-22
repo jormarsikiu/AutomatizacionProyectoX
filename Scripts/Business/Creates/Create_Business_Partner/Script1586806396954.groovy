@@ -68,9 +68,16 @@ if (status == '0'){
 String botonaddress = '$("a[href*=\'/Management/BusinessPartner/_Address\']")[0].click()'
 CustomKeywords.'jquery.jquery_generic.execJS'(botonaddress)
 
+WebUI.delay(8)
+
 //Tipo
-String type_bp = "jQuery('#AddressEntityTypeCode').val('$type').change()"
+String open_type_bp = '''$("#AddressEntityTypeCode").select2("open")'''
+CustomKeywords.'jquery.jquery_generic.execJS'(open_type_bp)
+WebUI.delay(3)
+String type_bp = "jQuery('#select2-AddressEntityTypeCode-results li:contains($type)').trigger({type:'mouseup'});"
 CustomKeywords.'jquery.jquery_generic.execJS'(type_bp)
+
+WebUI.delay(3)
 
 if (delivery == '1'){
 	String delivery_bp = '''$('#IsDefaultDelivery').click()'''
@@ -134,11 +141,13 @@ String zipcode_bp = "jQuery('#ZipCode').val('$zipcode')"
 CustomKeywords.'jquery.jquery_generic.execJS'(zipcode_bp)
 
 //Aceptar
-String butonacept_bp1 = '$(".btn-success")[0].click()'
-CustomKeywords.'jquery.jquery_generic.execJS'(butonacept_bp1)
+String butonacept_bp = '$(".btn-success")[0].click()'
+CustomKeywords.'jquery.jquery_generic.execJS'(butonacept_bp)
 
 
 //****************************Full Form 1 Contabilidad*****************************************//
+
+
 //open +
 String botonaccount = '$("a[href*=\'/Management/BusinessPartner/_Accountings\']")[0].click()'
 CustomKeywords.'jquery.jquery_generic.execJS'(botonaccount)
@@ -158,12 +167,11 @@ String childrenAccounting_bp = "jQuery('#select2-selectChildrenAccounting-result
 CustomKeywords.'jquery.jquery_generic.execJS'(childrenAccounting_bp)
 
 //Aceptar
-String butonacept_bp2 = '$(".btn-success")[1].click()'
-CustomKeywords.'jquery.jquery_generic.execJS'(butonacept_bp2)
-
+CustomKeywords.'jquery.jquery_generic.execJS'(butonacept_bp)
 
 
 //****************************Full Form 1 Grupos*****************************************//
+
 //open +
 String botongrups = '$("a[href*=\'/Management/BusinessPartner/_EntityGroups\']")[0].click()'
 CustomKeywords.'jquery.jquery_generic.execJS'(botongrups)
@@ -175,7 +183,6 @@ WebUI.delay(3)
 String parentGroup_bp = "jQuery('#select2-selectParentGroups-results li:contains($parentGroups)').trigger({type:'mouseup'});"
 CustomKeywords.'jquery.jquery_generic.execJS'(parentGroup_bp)
 
-
 //Registro hijo
 String open_childrenGroups = '''$("#selectChildrenGroups").select2("open")'''
 CustomKeywords.'jquery.jquery_generic.execJS'(open_childrenGroups)
@@ -184,8 +191,7 @@ String childrenGroups_bp = "jQuery('#select2-selectChildrenGroups-results li:con
 CustomKeywords.'jquery.jquery_generic.execJS'(childrenGroups_bp)
 
 //Aceptar
-String butonacept_bp3 = '$(".btn-success")[2].click()'
-CustomKeywords.'jquery.jquery_generic.execJS'(butonacept_bp3)
+CustomKeywords.'jquery.jquery_generic.execJS'(butonacept_bp)
 
 
 //****************************Full Form 1 Adicionales*****************************************//

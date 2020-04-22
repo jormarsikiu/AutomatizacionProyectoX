@@ -55,8 +55,8 @@
       <name>status</name>
    </variable>
    <variable>
-      <defaultValue>'MA01-01'</defaultValue>
-      <description>id</description>
+      <defaultValue>'Billing Adress'</defaultValue>
+      <description>Text select2</description>
       <id>9a7f878d-15f6-48a0-a53c-a6a0bafb589b</id>
       <masked>false</masked>
       <name>type</name>
@@ -160,14 +160,14 @@
       <name>childrenAccounting</name>
    </variable>
    <variable>
-      <defaultValue>'Unit conversion'</defaultValue>
+      <defaultValue>'Support'</defaultValue>
       <description>Text select2</description>
       <id>2cfefa4b-a7b0-46fc-9b91-f6cd580409d0</id>
       <masked>false</masked>
       <name>parentGroups</name>
    </variable>
    <variable>
-      <defaultValue>'Energy'</defaultValue>
+      <defaultValue>'Presencial'</defaultValue>
       <description>Text select2</description>
       <id>10c44aa9-e989-4881-b595-8088a1440163</id>
       <masked>false</masked>

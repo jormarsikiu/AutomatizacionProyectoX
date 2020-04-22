@@ -71,7 +71,7 @@ CustomKeywords.'jquery.jquery_generic.execJS'(next)
 
 //****************************Full Form 2 ROLES *****************************************//
 //MAXIMO 2 ROLES
-/*
+
 if (n_role == '1')
 {
     String role1 = "jQuery('#' + '$idRole1' + '-selectable').click()"
@@ -84,28 +84,11 @@ else{
 	String role2 = "jQuery('#' + '$idRole2' + '-selectable').click()"
 	CustomKeywords.'jquery.jquery_generic.execJS'(role2)
 }
-*/
 
-for(int i=1; i<n_role;i++)
-{
-	String idRole = "idRole"+i
-	print(idRole)
-	String role = "jQuery('#' + '$idRole' + '-selectable').click()"
-	CustomKeywords.'jquery.jquery_generic.execJS'(role)
-	
-}
-
-for(int i=1; i<n_society;i++)
-{
-	String idsociety = "idsociety"+i
-	String society = "jQuery('#' + '$idsociety' + '-selectable').click()"
-	CustomKeywords.'jquery.jquery_generic.execJS'(society)
-	
-}
 
 //****************************Full Form 3 ROLES *****************************************//
 //MAXIMO 2 SOCIEDADES
-/*
+
 if (n_society == '1')
 {
     String society1 = "jQuery('#' + '$idsociety1' + '-selectable').click()"
@@ -118,19 +101,30 @@ else{
 	CustomKeywords.'jquery.jquery_generic.execJS'(society2)
 }
 
-
-for(int i=1; i<n_society;i++)
-{
-	String idsociety = "idsociety"+i
-	String society = "jQuery('#' + '$idsociety' + '-selectable').click()"
-	CustomKeywords.'jquery.jquery_generic.execJS'(society)
-	
-}
-
-*/
 String finish = '$("a[href*=\'finish\']")[0].click()'
 CustomKeywords.'jquery.jquery_generic.execJS'(finish)
 
-//PROBAR 2 FORMA PARA MAS SOCIEDADES
 
+
+/**********************************************************************************/
+//PROBAR 2 FORMA PARA MAS SOCIEDADES
+/*
+ for(int i=1; i<n_role;i++)
+ {
+	 String idRole = "idRole"+i
+	 print(idRole)
+	 String role = "jQuery('#' + '$idRole' + '-selectable').click()"
+	 CustomKeywords.'jquery.jquery_generic.execJS'(role)
+	 
+ }
+ 
+ for(int i=1; i<n_society;i++)
+ {
+	 String idsociety = "idsociety"+i
+	 String society = "jQuery('#' + '$idsociety' + '-selectable').click()"
+	 CustomKeywords.'jquery.jquery_generic.execJS'(society)
+	 
+ }
+ 
+ */
 

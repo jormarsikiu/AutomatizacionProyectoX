@@ -64,20 +64,36 @@ if (modal == 'block'){
 	//****************************Full Form 2*****************************************//
 	
 	//Pais
-	String countryCode_s = "jQuery('#CountryCode').val('$countryCode').change()"	
-	CustomKeywords.'jquery.jquery_generic.execJS'(countryCode_s)
+	String open_country = '''$("#CountryCode").select2("open")'''
+	CustomKeywords.'jquery.jquery_generic.execJS'(open_country)
+	WebUI.delay(3)
+	String select_country = "jQuery('#select2-CountryCode-results li:contains($country)').trigger({type:'mouseup'});"
+	CustomKeywords.'jquery.jquery_generic.execJS'(select_country)
 	
-	String countyCode_s = "jQuery('#CountyCode').val('$countyCode').change()"	
-	CustomKeywords.'jquery.jquery_generic.execJS'(countyCode_s)
+	//Region
+	String open_county = '''$("#CountyCode").select2("open")'''
+	CustomKeywords.'jquery.jquery_generic.execJS'(open_county)
+	WebUI.delay(3)
+	String select_county = "jQuery('#select2-CountyCode-results li:contains($county)').trigger({type:'mouseup'});"
+	CustomKeywords.'jquery.jquery_generic.execJS'(select_county)
 	
-	String stateCode_s = "jQuery('#StateCode').val('$stateCode').change()"	
-	CustomKeywords.'jquery.jquery_generic.execJS'(stateCode_s)
+	//Estado
+	String open_state = '''$("#StateCode").select2("open")'''
+	CustomKeywords.'jquery.jquery_generic.execJS'(open_state)
+	WebUI.delay(3)
+	String select_state = "jQuery('#select2-StateCode-results li:contains($state)').trigger({type:'mouseup'});"
+	CustomKeywords.'jquery.jquery_generic.execJS'(select_state)
 	
-	String townshipCode_s = "jQuery('#TownshipCode').val('$townshipCode').change()"	
-	CustomKeywords.'jquery.jquery_generic.execJS'(townshipCode_s)
+	//Municipio
+	String open_townshipCode = '''$("#TownshipCode").select2("open")'''
+	CustomKeywords.'jquery.jquery_generic.execJS'(open_townshipCode)
+	WebUI.delay(3)
+	String select_stownshipCode = "jQuery('#select2-TownshipCode-results li:contains($townshipCode)').trigger({type:'mouseup'});"
+	CustomKeywords.'jquery.jquery_generic.execJS'(select_stownshipCode)
 	
-	String zip_s = "jQuery('#ZipCode').val('$zipcode')"	
-	CustomKeywords.'jquery.jquery_generic.execJS'(zip_s)
+	//zip
+	String zipcode_bp = "jQuery('#ZipCode').val('$zipcode')"
+	CustomKeywords.'jquery.jquery_generic.execJS'(zipcode_bp)
 	
 	CustomKeywords.'jquery.jquery_generic.execJS'(next)
 	

@@ -62,29 +62,29 @@
       <name>status</name>
    </variable>
    <variable>
-      <defaultValue>'VE'</defaultValue>
-      <description>ID</description>
+      <defaultValue>'Venezuela'</defaultValue>
+      <description>Text select2</description>
       <id>d04c8269-46fc-4a3e-86a8-b4428e1bf32f</id>
       <masked>false</masked>
       <name>countryCode</name>
    </variable>
    <variable>
-      <defaultValue>'VE-1'</defaultValue>
-      <description>ID</description>
+      <defaultValue>'Capital'</defaultValue>
+      <description>Text select2</description>
       <id>a17ea650-0cd2-47e7-add4-c6d103c02705</id>
       <masked>false</masked>
       <name>countyCode</name>
    </variable>
    <variable>
-      <defaultValue>'ANZO'</defaultValue>
-      <description>ID</description>
+      <defaultValue>'Miranda'</defaultValue>
+      <description>Text select2</description>
       <id>4223db9c-a7a0-4a4b-9f9b-83478b9c2c27</id>
       <masked>false</masked>
       <name>stateCode</name>
    </variable>
    <variable>
-      <defaultValue>'BAR-02'</defaultValue>
-      <description>ID</description>
+      <defaultValue>'Municipio Baruta'</defaultValue>
+      <description>Text select2</description>
       <id>e58d277e-77ac-403c-b2d0-5575d57f7ac9</id>
       <masked>false</masked>
       <name>townshipCode</name>

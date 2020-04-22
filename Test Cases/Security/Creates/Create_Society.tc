@@ -4,123 +4,88 @@
    <name>Create_Society</name>
    <tag></tag>
    <comment></comment>
-   <testCaseGuid>0d007b0b-1c6e-4fe9-95a3-01dafe28b706</testCaseGuid>
+   <testCaseGuid>2ae99b3b-262a-4c93-be1b-f82dd68e5c02</testCaseGuid>
    <variable>
       <defaultValue>'123'</defaultValue>
-      <description>TEXTO</description>
-      <id>78257449-1c70-4382-872a-3c69da13d7b8</id>
+      <description>Text</description>
+      <id>e60e6051-7c19-4d19-8a0e-1ec061757b19</id>
       <masked>false</masked>
       <name>code</name>
    </variable>
    <variable>
       <defaultValue>'Sociedad1'</defaultValue>
-      <description>TEXTO</description>
-      <id>0cd66b82-c9fe-4f0c-84fe-d4dec5883a5a</id>
+      <description>Text</description>
+      <id>1003b2d0-c45f-4449-b439-6a8b3ea869b9</id>
       <masked>false</masked>
       <name>societyName</name>
    </variable>
    <variable>
       <defaultValue>'Soc1'</defaultValue>
-      <description>TEXTO</description>
-      <id>86ef2c8d-b92e-405b-8dcb-4ff3cd2712b9</id>
+      <description>Text</description>
+      <id>1fff9ead-ec41-42b1-b6c6-bf575876a534</id>
       <masked>false</masked>
       <name>shortName</name>
    </variable>
    <variable>
       <defaultValue>'Turismo'</defaultValue>
-      <description>TEXTO</description>
-      <id>60491f20-7b44-4861-9b57-0cc850278a6f</id>
+      <description>Text</description>
+      <id>87fa8068-ccce-436f-942c-612899c4e8a5</id>
       <masked>false</masked>
       <name>comercialActivity</name>
    </variable>
    <variable>
       <defaultValue>'R.S.L.'</defaultValue>
-      <description>TEXTO</description>
-      <id>36745c9e-dfca-4e21-8779-a190e720d532</id>
+      <description>Text</description>
+      <id>1815c95b-4b1e-4c11-b54e-e09318158538</id>
       <masked>false</masked>
       <name>corporation</name>
    </variable>
    <variable>
       <defaultValue>'C:\\\\Users\\\\kaizen\\\\git\\\\AutomatizacionProyectoX\\\\Image\\\\1.png'</defaultValue>
-      <description>Ruta de la Imagen</description>
-      <id>53c3a994-aeca-463c-85b0-33d6a4e22f91</id>
+      <description>Text</description>
+      <id>89939e53-ea2b-4b71-a378-c652e8cebb41</id>
       <masked>false</masked>
       <name>rutaImage</name>
    </variable>
    <variable>
-      <defaultValue>'fa-glass'</defaultValue>
-      <description>fa-music, fa-search, fa-heart, fa-star, .....</description>
-      <id>9407c4b3-80bc-4946-9663-b2aca555f210</id>
-      <masked>false</masked>
-      <name>icon</name>
-   </variable>
-   <variable>
       <defaultValue>'0'</defaultValue>
       <description>Activo = 1, Inactivo = 0</description>
-      <id>26ceee3b-5fd1-4e08-bbfb-ecf2d68f1ddf</id>
+      <id>09bbbb9b-de6f-4eed-99ef-c1b19a009651</id>
       <masked>false</masked>
       <name>status</name>
    </variable>
    <variable>
-      <defaultValue>'Venezuela'</defaultValue>
-      <description>Text select2</description>
-      <id>d04c8269-46fc-4a3e-86a8-b4428e1bf32f</id>
-      <masked>false</masked>
-      <name>countryCode</name>
-   </variable>
-   <variable>
-      <defaultValue>'Capital'</defaultValue>
-      <description>Text select2</description>
-      <id>a17ea650-0cd2-47e7-add4-c6d103c02705</id>
-      <masked>false</masked>
-      <name>countyCode</name>
-   </variable>
-   <variable>
-      <defaultValue>'Miranda'</defaultValue>
-      <description>Text select2</description>
-      <id>4223db9c-a7a0-4a4b-9f9b-83478b9c2c27</id>
-      <masked>false</masked>
-      <name>stateCode</name>
-   </variable>
-   <variable>
-      <defaultValue>'Municipio Baruta'</defaultValue>
-      <description>Text select2</description>
-      <id>e58d277e-77ac-403c-b2d0-5575d57f7ac9</id>
-      <masked>false</masked>
-      <name>townshipCode</name>
-   </variable>
-   <variable>
       <defaultValue>'5101'</defaultValue>
-      <description>TEXTO</description>
-      <id>6f69e029-dcd7-4da2-89d7-78d19716e60c</id>
+      <description>Numbers</description>
+      <id>5cb6b33d-2315-4d6d-8beb-5920aad49590</id>
       <masked>false</masked>
       <name>zipcode</name>
    </variable>
    <variable>
       <defaultValue>'Ciudad1'</defaultValue>
-      <description>TEXTO</description>
-      <id>c503e005-6f67-4eeb-8b1c-bedad85f39ae</id>
+      <description>Text</description>
+      <id>07671ca4-2c60-4efc-ba48-687383f5159c</id>
       <masked>false</masked>
       <name>townName</name>
    </variable>
    <variable>
       <defaultValue>'Ciudad1'</defaultValue>
-      <description>TEXTO</description>
-      <id>345a7432-b836-497b-a1a3-64bea362bff2</id>
+      <description>Text</description>
+      <id>8fea4dce-0212-4585-8a24-e08349613f03</id>
       <masked>false</masked>
       <name>fiscalAddress</name>
    </variable>
    <variable>
       <defaultValue>'Ciudad1'</defaultValue>
-      <description>TEXTO</description>
-      <id>e53ddd4d-5eae-4c8c-b848-7d7eb9ec77ef</id>
+      <description>Text</description>
+      <id>ed362add-8020-4ccc-b66b-ea5822ccc1ef</id>
       <masked>false</masked>
       <name>complementaryAddress</name>
    </variable>
    <variable>
       <defaultValue>'Ciudad1'</defaultValue>
-      <description>TEXTO</description>
-      <id>318ccdd0-0e5c-43f6-9638-e4dfe2c21e22</id>
+      <description>Text</description>
+      <id>217a64ee-595d-4faf-a56a-09b27d42c674</id>
       <masked>false</masked>
       <name>taxAddress</name>
    </variable>

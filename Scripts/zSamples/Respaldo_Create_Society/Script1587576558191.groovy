@@ -67,21 +67,21 @@ if (modal == 'block'){
 	String open_country = '''$("#CountryCode").select2("open")'''
 	CustomKeywords.'jquery.jquery_generic.execJS'(open_country)
 	WebUI.delay(3)
-	String select_country = "jQuery('#select2-CountryCode-results li:contains($country)').trigger({type:'mouseup'});"
+	String select_country = "jQuery('#select2-CountryCode-results li:contains($countryCode)').trigger({type:'mouseup'});"
 	CustomKeywords.'jquery.jquery_generic.execJS'(select_country)
 	
 	//Region
 	String open_county = '''$("#CountyCode").select2("open")'''
 	CustomKeywords.'jquery.jquery_generic.execJS'(open_county)
 	WebUI.delay(3)
-	String select_county = "jQuery('#select2-CountyCode-results li:contains($county)').trigger({type:'mouseup'});"
+	String select_county = "jQuery('#select2-CountyCode-results li:contains($countyCode)').trigger({type:'mouseup'});"
 	CustomKeywords.'jquery.jquery_generic.execJS'(select_county)
 	
 	//Estado
 	String open_state = '''$("#StateCode").select2("open")'''
 	CustomKeywords.'jquery.jquery_generic.execJS'(open_state)
 	WebUI.delay(3)
-	String select_state = "jQuery('#select2-StateCode-results li:contains($state)').trigger({type:'mouseup'});"
+	String select_state = "jQuery('#select2-StateCode-results li:contains($stateCode)').trigger({type:'mouseup'});"
 	CustomKeywords.'jquery.jquery_generic.execJS'(select_state)
 	
 	//Municipio
@@ -114,4 +114,12 @@ if (modal == 'block'){
 	CustomKeywords.'jquery.jquery_generic.execJS'(finish)
 
 }
+
+
+
+/*Verify**/
+WebUI.delay(10)
+String alerta = "if(jQuery('#SocietiesTabletr:contains($societyName)').length){alert('Automatización: EXITO! Sociedad Visible en la tabla: '+'$societyName')}else{alert('Automatización: FALLA! Sociedad No visible en la tabla')}"
+CustomKeywords.'jquery.jquery_generic.execJS'(alerta)
+
 

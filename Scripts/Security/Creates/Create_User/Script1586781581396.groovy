@@ -110,7 +110,28 @@ CustomKeywords.'jquery.jquery_generic.execJS'(finish)
 
 WebUI.delay(10)
 
-/*Verify**/
+/*Verify email in table**/
 
-String alerta = "if(jQuery('#tableUser tr:contains($email)').length){alert('Automatización: EXITO! Usuario Visible en la tabla')}else{alert('Automatización: FALLA! Usuario No visible en la tabla')}"
-CustomKeywords.'jquery.jquery_generic.execJS'(alerta)
+String alerta = "jQuery('#tableUser tr').is(':contains($email)')"
+Boolean bool = CustomKeywords.'jquery.jquery_generic.execJS'(alerta)
+
+if(bool==true){
+	
+	String alerta1 = "jQuery(alert('Automatización: EXITO! Usuario Visible en la tabla'))"
+	CustomKeywords.'jquery.jquery_generic.execJS'(alerta1)
+	print('Automatización: EXITO! Usuario Visible en la tabla. Pagina 1')
+}
+
+else{
+	String siguiente = '''$('#tableUser_next').click()'''
+	CustomKeywords.'jquery.jquery_generic.execJS'(siguiente)
+	Boolean bool2 = CustomKeywords.'jquery.jquery_generic.execJS'(alerta)
+	if(bool2==true){
+		WebUI.delay(3)
+		String alerta1 = "jQuery(alert('Automatización: EXITO! Usuario Visible en la tabla'))"
+		CustomKeywords.'jquery.jquery_generic.execJS'(alerta1)
+		print('Automatización: EXITO! Usuario Visible en la tabla. Pagina 2')
+	}
+	
+}
+

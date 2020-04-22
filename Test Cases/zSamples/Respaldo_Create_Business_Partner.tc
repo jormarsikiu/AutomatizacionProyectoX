@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>Respaldo_Create_Business_Partner</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>b0321b75-7aec-4785-b4b6-78a1c8868317</testCaseGuid>
+   <variable>
+      <defaultValue>'MBP01-01'</defaultValue>
+      <description>Provider =  MBP01-01, Client = MBP01-02</description>
+      <id>c3d59f5b-01aa-4784-aba4-c7f161a70a9e</id>
+      <masked>false</masked>
+      <name>entityCode</name>
+   </variable>
+   <variable>
+      <defaultValue>'123'</defaultValue>
+      <description>text</description>
+      <id>84de05a2-563d-400e-9f79-431e982141ac</id>
+      <masked>false</masked>
+      <name>code</name>
+   </variable>
+   <variable>
+      <defaultValue>'COD-123'</defaultValue>
+      <description>text</description>
+      <id>fb422459-9e75-4161-b243-71e6247dcd36</id>
+      <masked>false</masked>
+      <name>taxCode</name>
+   </variable>
+   <variable>
+      <defaultValue>'SocioNegocio1'</defaultValue>
+      <description>text</description>
+      <id>e1a219b8-7faf-4d58-bbdb-cc5ca2e75d00</id>
+      <masked>false</masked>
+      <name>partnerName</name>
+   </variable>
+   <variable>
+      <defaultValue>'SocioNegocio1'</defaultValue>
+      <description>text</description>
+      <id>6424a66c-bf5b-4812-8143-782540cb77ef</id>
+      <masked>false</masked>
+      <name>shortName</name>
+   </variable>
+   <variable>
+      <defaultValue>'Turismo'</defaultValue>
+      <description>text</description>
+      <id>cf13e131-c4d8-4bc8-93e2-9bbc73d92bca</id>
+      <masked>false</masked>
+      <name>comercialActivity</name>
+   </variable>
+   <variable>
+      <defaultValue>'0'</defaultValue>
+      <description>Activo = 1, Inactivo = 0</description>
+      <id>ccd2545f-c534-4dc5-b24a-0e1c1a85cdff</id>
+      <masked>false</masked>
+      <name>status</name>
+   </variable>
+   <variable>
+      <defaultValue>'Billing Adress'</defaultValue>
+      <description>Text select2</description>
+      <id>9a7f878d-15f6-48a0-a53c-a6a0bafb589b</id>
+      <masked>false</masked>
+      <name>type</name>
+   </variable>
+   <variable>
+      <defaultValue>'1'</defaultValue>
+      <description>Activo = 1, Inactivo = 0</description>
+      <id>2c7560ef-6b04-4f65-b84e-79d5fbfc2433</id>
+      <masked>false</masked>
+      <name>delivery</name>
+   </variable>
+   <variable>
+      <defaultValue>'Venezuela'</defaultValue>
+      <description>Text select2</description>
+      <id>094e9212-b4e6-4cd4-9159-0a4a4c782e16</id>
+      <masked>false</masked>
+      <name>country</name>
+   </variable>
+   <variable>
+      <defaultValue>'Capital'</defaultValue>
+      <description>Text select2</description>
+      <id>5d226363-fabf-4389-8fdf-df53adb32939</id>
+      <masked>false</masked>
+      <name>county</name>
+   </variable>
+   <variable>
+      <defaultValue>'Miranda'</defaultValue>
+      <description>Text select2</description>
+      <id>c76f70be-ca0e-4b8b-85ce-1ea282e02f28</id>
+      <masked>false</masked>
+      <name>state</name>
+   </variable>
+   <variable>
+      <defaultValue>'Municipio Baruta'</defaultValue>
+      <description>Text select2</description>
+      <id>e85c5301-ae50-441d-bf97-c58d6f5a6049</id>
+      <masked>false</masked>
+      <name>townshipCode</name>
+   </variable>
+   <variable>
+      <defaultValue>'Street 4 -2 '</defaultValue>
+      <description>text</description>
+      <id>3b52e9da-d039-471d-8fdb-5d637b9e22df</id>
+      <masked>false</masked>
+      <name>address1</name>
+   </variable>
+   <variable>
+      <defaultValue>'Street 4 -2 '</defaultValue>
+      <description>text</description>
+      <id>5936de78-244b-4c63-a062-d951afcfc002</id>
+      <masked>false</masked>
+      <name>address2</name>
+   </variable>
+   <variable>
+      <defaultValue>'Street 4 -2 '</defaultValue>
+      <description>text</description>
+      <id>021315f4-5526-44da-aad9-5471df7e0710</id>
+      <masked>false</masked>
+      <name>address3</name>
+   </variable>
+   <variable>
+      <defaultValue>'Caracas'</defaultValue>
+      <description>text</description>
+      <id>378b9cca-b33a-45b2-9ed7-232de7d39af5</id>
+      <masked>false</masked>
+      <name>townName</name>
+   </variable>
+   <variable>
+      <defaultValue>'123'</defaultValue>
+      <description>numbers</description>
+      <id>8b01c2fd-5e97-4651-84ef-21ac9a77a916</id>
+      <masked>false</masked>
+      <name>latitude</name>
+   </variable>
+   <variable>
+      <defaultValue>'123'</defaultValue>
+      <description>numbers</description>
+      <id>85a17323-1e40-4904-abb3-fcc72f889bc0</id>
+      <masked>false</masked>
+      <name>longitud</name>
+   </variable>
+   <variable>
+      <defaultValue>'5101'</defaultValue>
+      <description>numbers</description>
+      <id>658dcfdc-45a5-419d-9979-2c79b45cc676</id>
+      <masked>false</masked>
+      <name>zipcode</name>
+   </variable>
+   <variable>
+      <defaultValue>'P Facturation'</defaultValue>
+      <description>Text select2</description>
+      <id>158971dc-37da-4c99-8a1a-f9dc46952db1</id>
+      <masked>false</masked>
+      <name>parentAccounting</name>
+   </variable>
+   <variable>
+      <defaultValue>'P Semestraly'</defaultValue>
+      <description>Text select2</description>
+      <id>d0ed87d2-8710-4a18-ad38-a781bf22deab</id>
+      <masked>false</masked>
+      <name>childrenAccounting</name>
+   </variable>
+   <variable>
+      <defaultValue>'Support'</defaultValue>
+      <description>Text select2</description>
+      <id>2cfefa4b-a7b0-46fc-9b91-f6cd580409d0</id>
+      <masked>false</masked>
+      <name>parentGroups</name>
+   </variable>
+   <variable>
+      <defaultValue>'Presencial'</defaultValue>
+      <description>Text select2</description>
+      <id>10c44aa9-e989-4881-b595-8088a1440163</id>
+      <masked>false</masked>
+      <name>childrenGroups</name>
+   </variable>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description>Text select2</description>
+      <id>1823c9bc-1fbd-420e-adcf-6b0ed82bc033</id>
+      <masked>false</masked>
+      <name>businessCondition</name>
+   </variable>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description>Text select2</description>
+      <id>d39d1743-db57-466a-bce0-98f4de10d66c</id>
+      <masked>false</masked>
+      <name>taxes</name>
+   </variable>
+   <variable>
+      <defaultValue>'2'</defaultValue>
+      <description>Maximo 2</description>
+      <id>0a9c401f-0e82-4a1b-983e-2f0dad3d9605</id>
+      <masked>false</masked>
+      <name>n_attributes</name>
+   </variable>
+   <variable>
+      <defaultValue>'Packaged product'</defaultValue>
+      <description>Text select2</description>
+      <id>90a134f1-7ec3-489f-b49d-ccf89eedec23</id>
+      <masked>false</masked>
+      <name>attributes1</name>
+   </variable>
+   <variable>
+      <defaultValue>'fragile'</defaultValue>
+      <description>Text select2</description>
+      <id>11bd820b-87b3-4886-98cd-2c93fa66a2f6</id>
+      <masked>false</masked>
+      <name>attributes2</name>
+   </variable>
+   <variable>
+      <defaultValue>'BA-02'</defaultValue>
+      <description>id</description>
+      <id>8501bb60-98bf-4f57-936a-28bf5477ebff</id>
+      <masked>false</masked>
+      <name>prices</name>
+   </variable>
+</TestCaseEntity>

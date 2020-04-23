@@ -39,7 +39,6 @@ WebUI.callTestCase(findTestCase('Login'), [:], FailureHandling.STOP_ON_FAILURE)
 WebUI.waitForPageLoad(20)
 
 //************************Open Top Menu**********************************************//
-
 String botonmenu = 'jQuery(\'.ti-layout-menu-v\').parent().click()'
 CustomKeywords.'jquery.jquery_generic.execJS'(botonmenu)
 
@@ -51,7 +50,7 @@ CustomKeywords.'jquery.jquery_generic.execJS'(botonBussiness)
 String botonBusinessPartner = '$("a[href*=\'/Management/BusinessPartner\']")[0].click()'
 CustomKeywords.'jquery.jquery_generic.execJS'(botonBusinessPartner)
 
-//************************Create Bussiness Partner Menu*************************************//
+//************************Create Bussiness Partner Form*************************************//
 String createBusinessPartner = '$("a[href*=\'/Management/BusinessPartner/Form\']")[0].click()'
 CustomKeywords.'jquery.jquery_generic.execJS'(createBusinessPartner)
 

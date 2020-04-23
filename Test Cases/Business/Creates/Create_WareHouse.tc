@@ -20,13 +20,6 @@
       <name>wareHouseName</name>
    </variable>
    <variable>
-      <defaultValue>'MW01-01'</defaultValue>
-      <description>id</description>
-      <id>7c766887-c2db-468b-bc47-d763fd895b87</id>
-      <masked>false</masked>
-      <name>entityTypeCode</name>
-   </variable>
-   <variable>
       <defaultValue>'Almacen1'</defaultValue>
       <description>text</description>
       <id>a6d04013-f174-4d5d-99dd-5b791b20c3d0</id>
@@ -41,115 +34,52 @@
       <name>status</name>
    </variable>
    <variable>
-      <defaultValue>'CO'</defaultValue>
-      <description></description>
-      <id>2953ddbb-12c7-4791-a728-95b004ea9ca0</id>
-      <masked>false</masked>
-      <name>country</name>
-   </variable>
-   <variable>
-      <defaultValue>'CO-1'</defaultValue>
-      <description></description>
-      <id>b109f5e0-8608-40d4-89bd-507a75998229</id>
-      <masked>false</masked>
-      <name>county</name>
-   </variable>
-   <variable>
-      <defaultValue>'BG'</defaultValue>
-      <description></description>
-      <id>6bb67695-70fb-46e6-a6e3-c6d7ef6e7b78</id>
-      <masked>false</masked>
-      <name>state</name>
-   </variable>
-   <variable>
-      <defaultValue>'BGCC'</defaultValue>
-      <description></description>
-      <id>676f5425-4520-4134-8c95-8210bfcd296e</id>
-      <masked>false</masked>
-      <name>townshipCode</name>
-   </variable>
-   <variable>
       <defaultValue>'Street 4 -2 '</defaultValue>
-      <description></description>
+      <description>text</description>
       <id>b985e357-1fa7-434f-ab65-09ea2ff7f630</id>
       <masked>false</masked>
       <name>address1</name>
    </variable>
    <variable>
       <defaultValue>'Street 4 -2 '</defaultValue>
-      <description></description>
+      <description>text</description>
       <id>6b1eead8-3906-4207-9b3d-fd6f06fba909</id>
       <masked>false</masked>
       <name>address2</name>
    </variable>
    <variable>
       <defaultValue>'Street 4 -2 '</defaultValue>
-      <description></description>
+      <description>text</description>
       <id>23ce6e91-9d71-4730-8150-0b5d7971610b</id>
       <masked>false</masked>
       <name>address3</name>
    </variable>
    <variable>
       <defaultValue>'Ciudad1'</defaultValue>
-      <description></description>
+      <description>text</description>
       <id>c8b28afa-9aa3-4f1c-841c-fc99aeb9a351</id>
       <masked>false</masked>
       <name>townName</name>
    </variable>
    <variable>
       <defaultValue>'123'</defaultValue>
-      <description></description>
+      <description>text</description>
       <id>7febe149-6605-4ae1-83a8-d346672cb632</id>
       <masked>false</masked>
       <name>latitude</name>
    </variable>
    <variable>
       <defaultValue>'123'</defaultValue>
-      <description></description>
+      <description>text</description>
       <id>578f1e87-faca-47df-b670-59afdf273031</id>
       <masked>false</masked>
       <name>longitud</name>
    </variable>
    <variable>
-      <defaultValue>'5051\r\n'</defaultValue>
-      <description></description>
+      <defaultValue>'5101'</defaultValue>
+      <description>text</description>
       <id>7222d97e-48c0-4eee-9c83-6bc00505a0a0</id>
       <masked>false</masked>
       <name>zipcode</name>
-   </variable>
-   <variable>
-      <defaultValue>'UC-01'</defaultValue>
-      <description></description>
-      <id>1d2f0e83-3d50-4947-a4a5-edec2bde382b</id>
-      <masked>false</masked>
-      <name>parentGroups</name>
-   </variable>
-   <variable>
-      <defaultValue>'UC-01-04'</defaultValue>
-      <description></description>
-      <id>12e72071-16d3-4080-a021-6fef8d698a36</id>
-      <masked>false</masked>
-      <name>childrenGroups</name>
-   </variable>
-   <variable>
-      <defaultValue>''</defaultValue>
-      <description></description>
-      <id>86cbfb41-51c0-4724-811d-22fc62e5f7c3</id>
-      <masked>false</masked>
-      <name>businessCondition</name>
-   </variable>
-   <variable>
-      <defaultValue>'BA-04'</defaultValue>
-      <description></description>
-      <id>c850424e-2df0-4fa3-9f38-b1cdef9eb225</id>
-      <masked>false</masked>
-      <name>attributes1</name>
-   </variable>
-   <variable>
-      <defaultValue>'BA-02'</defaultValue>
-      <description></description>
-      <id>e5723d52-466f-4306-8084-7163ef61e430</id>
-      <masked>false</masked>
-      <name>attributes2</name>
    </variable>
 </TestCaseEntity>

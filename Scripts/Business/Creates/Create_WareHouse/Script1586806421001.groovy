@@ -18,33 +18,39 @@ import internal.GlobalVariable as GlobalVariable
 WebUI.callTestCase(findTestCase('Login'), [:], FailureHandling.STOP_ON_FAILURE)
 WebUI.waitForPageLoad(20)
 
-//Open Top Menu
+//************************Open Top Menu**********************************************//
 String botonmenu = 'jQuery(\'.ti-layout-menu-v\').parent().click()'
 CustomKeywords.'jquery.jquery_generic.execJS'(botonmenu)
 
-//Select Bussiness Menu
+//************************Select Bussiness Menu*************************************//
 String botonBussiness = '''$("a[href*='/dashboard/Business/index/MAP-003']")[0].click()'''
 CustomKeywords.'jquery.jquery_generic.execJS'(botonBussiness)
 
+//************************Open WareHouse Menu Menu***********************************//
+String createWareHouse= '''$("a[href*='/Management/WareHouse']")[0].click()'''
+CustomKeywords.'jquery.jquery_generic.execJS'(createWareHouse)
 
-//Open WareHouse Menu
-String botonWareHouse= '''$("a[href*='/Management/WareHouse']")[0].click()'''
+//************************Create WareHouse Form*************************************//
+String botonWareHouse= '''$("a[href*=\'/Management/Warehouse/Form\']")[0].click()'''
 CustomKeywords.'jquery.jquery_generic.execJS'(botonWareHouse)
 
+WebUI.waitForPageLoad(20)
 //****************************Full Form 1 Almacen*****************************************//
-WebUI.delay(5)
 
 //Almacen 
 String wareHouseCode_bp = "jQuery('#WareHouseCode').val('$wareHouseCode')"
 CustomKeywords.'jquery.jquery_generic.execJS'(wareHouseCode_bp)
 
 //Nombre
-String wareHousename_bp = "jQuery('#c').val('$wareHouseName')"
+String wareHousename_bp = "jQuery('#WareHouseName').val('$wareHouseName')"
 CustomKeywords.'jquery.jquery_generic.execJS'(wareHousename_bp)
 
 //Codigo de tipo de entidad
-String entityTypeCode_bp = "jQuery('#EntityTypeCode').val('$entityTypeCode').change()"
-CustomKeywords.'jquery.jquery_generic.execJS'(entityTypeCode_bp)
+String open_entity_bp = '''$("#EntityTypeCode").select2("open")'''
+CustomKeywords.'jquery.jquery_generic.execJS'(open_entity_bp)
+WebUI.delay(3)
+String entity_bp = "jQuery('#select2-EntityTypeCode-results li').first().trigger({type:'mouseup'});"
+CustomKeywords.'jquery.jquery_generic.execJS'(entity_bp)
 
 //Nombre Corto
 String shortName_bp = "jQuery('#ShortName').val('$shortName').change()"
@@ -62,21 +68,35 @@ WebUI.delay(3)
 String botonaddress = '$("a[href*=\'/Management/Warehouse/_Address\']")[0].click()'
 CustomKeywords.'jquery.jquery_generic.execJS'(botonaddress)
 
+WebUI.delay(3)
+
 //Pais
-String country_p = "jQuery('#CountryCode').val('$country').change()"
-CustomKeywords.'jquery.jquery_generic.execJS'(country_p)
+String open_country = '''$("#CountryCode").select2("open")'''
+CustomKeywords.'jquery.jquery_generic.execJS'(open_country)
+WebUI.delay(3)
+String select_country = "jQuery('#select2-CountryCode-results li').first().trigger({type:'mouseup'});"
+CustomKeywords.'jquery.jquery_generic.execJS'(select_country)
 
 //Region
-String county_bp = "jQuery('#CountyCode').val('$county').change()"
-CustomKeywords.'jquery.jquery_generic.execJS'(county_bp)
+String open_county = '''$("#CountyCode").select2("open")'''
+CustomKeywords.'jquery.jquery_generic.execJS'(open_county)
+WebUI.delay(3)
+String select_county = "jQuery('#select2-CountyCode-results li').first().trigger({type:'mouseup'});"
+CustomKeywords.'jquery.jquery_generic.execJS'(select_county)
 
 //Estado
-String state_bp = "jQuery('#StateCode').val('$state').change()"
-CustomKeywords.'jquery.jquery_generic.execJS'(state_bp)
+String open_state = '''$("#StateCode").select2("open")'''
+CustomKeywords.'jquery.jquery_generic.execJS'(open_state)
+WebUI.delay(3)
+String select_state = "jQuery('#select2-StateCode-results li').first().trigger({type:'mouseup'});"
+CustomKeywords.'jquery.jquery_generic.execJS'(select_state)
 
 //Municipio
-String townshipCode_bp = "jQuery('#TownshipCode').val('$townshipCode').change()"
-CustomKeywords.'jquery.jquery_generic.execJS'(townshipCode_bp)
+String open_townshipCode = '''$("#TownshipCode").select2("open")'''
+CustomKeywords.'jquery.jquery_generic.execJS'(open_townshipCode)
+WebUI.delay(3)
+String select_stownshipCode = "jQuery('#select2-TownshipCode-results li').first().trigger({type:'mouseup'});"
+CustomKeywords.'jquery.jquery_generic.execJS'(select_stownshipCode)
 
 //Direccion1
 String address1_bp = "jQuery('#Address1').val('$address1')"
@@ -113,35 +133,56 @@ CustomKeywords.'jquery.jquery_generic.execJS'(butonacept_bp1)
 //****************************Full Form 1 Grupo*****************************************//
 
 //open +
-String botongrups = '$("a[href*=\'/Management/BusinessPartner/_EntityGroups\']")[0].click()'
+String botongrups = '$("a[href*=\'/Management/Warehouse/_EntityGroups\']")[0].click()'
 CustomKeywords.'jquery.jquery_generic.execJS'(botongrups)
 
 WebUI.delay(3)
 
-//Registro Padre
-String parentGroups_bp = "jQuery('#selectParentGroups').val('$parentGroups').change()"
-CustomKeywords.'jquery.jquery_generic.execJS'(parentGroups_bp)
-
+//Registro padre
+String open_parentGroup = '''$("#selectParentGroups").select2("open")'''
+CustomKeywords.'jquery.jquery_generic.execJS'(open_parentGroup)
+WebUI.delay(3)
+String parentGroup_bp = "jQuery('#select2-selectParentGroups-results li').first().trigger({type:'mouseup'});"
+CustomKeywords.'jquery.jquery_generic.execJS'(parentGroup_bp)
 
 //Registro hijo
-String childrenGroups_bp = "jQuery('#selectChildrenGroups').val('$childrenGroups').change()"
+String open_childrenGroups = '''$("#selectChildrenGroups").select2("open")'''
+CustomKeywords.'jquery.jquery_generic.execJS'(open_childrenGroups)
+WebUI.delay(3)
+String childrenGroups_bp = "jQuery('#select2-selectChildrenGroups-results li').first().trigger({type:'mouseup'});"
 CustomKeywords.'jquery.jquery_generic.execJS'(childrenGroups_bp)
 
 //Aceptar
-String butonacept_bp2 = '$(".btn-success")[1].click()'
+String butonacept_bp2 = '$(".btn-success")[0].click()'
 CustomKeywords.'jquery.jquery_generic.execJS'(butonacept_bp2)
 
 //****************************Full Form 1 Adicionales*****************************************//
 
-//Condicion Comercial
-String businessCondition_bp = "jQuery('#selectBusinessCondition').val('$businessCondition').change()"
-CustomKeywords.'jquery.jquery_generic.execJS'(businessCondition_bp)
+//Condicion Comercial (1)
+String open_businessCondition = '''$("#selectBusinessCondition").select2("open")'''
+CustomKeywords.'jquery.jquery_generic.execJS'(open_businessCondition)
+WebUI.delay(3)
+String businessCondition1 = "jQuery('#select2-selectBusinessCondition-results li').first().trigger({type:'mouseup'});"
+CustomKeywords.'jquery.jquery_generic.execJS'(businessCondition1)
 
-//Atributos de Entidad
-String attributes_bp1 = "jQuery('#selectAttributes').val('$attributes1').change()"
+//Condicion Comercial (2)
+CustomKeywords.'jquery.jquery_generic.execJS'(open_businessCondition)
+WebUI.delay(3)
+String businessCondition2 = "jQuery('#select2-selectBusinessCondition-results li').last().trigger({type:'mouseup'});"
+CustomKeywords.'jquery.jquery_generic.execJS'(businessCondition2)
+
+//Atributo Entidad (1)
+String open_attributes1 = '''$("#selectAttributes").select2("open")'''
+CustomKeywords.'jquery.jquery_generic.execJS'(open_attributes1)
+WebUI.delay(3)
+String attributes_bp1 = "jQuery('#select2-selectAttributes-results li').first().trigger({type:'mouseup'});"
 CustomKeywords.'jquery.jquery_generic.execJS'(attributes_bp1)
 
-String attributes_bp2 = "jQuery('#selectAttributes').val('$attributes2').change()"
+//Atributo Entidad (2)
+String open_attributes2 = '''$("#selectAttributes").select2("open")'''
+CustomKeywords.'jquery.jquery_generic.execJS'(open_attributes2)
+WebUI.delay(3)
+String attributes_bp2 = "jQuery('#select2-selectAttributes-results li').last().trigger({type:'mouseup'});"
 CustomKeywords.'jquery.jquery_generic.execJS'(attributes_bp2)
 
 //Guardar

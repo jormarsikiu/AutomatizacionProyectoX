@@ -39,8 +39,11 @@ CustomKeywords.'jquery.jquery_generic.execJS'(botonform)
 //****************************Full Form 1*****************************************//
 
 //Código del tipo de entidad
-String entity_bi = "jQuery('#EntityTypeCode').val('$entityCode').change()"
-CustomKeywords.'jquery.jquery_generic.execJS'(entity_bi)
+String open_entity_bp = '''$("#EntityTypeCode").select2("open")'''
+CustomKeywords.'jquery.jquery_generic.execJS'(open_entity_bp)
+WebUI.delay(3)
+String entity_bp = "jQuery('#select2-EntityTypeCode-results li').first().trigger({type:'mouseup'});"
+CustomKeywords.'jquery.jquery_generic.execJS'(entity_bp)
 
 //Código
 String itemcode_bi = "jQuery('#ItemCode').val('$itemcode')"
@@ -98,12 +101,18 @@ CustomKeywords.'jquery.jquery_generic.execJS'(botongroups)
 
 WebUI.delay(10)
 
-//Registro Padre
-String parentGroups_bp = "jQuery('#selectParentGroups').val('$parentGroups').change()"
-CustomKeywords.'jquery.jquery_generic.execJS'(parentGroups_bp)
+//Registro padre
+String open_parentGroup = '''$("#selectParentGroups").select2("open")'''
+CustomKeywords.'jquery.jquery_generic.execJS'(open_parentGroup)
+WebUI.delay(3)
+String parentGroup_bp = "jQuery('#select2-selectParentGroups-results li').first().trigger({type:'mouseup'});"
+CustomKeywords.'jquery.jquery_generic.execJS'(parentGroup_bp)
 
 //Registro hijo
-String childrenGroups_bp = "jQuery('#selectChildrenGroups').val('$childrenGroups').change()"
+String open_childrenGroups = '''$("#selectChildrenGroups").select2("open")'''
+CustomKeywords.'jquery.jquery_generic.execJS'(open_childrenGroups)
+WebUI.delay(3)
+String childrenGroups_bp = "jQuery('#select2-selectChildrenGroups-results li').first().trigger({type:'mouseup'});"
 CustomKeywords.'jquery.jquery_generic.execJS'(childrenGroups_bp)
 
 //Aceptar
@@ -114,10 +123,13 @@ CustomKeywords.'jquery.jquery_generic.execJS'(butonacept_bp1)
 String botonprices= '''$("a[href*='/Management/Item/_PriceList']")[0].click()'''
 CustomKeywords.'jquery.jquery_generic.execJS'(botonprices)
 
-WebUI.delay(10)
-
-String priceListCode_bi = "jQuery('#PriceListCode').val('$priceListCode').change()"
+//Lista de precios
+String open_priceListCode = '''$("#PriceListCode").select2("open")'''
+CustomKeywords.'jquery.jquery_generic.execJS'(open_priceListCode)
+WebUI.delay(3)
+String priceListCode_bi = "jQuery('#select2-PriceListCode-results li').first().trigger({type:'mouseup'});"
 CustomKeywords.'jquery.jquery_generic.execJS'(priceListCode_bi)
+
 
 //Aceptar
 String butonacept_bp2 = '$(".btn-success")[1].click()'
@@ -125,15 +137,25 @@ CustomKeywords.'jquery.jquery_generic.execJS'(butonacept_bp2)
 
 //****************************Full Form 1 Adicionales*****************************************//
 
-//Atributos de Entidad
-String attributes_bp1 = "jQuery('#selectAttributes').val('$attributes1').change()"
+//Atributo Entidad (1)
+String open_attributes1 = '''$("#selectAttributes").select2("open")'''
+CustomKeywords.'jquery.jquery_generic.execJS'(open_attributes1)
+WebUI.delay(3)
+String attributes_bp1 = "jQuery('#select2-selectAttributes-results li').first().trigger({type:'mouseup'});"
 CustomKeywords.'jquery.jquery_generic.execJS'(attributes_bp1)
 
-String attributes_bp2 = "jQuery('#selectAttributes').val('$attributes2').change()"
+//Atributo Entidad (2)
+String open_attributes2 = '''$("#selectAttributes").select2("open")'''
+CustomKeywords.'jquery.jquery_generic.execJS'(open_attributes2)
+WebUI.delay(3)
+String attributes_bp2 = "jQuery('#select2-selectAttributes-results li').last().trigger({type:'mouseup'});"
 CustomKeywords.'jquery.jquery_generic.execJS'(attributes_bp2)
 
 //Almacen
-String warehouse_bp = "jQuery('#selectWarehouse').val('$warehouse').change()"
+String open_warehouse = '''$("#selectWarehouse").select2("open")'''
+CustomKeywords.'jquery.jquery_generic.execJS'(open_warehouse)
+WebUI.delay(3)
+String warehouse_bp = "jQuery('#select2-selectWarehouse-results li').first().trigger({type:'mouseup'});"
 CustomKeywords.'jquery.jquery_generic.execJS'(warehouse_bp)
 
 //Guardar

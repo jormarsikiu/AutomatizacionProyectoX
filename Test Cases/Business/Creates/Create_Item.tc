@@ -6,13 +6,6 @@
    <comment></comment>
    <testCaseGuid>eb32d2ae-8648-4058-90d2-e820c6ba84cc</testCaseGuid>
    <variable>
-      <defaultValue>'MI01-01'</defaultValue>
-      <description>id</description>
-      <id>9c364183-b3e4-4e68-827e-d63becee8218</id>
-      <masked>false</masked>
-      <name>entityCode</name>
-   </variable>
-   <variable>
       <defaultValue>'CD-123'</defaultValue>
       <description>text</description>
       <id>f1daa14e-c22a-4f9e-830b-76d0c8726846</id>
@@ -88,47 +81,5 @@
       <id>5cd2c0d1-9325-4e28-8aaf-8a8d352bfecd</id>
       <masked>false</masked>
       <name>isTaxable</name>
-   </variable>
-   <variable>
-      <defaultValue>'UC-03'</defaultValue>
-      <description>id</description>
-      <id>13ed0567-3bee-4523-8861-1705481b9c61</id>
-      <masked>false</masked>
-      <name>parentGroups</name>
-   </variable>
-   <variable>
-      <defaultValue>'UC-03-01'</defaultValue>
-      <description>id</description>
-      <id>c46e0402-e1b7-475d-8a15-d523121c0a35</id>
-      <masked>false</masked>
-      <name>childrenGroups</name>
-   </variable>
-   <variable>
-      <defaultValue>'PL4'</defaultValue>
-      <description>id</description>
-      <id>004d82e8-49f7-4593-89cf-5a02af13a870</id>
-      <masked>false</masked>
-      <name>priceListCode</name>
-   </variable>
-   <variable>
-      <defaultValue>'BA-03'</defaultValue>
-      <description>id</description>
-      <id>b8d8459c-713b-459d-890f-c1e54ad29330</id>
-      <masked>false</masked>
-      <name>attributes1</name>
-   </variable>
-   <variable>
-      <defaultValue>'BA-02'</defaultValue>
-      <description>id</description>
-      <id>30552ef8-fe25-4f95-9515-cb2b85da663d</id>
-      <masked>false</masked>
-      <name>attributes2</name>
-   </variable>
-   <variable>
-      <defaultValue>'8d5d7f49-16bf-44cf-80c6-ad35c63836b8'</defaultValue>
-      <description>id</description>
-      <id>efdaf8bd-729c-4c0b-a9bd-9b8481c82e19</id>
-      <masked>false</masked>
-      <name>warehouse</name>
    </variable>
 </TestCaseEntity>

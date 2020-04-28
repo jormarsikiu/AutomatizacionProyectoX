@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>Create_Invoce</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>893bccc7-31cd-4e6d-9780-d8a2670a92a0</testCaseGuid>
+   <variable>
+      <defaultValue>'09256ed9-71b9-4ce7-99e8-bf3e88a4da21'</defaultValue>
+      <description></description>
+      <id>8c7acc46-aa7c-41df-bceb-c95ed484b37e</id>
+      <masked>false</masked>
+      <name>client</name>
+   </variable>
+   <variable>
+      <defaultValue>'09256ed9-71b9-4ce7-99e8-bf3e88a4da21'</defaultValue>
+      <description></description>
+      <id>dbb4aed8-4c21-46dd-9f61-5d3312fbc186</id>
+      <masked>false</masked>
+      <name>customer</name>
+   </variable>
+</TestCaseEntity>

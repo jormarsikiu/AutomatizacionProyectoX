@@ -27,16 +27,14 @@ CustomKeywords.'jquery.jquery_generic.execJS'(botonmenu)
 String botonSales = '$("a[href*=\'/dashboard/Sales/index/SAL-002\']")[0].click()'
 CustomKeywords.'jquery.jquery_generic.execJS'(botonSales)
 
-//************************Open Transacctions Menu***********************************//
-String botonTransacctions = '$("a[href*=\'/documents/transactiondraft/index\']")[0].click()'
+//************************Open Transacctions Order Menu***********************************//
+String botonTransacctions = '$("a[href*=\'/documents/transactionorder/index\']")[0].click()'
 CustomKeywords.'jquery.jquery_generic.execJS'(botonTransacctions)
 
-//************************Create Bussiness Partner Form*************************************//
-String createDraft = '$("a[href*=\'/Documents/TransactionDraft/CreateDraftFormAsync\']")[0].click()'
+//************************Create Order Form*************************************//
+String createDraft = '$("a[href*=\'/Documents/TransactionOrder/CreateOrderFormAsync\']")[0].click()'
 CustomKeywords.'jquery.jquery_generic.execJS'(createDraft)
 
 WebUI.waitForPageLoad(20)
 
-$('#GetClientCode').click()
-
-
+//NO ABRE EL MODAL

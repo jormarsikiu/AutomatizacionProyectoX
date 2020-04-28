@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>Create_Draft</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>7a17c0de-5615-48a5-aeb5-8fb145f84f9b</testCaseGuid>
+   <variable>
+      <defaultValue>'52ad624e-1ba8-4f50-cc55-08d7e784f7e4'</defaultValue>
+      <description></description>
+      <id>7cdb4614-f8a9-4dac-b418-402c5794e8f2</id>
+      <masked>false</masked>
+      <name>client</name>
+   </variable>
+   <variable>
+      <defaultValue>'09256ed9-71b9-4ce7-99e8-bf3e88a4da21'</defaultValue>
+      <description></description>
+      <id>5674abf1-0788-4283-a2ed-22ee38dfd866</id>
+      <masked>false</masked>
+      <name>customer</name>
+   </variable>
+   <variable>
+      <defaultValue>'05/01/2020'</defaultValue>
+      <description></description>
+      <id>1851aee0-d8b5-4819-9cfd-eeaccae1c931</id>
+      <masked>false</masked>
+      <name>draft_date</name>
+   </variable>
+   <variable>
+      <defaultValue>'05/01/2020'</defaultValue>
+      <description></description>
+      <id>ecfbd9ee-0d7e-415a-ba51-b3ff6e058763</id>
+      <masked>false</masked>
+      <name>draft_date_due</name>
+   </variable>
+</TestCaseEntity>

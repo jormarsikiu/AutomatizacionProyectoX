@@ -72,15 +72,16 @@ CustomKeywords.'jquery.jquery_generic.execJS'(next)
 
 //****************************Full Form 2 ROLES *****************************************//
 //Se anade un solo rol
-String role = "jQuery('#' + '$idRole' + '-selectable').click()"
+//String role = "jQuery('#' + '$idRole' + '-selectable').click()"
 
-CustomKeywords.'jquery.jquery_generic.execJS'(role)
+//CustomKeywords.'jquery.jquery_generic.execJS'(role)
 
+CustomKeywords.'jquery.jquery_generic.execJS'(next)
 //****************************Full Form 3 ROLES *****************************************//
 //Se anade una sola sociedad
-String society = "jQuery('#' + '$idsociety' + '-selectable').click()"
+//String society = "jQuery('#' + '$idsociety' + '-selectable').click()"
 
-CustomKeywords.'jquery.jquery_generic.execJS'(society)
+//CustomKeywords.'jquery.jquery_generic.execJS'(society)
 
 String finish = '$("a[href*=\'finish\']")[0].click()'
 

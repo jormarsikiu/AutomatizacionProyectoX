@@ -61,32 +61,4 @@
       <masked>false</masked>
       <name>zipcode</name>
    </variable>
-   <variable>
-      <defaultValue>'Ciudad1'</defaultValue>
-      <description>Text</description>
-      <id>07671ca4-2c60-4efc-ba48-687383f5159c</id>
-      <masked>false</masked>
-      <name>townName</name>
-   </variable>
-   <variable>
-      <defaultValue>'Ciudad1'</defaultValue>
-      <description>Text</description>
-      <id>8fea4dce-0212-4585-8a24-e08349613f03</id>
-      <masked>false</masked>
-      <name>fiscalAddress</name>
-   </variable>
-   <variable>
-      <defaultValue>'Ciudad1'</defaultValue>
-      <description>Text</description>
-      <id>ed362add-8020-4ccc-b66b-ea5822ccc1ef</id>
-      <masked>false</masked>
-      <name>complementaryAddress</name>
-   </variable>
-   <variable>
-      <defaultValue>'Ciudad1'</defaultValue>
-      <description>Text</description>
-      <id>217a64ee-595d-4faf-a56a-09b27d42c674</id>
-      <masked>false</masked>
-      <name>taxAddress</name>
-   </variable>
 </TestCaseEntity>

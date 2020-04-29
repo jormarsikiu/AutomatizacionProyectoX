@@ -5,4 +5,67 @@
    <tag></tag>
    <comment></comment>
    <testCaseGuid>6e6fdf0b-a6ef-4c83-be65-9e2c5415f22c</testCaseGuid>
+   <variable>
+      <defaultValue>'\'MS-01\''</defaultValue>
+      <description>Id de la sociedad</description>
+      <id>1928fe9b-9eb6-4253-b080-98ea837c9362</id>
+      <masked>false</masked>
+      <name>idsociety</name>
+   </variable>
+   <variable>
+      <defaultValue>'435'</defaultValue>
+      <description>Text</description>
+      <id>68418a6e-50e0-4ec1-b83d-fcc645e8f4c8</id>
+      <masked>false</masked>
+      <name>code</name>
+   </variable>
+   <variable>
+      <defaultValue>'SociedadEditable'</defaultValue>
+      <description>Text</description>
+      <id>b1a60711-9b0a-44d8-b631-632676e20133</id>
+      <masked>false</masked>
+      <name>societyName</name>
+   </variable>
+   <variable>
+      <defaultValue>'SocED'</defaultValue>
+      <description>Text</description>
+      <id>46531f25-b3ad-4ac8-aa90-079d98ed3c8f</id>
+      <masked>false</masked>
+      <name>shortName</name>
+   </variable>
+   <variable>
+      <defaultValue>'Economia'</defaultValue>
+      <description>Text</description>
+      <id>e4bb5edf-b4a2-482c-9b8c-de96c7720ddf</id>
+      <masked>false</masked>
+      <name>comercialActivity</name>
+   </variable>
+   <variable>
+      <defaultValue>'R.S.L.'</defaultValue>
+      <description>Text</description>
+      <id>23a8ea86-aea2-4cef-b708-84e0443709cc</id>
+      <masked>false</masked>
+      <name>corporation</name>
+   </variable>
+   <variable>
+      <defaultValue>'C:\\\\Users\\\\kaizen\\\\git\\\\AutomatizacionProyectoX\\\\Image\\\\1.png'</defaultValue>
+      <description>Text Ruta</description>
+      <id>d0661c49-990b-4de9-9494-0b1cb3f4c8a9</id>
+      <masked>false</masked>
+      <name>rutaImage</name>
+   </variable>
+   <variable>
+      <defaultValue>'0'</defaultValue>
+      <description>Activo = 1, Inactivo = 0</description>
+      <id>ec5f23a6-1167-4956-862c-17f6d4f6289d</id>
+      <masked>false</masked>
+      <name>status</name>
+   </variable>
+   <variable>
+      <defaultValue>'5101'</defaultValue>
+      <description>Text Numbers</description>
+      <id>61df632b-2768-4984-afa8-cb7538a2cf78</id>
+      <masked>false</masked>
+      <name>zipcode</name>
+   </variable>
 </TestCaseEntity>

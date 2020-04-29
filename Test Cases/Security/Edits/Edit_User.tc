@@ -7,72 +7,100 @@
    <testCaseGuid>d8f3584c-acb7-429c-80f6-c3f0620f7eda</testCaseGuid>
    <variable>
       <defaultValue>'14069d85-0196-4b26-a08a-d6ecf642c633'</defaultValue>
-      <description></description>
+      <description>Id del usuario</description>
       <id>91245490-ed47-436a-b06c-769056de7dbe</id>
       <masked>false</masked>
       <name>iduser</name>
    </variable>
    <variable>
       <defaultValue>'Test'</defaultValue>
-      <description></description>
+      <description>Texto</description>
       <id>75bcd088-167b-4bc9-badb-d49233904992</id>
       <masked>false</masked>
       <name>firstName</name>
    </variable>
    <variable>
       <defaultValue>'Automatizado'</defaultValue>
-      <description></description>
+      <description>Texto</description>
       <id>4e7fddd5-36d5-4402-9894-f7454f39f4ce</id>
       <masked>false</masked>
       <name>lastName</name>
    </variable>
    <variable>
       <defaultValue>'Moto'</defaultValue>
-      <description></description>
+      <description>Texto</description>
       <id>7cfc891b-2c8b-4d74-b264-ab266fa0e6f8</id>
       <masked>false</masked>
       <name>avatar</name>
    </variable>
    <variable>
       <defaultValue>'test@pruebas.com'</defaultValue>
-      <description></description>
+      <description>Texto Email</description>
       <id>a9bfa415-ea79-4ea5-9eab-a2118456a4f6</id>
       <masked>false</masked>
       <name>email</name>
    </variable>
    <variable>
       <defaultValue>'12345678aA'</defaultValue>
-      <description></description>
+      <description>Texto</description>
       <id>9fccd178-faeb-4174-be82-e51ba0ecb5b8</id>
       <masked>false</masked>
       <name>password</name>
    </variable>
    <variable>
       <defaultValue>'12345678aA'</defaultValue>
-      <description></description>
+      <description>Texto</description>
       <id>2da1c4b5-2400-4a4a-8377-247a8163f9f8</id>
       <masked>false</masked>
       <name>confirmPassword</name>
    </variable>
    <variable>
       <defaultValue>'4635436434'</defaultValue>
-      <description></description>
+      <description>Texto</description>
       <id>8669c47d-0606-47ea-81e6-f6aaa7d974f3</id>
       <masked>false</masked>
       <name>phone</name>
    </variable>
    <variable>
+      <defaultValue>'2'</defaultValue>
+      <description>Cantidad maxima 2 </description>
+      <id>1cc7b93b-a802-4011-ac25-806b40dfee46</id>
+      <masked>false</masked>
+      <name>n_role</name>
+   </variable>
+   <variable>
       <defaultValue>'921692382'</defaultValue>
-      <description></description>
+      <description>Id del rol 1 a agregar</description>
       <id>b1c7f9ee-4162-4f9c-b5d8-e5b209c05649</id>
       <masked>false</masked>
-      <name>idRole</name>
+      <name>idRole1</name>
+   </variable>
+   <variable>
+      <defaultValue>'1766855204'</defaultValue>
+      <description>Id del rol 2 a agregar</description>
+      <id>0838dfc3-d272-4ed7-ba0d-4a3708150de3</id>
+      <masked>false</masked>
+      <name>idRole2</name>
+   </variable>
+   <variable>
+      <defaultValue>'2'</defaultValue>
+      <description>Cantidad maxima 2 </description>
+      <id>009be151-2f1a-41ce-81dd-24d8e2224883</id>
+      <masked>false</masked>
+      <name>n_society</name>
    </variable>
    <variable>
       <defaultValue>'73628552'</defaultValue>
-      <description></description>
+      <description>Id de la sociedad 1 a agregar</description>
       <id>2ebfc3af-f81e-4417-b9ba-59e3bcf9a496</id>
       <masked>false</masked>
-      <name>idsociety</name>
+      <name>idsociety1</name>
+   </variable>
+   <variable>
+      <defaultValue>'73628553'</defaultValue>
+      <description></description>
+      <id>44d74116-2f37-4c71-bd3d-04df82d084c3</id>
+      <masked>false</masked>
+      <name>idsociety2</name>
    </variable>
 </TestCaseEntity>

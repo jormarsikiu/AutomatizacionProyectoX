@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestCaseEntity>
    <description></description>
-   <name>New Test Case</name>
+   <name>Edit_Business_Partner</name>
    <tag></tag>
    <comment></comment>
-   <testCaseGuid>88fbdaeb-ad95-4aae-83d4-e7921ba66582</testCaseGuid>
+   <testCaseGuid>3d11450b-6d90-4b37-baf7-d252efce4f0f</testCaseGuid>
 </TestCaseEntity>

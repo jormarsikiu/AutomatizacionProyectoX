@@ -14,7 +14,8 @@ import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
-//import com.kms.katalon.core.testng.keyword.TestNGBuiltinKeywords as TestNGKW
+import com.kms.katalon.core.testng.keyword.TestNGBuiltinKeywords as TestNGKW
+import com.kms.katalon.core.logging.KeywordLogger
 
 WebUI.callTestCase(findTestCase('Login'), [:], FailureHandling.STOP_ON_FAILURE)
 
@@ -90,7 +91,7 @@ CustomKeywords.'jquery.jquery_generic.execJS'(finish)
 
 WebUI.delay(10)
 
-/*Verify email in table**/
+//**************************************Verify data in table********************************//
 
 String alerta = "jQuery('#tableUser tr').is(':contains($email)')"
 Boolean bool = CustomKeywords.'jquery.jquery_generic.execJS'(alerta)
@@ -99,19 +100,28 @@ if(bool==true){
 	
 	String alerta1 = "jQuery(alert('Automatización: EXITO! Usuario Visible en la tabla'))"
 	CustomKeywords.'jquery.jquery_generic.execJS'(alerta1)
-	print('Automatización: EXITO! Usuario Visible en la tabla. Pagina 1')
+	print('\n\n Automatización: EXITO! Usuario Visible en el Index')
+	WebUI.comment('Automatización: EXITO! Usuario Creado Visible en el Index. Pagina 1')
 }
 
 else{
-	String siguiente = '''$('#tableUser_next').click()'''
-	CustomKeywords.'jquery.jquery_generic.execJS'(siguiente)
-	Boolean bool2 = CustomKeywords.'jquery.jquery_generic.execJS'(alerta)
-	if(bool2==true){
-		WebUI.delay(3)
-		String alerta1 = "jQuery(alert('Automatización: EXITO! Usuario Visible en la tabla'))"
-		CustomKeywords.'jquery.jquery_generic.execJS'(alerta1)
-		print('Automatización: EXITO! Usuario Visible en la tabla. Pagina 2')
+	int pagina = 2;
+	while(bool==false)
+	{
+		
+		String siguiente = '''$('#tableUser_next').click()'''
+		CustomKeywords.'jquery.jquery_generic.execJS'(siguiente)
+		
+		Boolean bool2 = CustomKeywords.'jquery.jquery_generic.execJS'(alerta)
+		if(bool2==true){
+			bool=true
+			WebUI.delay(3)
+			String alerta1 = "jQuery(alert('Automatización: EXITO! Usuario Visible en la tabla'))"
+			CustomKeywords.'jquery.jquery_generic.execJS'(alerta1)
+			print('\n\nAutomatización: EXITO! Usuario Visible en el Index')
+			WebUI.comment('Automatización: EXITO! Usuario Creado visible en el Index. Pagina' + pagina)
+			pagina = pagina+1
+		}
 	}
-	
 }
 

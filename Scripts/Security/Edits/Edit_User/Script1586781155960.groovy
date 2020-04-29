@@ -71,18 +71,46 @@ String next = '$("a[href*=\'next\']")[0].click()'
 CustomKeywords.'jquery.jquery_generic.execJS'(next)
 
 //****************************Full Form 2 ROLES *****************************************//
-//Se anade un solo rol
-//String role = "jQuery('#' + '$idRole' + '-selectable').click()"
+//Se quita el roles
+String changeRol1 = '''$("#ms-pre-selected-options-roles .ms-selection:visible").find("li").first().click()'''
+CustomKeywords.'jquery.jquery_generic.execJS'(changeRol1)
 
-//CustomKeywords.'jquery.jquery_generic.execJS'(role)
+String changeRol2 = '''$("#ms-pre-selected-options-roles .ms-selection:visible").find("li").last().click()'''
+CustomKeywords.'jquery.jquery_generic.execJS'(changeRol2)
+
+//MAXIMO 2 ROLES
+if (n_role == '1') {
+	String role1 = "jQuery('#' + '$idRole1' + '-selectable').click()"
+	CustomKeywords.'jquery.jquery_generic.execJS'(role1)
+} else {
+	String role1 = "jQuery('#' + '$idRole1' + '-selectable').click()"
+	CustomKeywords.'jquery.jquery_generic.execJS'(role1)
+	String role2 = "jQuery('#' + '$idRole2' + '-selectable').click()"
+	CustomKeywords.'jquery.jquery_generic.execJS'(role2)
+}
 
 CustomKeywords.'jquery.jquery_generic.execJS'(next)
 //****************************Full Form 3 ROLES *****************************************//
-//Se anade una sola sociedad
-//String society = "jQuery('#' + '$idsociety' + '-selectable').click()"
 
-//CustomKeywords.'jquery.jquery_generic.execJS'(society)
+String changeSociety1 = '''$("#ms-pre-selected-options-socienties .ms-selection:visible").find("li").first().click()'''
+CustomKeywords.'jquery.jquery_generic.execJS'(changeSociety1)
+
+String changeSociety2 = '''$("#ms-pre-selected-options-socienties .ms-selection:visible").find("li").first().click()'''
+CustomKeywords.'jquery.jquery_generic.execJS'(changeSociety2)
+
+//MAXIMO 2 SOCIEDADES
+if (n_society == '1') {
+    String society1 = "jQuery('#' + '$idsociety1' + '-selectable').click()"
+    CustomKeywords.'jquery.jquery_generic.execJS'(society1)
+} else {
+    String society1 = "jQuery('#' + '$idsociety1' + '-selectable').click()"
+    CustomKeywords.'jquery.jquery_generic.execJS'(society1)
+    String society2 = "jQuery('#' + '$idsociety2' + '-selectable').click()"
+    CustomKeywords.'jquery.jquery_generic.execJS'(society2)
+}
 
 String finish = '$("a[href*=\'finish\']")[0].click()'
 
 CustomKeywords.'jquery.jquery_generic.execJS'(finish)
+
+WebUI.comment('Automatización: Usuario Editado Exitosamente')

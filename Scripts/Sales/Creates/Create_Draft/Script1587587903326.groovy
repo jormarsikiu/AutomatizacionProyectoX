@@ -65,6 +65,9 @@ CustomKeywords.'jquery.jquery_generic.execJS'(draftdatedue)
 String buttonadd = '''$('#addItem').click()'''
 CustomKeywords.'jquery.jquery_generic.execJS'(buttonadd)
 
+
+//NO SE ANADEN LOS ITEMS
+
 //Boton Guardar
 String buttonsave = '''$('.btn-outline-info').click())'''
 CustomKeywords.'jquery.jquery_generic.execJS'(buttonsave)

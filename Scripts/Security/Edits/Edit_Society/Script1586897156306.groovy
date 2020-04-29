@@ -25,5 +25,94 @@ CustomKeywords.'jquery.jquery_generic.execJS'(menu_society)
 
 //********************Open Edit Society**********************//
 
-String edit_society = '''$("#SocietiesTable a").filter('[onclick="chargeEditModal('MS-01')"]').click()'''
+String edit_society = "jQuery('#SocietiesTable a').filter(`[onclick='chargeEditModal($idsociety)']`).click()"
 CustomKeywords.'jquery.jquery_generic.execJS'(edit_society)
+
+String modal = WebUI.executeJavaScript('return document.getElementById("IdFormCreateModal").style.display;', null)
+if (modal == 'block'){
+
+	//****************************Full Form 1*****************************************//
+	String code_s = "jQuery('#EntityCode').val('$code')"
+	CustomKeywords.'jquery.jquery_generic.execJS'(code_s)
+	
+	String societyName_s = "jQuery('#SocietyName').val('$societyName')"
+	CustomKeywords.'jquery.jquery_generic.execJS'(societyName_s)
+	
+	String shortName_s = "jQuery('#ShortName').val('$shortName')"
+	CustomKeywords.'jquery.jquery_generic.execJS'(shortName_s)
+	
+	String comercial_s = "jQuery('#ComercialActivity').val('$comercialActivity')"
+	CustomKeywords.'jquery.jquery_generic.execJS'(comercial_s)
+	
+	String corporation_s = "jQuery('#Corporation').val('$corporation')"
+	CustomKeywords.'jquery.jquery_generic.execJS'(corporation_s)
+	
+	WebUI.uploadFile(findTestObject('Object Repository/Page_Panel Security/File'), rutaImage)
+	
+	String open_icon_s = '''$("#Icon").select2("open")'''
+	CustomKeywords.'jquery.jquery_generic.execJS'(open_icon_s)
+	String icon_s = "jQuery('#select2-Icon-results li').first().trigger({type:'mouseup'});"
+	CustomKeywords.'jquery.jquery_generic.execJS'(icon_s)
+	
+	
+	if (status == '0'){
+		String status = '''$('.switchery-small').click()'''
+		CustomKeywords.'jquery.jquery_generic.execJS'(status)
+	}
+	
+	String next = '$("a[href*=\'next\']")[0].click()'	
+	CustomKeywords.'jquery.jquery_generic.execJS'(next)
+	
+	//****************************Full Form 2*****************************************//
+	
+	//Pais
+	String open_country = '''$("#CountryCode").select2("open")'''
+	CustomKeywords.'jquery.jquery_generic.execJS'(open_country)
+	WebUI.delay(3)
+	String select_country = "jQuery('#select2-CountryCode-results li').first().trigger({type:'mouseup'});"
+	CustomKeywords.'jquery.jquery_generic.execJS'(select_country)
+	
+	//Region
+	String open_county = '''$("#CountyCode").select2("open")'''
+	CustomKeywords.'jquery.jquery_generic.execJS'(open_county)
+	WebUI.delay(3)
+	String select_county = "jQuery('#select2-CountyCode-results li').first().trigger({type:'mouseup'});"
+	CustomKeywords.'jquery.jquery_generic.execJS'(select_county)
+	
+	//Estado
+	String open_state = '''$("#StateCode").select2("open")'''
+	CustomKeywords.'jquery.jquery_generic.execJS'(open_state)
+	WebUI.delay(3)
+	String select_state = "jQuery('#select2-StateCode-results li').first().trigger({type:'mouseup'});"
+	CustomKeywords.'jquery.jquery_generic.execJS'(select_state)
+	
+	//Municipio
+	String open_townshipCode = '''$("#TownshipCode").select2("open")'''
+	CustomKeywords.'jquery.jquery_generic.execJS'(open_townshipCode)
+	WebUI.delay(3)
+	String select_stownshipCode = "jQuery('#select2-TownshipCode-results li').first().trigger({type:'mouseup'});"
+	CustomKeywords.'jquery.jquery_generic.execJS'(select_stownshipCode)
+	
+	//zip
+	String zipcode_bp = "jQuery('#ZipCode').val('$zipcode')"
+	CustomKeywords.'jquery.jquery_generic.execJS'(zipcode_bp)
+	
+	CustomKeywords.'jquery.jquery_generic.execJS'(next)
+	
+	//****************************Full Form 3*****************************************//
+	String townName_s = "jQuery('#TownName').val('$townName')"	
+	CustomKeywords.'jquery.jquery_generic.execJS'(townName_s)
+	
+	String fiscalAddress_s = "jQuery('#FiscalAddress').val('$fiscalAddress')"	
+	CustomKeywords.'jquery.jquery_generic.execJS'(fiscalAddress_s)
+	
+	String complementaryAddress_s = "jQuery('#ComplementaryAddress').val('$complementaryAddress')"	
+	CustomKeywords.'jquery.jquery_generic.execJS'(complementaryAddress_s)
+	
+	String taxAddress_s = "jQuery('#TaxAddress').val('$taxAddress')"	
+	CustomKeywords.'jquery.jquery_generic.execJS'(taxAddress_s)
+	
+	String finish = '$("a[href*=\'finish\']")[0].click()'
+	CustomKeywords.'jquery.jquery_generic.execJS'(finish)
+	
+}

@@ -84,21 +84,21 @@
    </variable>
    <variable>
       <defaultValue>'123'</defaultValue>
-      <description>Numbers</description>
+      <description>Text Numbers</description>
       <id>7116c97a-8c44-4af9-b127-a462c8972f2b</id>
       <masked>false</masked>
       <name>latitude</name>
    </variable>
    <variable>
       <defaultValue>'123'</defaultValue>
-      <description>Numbers</description>
+      <description>Text Numbers</description>
       <id>5c3252c9-016b-44d5-957f-b6fae4f5b31a</id>
       <masked>false</masked>
       <name>longitud</name>
    </variable>
    <variable>
       <defaultValue>'5101'</defaultValue>
-      <description>Text</description>
+      <description>Text Numbers</description>
       <id>e12b86fb-9526-4d41-ab05-7ac6e9293e69</id>
       <masked>false</masked>
       <name>zipcode</name>

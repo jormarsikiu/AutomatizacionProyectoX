@@ -115,4 +115,9 @@ if (modal == 'block'){
 	String finish = '$("a[href*=\'finish\']")[0].click()'
 	CustomKeywords.'jquery.jquery_generic.execJS'(finish)
 	
+	WebUI.comment('Automatización: Sociedad Editada Exitosamente')
+	
+	WebUI.closeBrowser()
+	
 }
+

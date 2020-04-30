@@ -3,7 +3,7 @@
    <description></description>
    <name>Edit_Society</name>
    <tag></tag>
-   <comment></comment>
+   <comment>Automatización: Sociedad Editada Exitosamente</comment>
    <testCaseGuid>6e6fdf0b-a6ef-4c83-be65-9e2c5415f22c</testCaseGuid>
    <variable>
       <defaultValue>'\'MS-01\''</defaultValue>

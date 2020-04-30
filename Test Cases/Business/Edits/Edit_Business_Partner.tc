@@ -5,4 +5,109 @@
    <tag></tag>
    <comment></comment>
    <testCaseGuid>3d11450b-6d90-4b37-baf7-d252efce4f0f</testCaseGuid>
+   <variable>
+      <defaultValue>'09256ed9-71b9-4ce7-99e8-bf3e88a4da22'</defaultValue>
+      <description>Id del Socio de Negocio</description>
+      <id>326e9306-a9b2-479f-8b22-c9650ab0dcd7</id>
+      <masked>false</masked>
+      <name>idBusinessPartner</name>
+   </variable>
+   <variable>
+      <defaultValue>'123'</defaultValue>
+      <description>Text</description>
+      <id>ebcc2983-827e-4085-bda9-d04e8e9ed4a2</id>
+      <masked>false</masked>
+      <name>code</name>
+   </variable>
+   <variable>
+      <defaultValue>'COD-123'</defaultValue>
+      <description>Text</description>
+      <id>4f23d77b-437d-41c8-94da-a43660d54655</id>
+      <masked>false</masked>
+      <name>taxCode</name>
+   </variable>
+   <variable>
+      <defaultValue>'SocioNegocio1'</defaultValue>
+      <description>Text</description>
+      <id>db308cd0-d820-49e5-a12f-798e055d6c6d</id>
+      <masked>false</masked>
+      <name>partnerName</name>
+   </variable>
+   <variable>
+      <defaultValue>'SocioNegocio1'</defaultValue>
+      <description>Text</description>
+      <id>a7897328-a183-4b8b-b842-5f07ad6ff534</id>
+      <masked>false</masked>
+      <name>shortName</name>
+   </variable>
+   <variable>
+      <defaultValue>'Turismo'</defaultValue>
+      <description>Text</description>
+      <id>9229c62e-b15b-4100-a44a-ebba8a934421</id>
+      <masked>false</masked>
+      <name>comercialActivity</name>
+   </variable>
+   <variable>
+      <defaultValue>'0'</defaultValue>
+      <description>Activo = 1, Inactivo = 0</description>
+      <id>02b34def-2bb7-4d0e-8222-e1f447af903e</id>
+      <masked>false</masked>
+      <name>status</name>
+   </variable>
+   <variable>
+      <defaultValue>'1'</defaultValue>
+      <description>Activo = 1, Inactivo = 0</description>
+      <id>1178642a-8b77-47d4-beed-dc53c2a65531</id>
+      <masked>false</masked>
+      <name>delivery</name>
+   </variable>
+   <variable>
+      <defaultValue>'Street 4 -2 '</defaultValue>
+      <description>Text</description>
+      <id>2d5fd4ef-8a56-4c90-a797-c8f509ecc8da</id>
+      <masked>false</masked>
+      <name>address1</name>
+   </variable>
+   <variable>
+      <defaultValue>'Street 4 -2 '</defaultValue>
+      <description>Text</description>
+      <id>22758cc8-9c82-4a47-8220-3defc8b2c7d6</id>
+      <masked>false</masked>
+      <name>address2</name>
+   </variable>
+   <variable>
+      <defaultValue>'Street 4 -2 '</defaultValue>
+      <description>Text</description>
+      <id>ae1415c6-2225-4204-8645-dc2a7bf06303</id>
+      <masked>false</masked>
+      <name>address3</name>
+   </variable>
+   <variable>
+      <defaultValue>'Caracas'</defaultValue>
+      <description>Text</description>
+      <id>7249705e-f386-4488-a376-ac4e43daaf04</id>
+      <masked>false</masked>
+      <name>townName</name>
+   </variable>
+   <variable>
+      <defaultValue>'123'</defaultValue>
+      <description>Text Numbers</description>
+      <id>ae89bb27-42b6-40d2-9093-a55dd92c985b</id>
+      <masked>false</masked>
+      <name>latitude</name>
+   </variable>
+   <variable>
+      <defaultValue>'123'</defaultValue>
+      <description>Text Numbers</description>
+      <id>ee6564a5-7adb-45d5-8d12-685c44bcd2b0</id>
+      <masked>false</masked>
+      <name>longitud</name>
+   </variable>
+   <variable>
+      <defaultValue>'5101'</defaultValue>
+      <description>Text Numbers</description>
+      <id>da0cdd81-b2f0-48e7-8d18-410d2ddd1f2e</id>
+      <masked>false</masked>
+      <name>zipcode</name>
+   </variable>
 </TestCaseEntity>

@@ -3,7 +3,7 @@
    <description></description>
    <name>Edit_User</name>
    <tag></tag>
-   <comment></comment>
+   <comment>Automatización: Usuario Editado Exitosamente</comment>
    <testCaseGuid>d8f3584c-acb7-429c-80f6-c3f0620f7eda</testCaseGuid>
    <variable>
       <defaultValue>'14069d85-0196-4b26-a08a-d6ecf642c633'</defaultValue>
@@ -98,7 +98,7 @@
    </variable>
    <variable>
       <defaultValue>'73628553'</defaultValue>
-      <description></description>
+      <description>Id de la sociedad 2 a agregar</description>
       <id>44d74116-2f37-4c71-bd3d-04df82d084c3</id>
       <masked>false</masked>
       <name>idsociety2</name>

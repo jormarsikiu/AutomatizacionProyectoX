@@ -26,7 +26,7 @@ String menu_crear_society = '$("a[href*=\'society/Index\']")[0].click()'
 CustomKeywords.'jquery.jquery_generic.execJS'(menu_crear_society)
 
 //********************Open form Society**********************//
-String form_crear_society = 'jQuery(\'#IdFormCreateSociety\').click()'
+String form_crear_society = "jQuery(\'#IdFormCreateSociety\').click()"
 
 CustomKeywords.'jquery.jquery_generic.execJS'(form_crear_society)
 
@@ -152,5 +152,5 @@ if (modal == 'block') {
 
 WebUI.delay(10)
 
-WebUI.callTestCase(findTestCase('Security/Validates/Validate_create_society'), [('societyName') : societyName],  FailureHandling.STOP_ON_FAILURE)
+//WebUI.callTestCase(findTestCase('Security/Validates/Validate_create_society'), [('societyName') : societyName],  FailureHandling.STOP_ON_FAILURE)
 

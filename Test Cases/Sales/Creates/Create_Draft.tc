@@ -6,14 +6,14 @@
    <comment></comment>
    <testCaseGuid>7a17c0de-5615-48a5-aeb5-8fb145f84f9b</testCaseGuid>
    <variable>
-      <defaultValue>'52ad624e-1ba8-4f50-cc55-08d7e784f7e4'</defaultValue>
+      <defaultValue>'09256ed9-71b9-4ce7-99e8-bf3e88a4da21'</defaultValue>
       <description></description>
       <id>7cdb4614-f8a9-4dac-b418-402c5794e8f2</id>
       <masked>false</masked>
       <name>client</name>
    </variable>
    <variable>
-      <defaultValue>'09256ed9-71b9-4ce7-99e8-bf3e88a4da21'</defaultValue>
+      <defaultValue>'09256ed9-71b9-4ce7-99e8-bf3e88a4da22'</defaultValue>
       <description></description>
       <id>5674abf1-0788-4283-a2ed-22ee38dfd866</id>
       <masked>false</masked>

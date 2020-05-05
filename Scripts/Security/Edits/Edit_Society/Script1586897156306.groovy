@@ -25,7 +25,12 @@ CustomKeywords.'jquery.jquery_generic.execJS'(menu_society)
 
 //********************Open Edit Society**********************//
 
-String edit_society = "jQuery('#SocietiesTable a').filter(`[onclick='chargeEditModal($idsociety)']`).click()"
+
+//String createBusinessPartner = "jQuery('#btnEdit_'+$idBusinessPartner)[0].click()"
+String idsociety = "/Settings/Society/Edit?code=" + code
+print(idsociety)
+String edit_society= '''jQuery("a[href*='$idsociety']")[0].click()''' //ERROR DAYANA
+print (edit_society)
 CustomKeywords.'jquery.jquery_generic.execJS'(edit_society)
 
 String modal = WebUI.executeJavaScript('return document.getElementById("IdFormCreateModal").style.display;', null)
@@ -69,28 +74,28 @@ if (modal == 'block'){
 	String open_country = '''$("#CountryCode").select2("open")'''
 	CustomKeywords.'jquery.jquery_generic.execJS'(open_country)
 	WebUI.delay(3)
-	String select_country = "jQuery('#select2-CountryCode-results li').first().trigger({type:'mouseup'});"
+	String select_country = "jQuery('#select2-CountryCode-results li').last().trigger({type:'mouseup'});"
 	CustomKeywords.'jquery.jquery_generic.execJS'(select_country)
 	
 	//Region
 	String open_county = '''$("#CountyCode").select2("open")'''
 	CustomKeywords.'jquery.jquery_generic.execJS'(open_county)
 	WebUI.delay(3)
-	String select_county = "jQuery('#select2-CountyCode-results li').first().trigger({type:'mouseup'});"
+	String select_county = "jQuery('#select2-CountyCode-results li').last().trigger({type:'mouseup'});"
 	CustomKeywords.'jquery.jquery_generic.execJS'(select_county)
 	
 	//Estado
 	String open_state = '''$("#StateCode").select2("open")'''
 	CustomKeywords.'jquery.jquery_generic.execJS'(open_state)
 	WebUI.delay(3)
-	String select_state = "jQuery('#select2-StateCode-results li').first().trigger({type:'mouseup'});"
+	String select_state = "jQuery('#select2-StateCode-results li').last().trigger({type:'mouseup'});"
 	CustomKeywords.'jquery.jquery_generic.execJS'(select_state)
 	
 	//Municipio
 	String open_townshipCode = '''$("#TownshipCode").select2("open")'''
 	CustomKeywords.'jquery.jquery_generic.execJS'(open_townshipCode)
 	WebUI.delay(3)
-	String select_stownshipCode = "jQuery('#select2-TownshipCode-results li').first().trigger({type:'mouseup'});"
+	String select_stownshipCode = "jQuery('#select2-TownshipCode-results li').last().trigger({type:'mouseup'});"
 	CustomKeywords.'jquery.jquery_generic.execJS'(select_stownshipCode)
 	
 	//zip
@@ -115,9 +120,9 @@ if (modal == 'block'){
 	String finish = '$("a[href*=\'finish\']")[0].click()'
 	CustomKeywords.'jquery.jquery_generic.execJS'(finish)
 	
-	WebUI.comment('Automatización: Sociedad Editada Exitosamente')
-	
 	WebUI.closeBrowser()
+	
+	WebUI.comment('Automatización: Sociedad Editada Exitosamente')
 	
 }
 

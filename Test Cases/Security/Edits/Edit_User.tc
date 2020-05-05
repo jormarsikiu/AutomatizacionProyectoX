@@ -6,35 +6,35 @@
    <comment>Automatización: Usuario Editado Exitosamente</comment>
    <testCaseGuid>d8f3584c-acb7-429c-80f6-c3f0620f7eda</testCaseGuid>
    <variable>
-      <defaultValue>'14069d85-0196-4b26-a08a-d6ecf642c633'</defaultValue>
+      <defaultValue>'5fe56a11-5650-4229-b098-7430a9519c71'</defaultValue>
       <description>Id del usuario</description>
       <id>91245490-ed47-436a-b06c-769056de7dbe</id>
       <masked>false</masked>
       <name>iduser</name>
    </variable>
    <variable>
-      <defaultValue>'Test'</defaultValue>
+      <defaultValue>'Test2'</defaultValue>
       <description>Texto</description>
       <id>75bcd088-167b-4bc9-badb-d49233904992</id>
       <masked>false</masked>
       <name>firstName</name>
    </variable>
    <variable>
-      <defaultValue>'Automatizado'</defaultValue>
+      <defaultValue>'Automatizado2'</defaultValue>
       <description>Texto</description>
       <id>4e7fddd5-36d5-4402-9894-f7454f39f4ce</id>
       <masked>false</masked>
       <name>lastName</name>
    </variable>
    <variable>
-      <defaultValue>'Moto'</defaultValue>
+      <defaultValue>'Moto2'</defaultValue>
       <description>Texto</description>
       <id>7cfc891b-2c8b-4d74-b264-ab266fa0e6f8</id>
       <masked>false</masked>
       <name>avatar</name>
    </variable>
    <variable>
-      <defaultValue>'test@pruebas.com'</defaultValue>
+      <defaultValue>'test2@pruebas.com'</defaultValue>
       <description>Texto Email</description>
       <id>a9bfa415-ea79-4ea5-9eab-a2118456a4f6</id>
       <masked>false</masked>
@@ -60,6 +60,13 @@
       <id>8669c47d-0606-47ea-81e6-f6aaa7d974f3</id>
       <masked>false</masked>
       <name>phone</name>
+   </variable>
+   <variable>
+      <defaultValue>'1'</defaultValue>
+      <description>Activo = 1, Inactivo = 0</description>
+      <id>05c0a541-76af-4734-a1eb-5f55a45b6698</id>
+      <masked>false</masked>
+      <name>status</name>
    </variable>
    <variable>
       <defaultValue>'2'</defaultValue>

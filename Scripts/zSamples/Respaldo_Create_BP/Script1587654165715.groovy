@@ -74,7 +74,7 @@ WebUI.delay(8)
 String open_type_bp = '''$("#AddressEntityTypeCode").select2("open")'''
 CustomKeywords.'jquery.jquery_generic.execJS'(open_type_bp)
 WebUI.delay(3)
-String type_bp = "jQuery('#select2-AddressEntityTypeCode-results li:contains($type)').trigger({type:'mouseup'});"
+String type_bp = $('.select2-results__options li:contains(Mouse)').trigger({type:'mouseup'});
 CustomKeywords.'jquery.jquery_generic.execJS'(type_bp)
 
 WebUI.delay(3)

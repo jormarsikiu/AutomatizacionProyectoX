@@ -3,17 +3,10 @@
    <description></description>
    <name>Edit_Society</name>
    <tag></tag>
-   <comment>Automatización: Sociedad Editada Exitosamente</comment>
+   <comment></comment>
    <testCaseGuid>6e6fdf0b-a6ef-4c83-be65-9e2c5415f22c</testCaseGuid>
    <variable>
-      <defaultValue>'\'MS-01\''</defaultValue>
-      <description>Id de la sociedad</description>
-      <id>1928fe9b-9eb6-4253-b080-98ea837c9362</id>
-      <masked>false</masked>
-      <name>idsociety</name>
-   </variable>
-   <variable>
-      <defaultValue>'435'</defaultValue>
+      <defaultValue>'123'</defaultValue>
       <description>Text</description>
       <id>68418a6e-50e0-4ec1-b83d-fcc645e8f4c8</id>
       <masked>false</masked>

@@ -6,7 +6,7 @@
    <comment></comment>
    <testCaseGuid>3d11450b-6d90-4b37-baf7-d252efce4f0f</testCaseGuid>
    <variable>
-      <defaultValue>'09256ed9-71b9-4ce7-99e8-bf3e88a4da22'</defaultValue>
+      <defaultValue>'09256ed9-71b9-4ce7-99e8-bf3e88a4da32'</defaultValue>
       <description>Id del Socio de Negocio</description>
       <id>326e9306-a9b2-479f-8b22-c9650ab0dcd7</id>
       <masked>false</masked>

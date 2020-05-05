@@ -27,7 +27,7 @@
       <name>avatar</name>
    </variable>
    <variable>
-      <defaultValue>'automated.4test@grupokaizen.net'</defaultValue>
+      <defaultValue>'automated.test3@grupokaizen.net'</defaultValue>
       <description>EMAIL</description>
       <id>ad4e10cd-e739-4109-b995-49b7de99bbb0</id>
       <masked>false</masked>

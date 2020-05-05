@@ -44,6 +44,8 @@ String openclient = '''$(".select2-hidden-accessible").select2("open")'''
 CustomKeywords.'jquery.jquery_generic.execJS'(openclient)
 String selectclient = "jQuery('.select2-hidden-accessible').select2().val('$client').get(0)"
 CustomKeywords.'jquery.jquery_generic.execJS'(selectclient)
+String aceptclient = "jQuery('.editable-submit').click()"
+CustomKeywords.'jquery.jquery_generic.execJS'(aceptclient)
 
 //Código de cliente - Receptor
 String customer =  '''$('#customerDir').click()'''
@@ -52,6 +54,9 @@ String opencustomer = '''$(".select2-hidden-accessible").select2("open")'''
 CustomKeywords.'jquery.jquery_generic.execJS'(opencustomer)
 String selectcustomer = "jQuery('.select2-hidden-accessible').select2().val('$customer').get(0)"
 CustomKeywords.'jquery.jquery_generic.execJS'(selectcustomer)
+String aceptclient2 = "jQuery('.editable-submit').click()"
+CustomKeywords.'jquery.jquery_generic.execJS'(aceptclient2)
+
 
 //Fecha de borrador
 String draftdate = "jQuery('#DraftDate').val('$draft_date')"
@@ -66,7 +71,14 @@ String buttonadd = '''$('#addItem').click()'''
 CustomKeywords.'jquery.jquery_generic.execJS'(buttonadd)
 
 
-//NO SE ANADEN LOS ITEMS
+//item
+String openitem = '''$('.select2-hidden-accessible').select2("open")'''
+CustomKeywords.'jquery.jquery_generic.execJS'(openitem)
+
+//additem
+String additem = '''$('.select2-results__options li:contains(Mouse)').trigger({type:'mouseup'});'''
+
+
 
 //Boton Guardar
 String buttonsave = '''$('.btn-outline-info').click())'''

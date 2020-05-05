@@ -83,7 +83,7 @@ WebUI.delay(8)
 String open_type_bp = '''$("#AddressEntityTypeCode").select2("open")'''
 CustomKeywords.'jquery.jquery_generic.execJS'(open_type_bp)
 WebUI.delay(3)
-String type_bp = "jQuery('#select2-AddressEntityTypeCode-results li').first().trigger({type:'mouseup'});"
+String type_bp = "jQuery('#select2-AddressEntityTypeCode-results li').last().trigger({type:'mouseup'});"
 CustomKeywords.'jquery.jquery_generic.execJS'(type_bp)
 
 WebUI.delay(3)
@@ -97,28 +97,28 @@ if (delivery == '1'){
 String open_country = '''$("#CountryCode").select2("open")'''
 CustomKeywords.'jquery.jquery_generic.execJS'(open_country)
 WebUI.delay(3)
-String select_country = "jQuery('#select2-CountryCode-results li').first().trigger({type:'mouseup'});"
+String select_country = "jQuery('#select2-CountryCode-results li').last().trigger({type:'mouseup'});"
 CustomKeywords.'jquery.jquery_generic.execJS'(select_country)
 
 //Region
 String open_county = '''$("#CountyCode").select2("open")'''
 CustomKeywords.'jquery.jquery_generic.execJS'(open_county)
 WebUI.delay(3)
-String select_county = "jQuery('#select2-CountyCode-results li').first().trigger({type:'mouseup'});"
+String select_county = "jQuery('#select2-CountyCode-results li').last().trigger({type:'mouseup'});"
 CustomKeywords.'jquery.jquery_generic.execJS'(select_county)
 
 //Estado
 String open_state = '''$("#StateCode").select2("open")'''
 CustomKeywords.'jquery.jquery_generic.execJS'(open_state)
 WebUI.delay(3)
-String select_state = "jQuery('#select2-StateCode-results li').first().trigger({type:'mouseup'});"
+String select_state = "jQuery('#select2-StateCode-results li').last().trigger({type:'mouseup'});"
 CustomKeywords.'jquery.jquery_generic.execJS'(select_state)
 
 //Municipio
 String open_townshipCode = '''$("#TownshipCode").select2("open")'''
 CustomKeywords.'jquery.jquery_generic.execJS'(open_townshipCode)
 WebUI.delay(3)
-String select_stownshipCode = "jQuery('#select2-TownshipCode-results li').first().trigger({type:'mouseup'});"
+String select_stownshipCode = "jQuery('#select2-TownshipCode-results li').last().trigger({type:'mouseup'});"
 CustomKeywords.'jquery.jquery_generic.execJS'(select_stownshipCode)
 
 //Direccion1
@@ -165,14 +165,14 @@ CustomKeywords.'jquery.jquery_generic.execJS'(botonaccount)
 String open_parentAccounting_bp = '''$("#selectParentAccounting").select2("open")'''
 CustomKeywords.'jquery.jquery_generic.execJS'(open_parentAccounting_bp)
 WebUI.delay(3)
-String parentAccounting_bp = "jQuery('#select2-selectParentAccounting-results li').first().trigger({type:'mouseup'});"
+String parentAccounting_bp = "jQuery('#select2-selectParentAccounting-results li').last().trigger({type:'mouseup'});"
 CustomKeywords.'jquery.jquery_generic.execJS'(parentAccounting_bp)
 
 //Registro Hijo
 String open_childrenAccounting = '''$("#selectChildrenAccounting").select2("open")'''
 CustomKeywords.'jquery.jquery_generic.execJS'(open_childrenAccounting)
 WebUI.delay(3)
-String childrenAccounting_bp = "jQuery('#select2-selectChildrenAccounting-results li').first().trigger({type:'mouseup'});"
+String childrenAccounting_bp = "jQuery('#select2-selectChildrenAccounting-results li').last().trigger({type:'mouseup'});"
 CustomKeywords.'jquery.jquery_generic.execJS'(childrenAccounting_bp)
 
 //Aceptar
@@ -189,14 +189,14 @@ CustomKeywords.'jquery.jquery_generic.execJS'(botongrups)
 String open_parentGroup = '''$("#selectParentGroups").select2("open")'''
 CustomKeywords.'jquery.jquery_generic.execJS'(open_parentGroup)
 WebUI.delay(3)
-String parentGroup_bp = "jQuery('#select2-selectParentGroups-results li').first().trigger({type:'mouseup'});"
+String parentGroup_bp = "jQuery('#select2-selectParentGroups-results li').last().trigger({type:'mouseup'});"
 CustomKeywords.'jquery.jquery_generic.execJS'(parentGroup_bp)
 
 //Registro hijo
 String open_childrenGroups = '''$("#selectChildrenGroups").select2("open")'''
 CustomKeywords.'jquery.jquery_generic.execJS'(open_childrenGroups)
 WebUI.delay(3)
-String childrenGroups_bp = "jQuery('#select2-selectChildrenGroups-results li').first().trigger({type:'mouseup'});"
+String childrenGroups_bp = "jQuery('#select2-selectChildrenGroups-results li').last().trigger({type:'mouseup'});"
 CustomKeywords.'jquery.jquery_generic.execJS'(childrenGroups_bp)
 
 //Aceptar

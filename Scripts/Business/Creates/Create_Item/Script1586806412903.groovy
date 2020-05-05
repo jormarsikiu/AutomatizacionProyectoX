@@ -99,7 +99,7 @@ if (isTaxable == '0'){
 String botongroups= '''$("a[href*='/Management/Item/_EntityGroups']")[0].click()'''
 CustomKeywords.'jquery.jquery_generic.execJS'(botongroups)
 
-WebUI.delay(10)
+WebUI.delay(5)
 
 //Registro padre
 String open_parentGroup = '''$("#selectParentGroups").select2("open")'''
@@ -132,7 +132,7 @@ CustomKeywords.'jquery.jquery_generic.execJS'(priceListCode_bi)
 
 
 //Aceptar
-String butonacept_bp2 = '$(".btn-success")[1].click()'
+String butonacept_bp2 = '$(".btn-success")[0].click()'
 CustomKeywords.'jquery.jquery_generic.execJS'(butonacept_bp2)
 
 //****************************Full Form 1 Adicionales*****************************************//
@@ -161,6 +161,78 @@ CustomKeywords.'jquery.jquery_generic.execJS'(warehouse_bp)
 //Guardar
 String butonsave= '$(".pull-right").click()'
 CustomKeywords.'jquery.jquery_generic.execJS'(butonsave)
+
+//**********************Validacion********************************//
+WebUI.delay(10)
+//Si existe la tabla
+String existe = "let elemento= (jQuery('#tableItem').length > 0); return elemento;"
+Boolean elemento_existe = CustomKeywords.'jquery.jquery_generic.execJS'(existe)
+
+if (elemento_existe == true)
+{
+	String validacion = '0'
+	String pagina_validacion = '0'
+	
+	String alerta = "let user= jQuery('#tableItem tr').is(':contains($itemcode)'); return user;"
+	Boolean bool_validate = CustomKeywords.'jquery.jquery_generic.execJS'(alerta)
+	print(bool_validate)
+	
+	if(bool_validate==true){
+		validacion = '1'
+		
+	}else{
+
+		int pagina = 2;
+		while(bool_validate==false)
+		{
+			String siguiente = '''$('#tableItem_next').click()'''
+			CustomKeywords.'jquery.jquery_generic.execJS'(siguiente)
+			WebUI.delay(15)
+			
+			String alert2 = "let user2 = jQuery('#tableItem tr').is(':contains($itemcode)'); return user2;"
+			Boolean bool2 = CustomKeywords.'jquery.jquery_generic.execJS'(alert2)
+			print(bool2)
+			
+			if(bool2==true){
+				bool_validate=true
+				WebUI.delay(3)
+				validacion = '2'
+				pagina_validacion=pagina
+				pagina = pagina+1
+				break;
+			}
+			else{
+				bool_validate=false
+				validacion='3'
+				break;
+			}
+		}
+	}
+	
+	WebUI.delay(5)
+	WebUI.closeBrowser()
+	
+	if (validacion == '1')
+	{
+		WebUI.comment('Automatización Exitosa: Articulo Creado en la pagina 1')
+	}
+	else if (validacion == '2')
+	{
+		
+		WebUI.comment('Automatización Exitosa: Articulo Creado en la pagina ${pagina_validacion} ') 
+	}
+	else if (validacion == '3')
+	{
+		WebUI.comment('Automatización Fallida: Articulo no encontrado en el Index')
+	}
+	
+}
+else{
+	
+	WebUI.comment('Automatización Fallida: Articulo No fue guardado')
+}
+
+
 
 
 

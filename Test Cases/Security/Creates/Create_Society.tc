@@ -6,14 +6,14 @@
    <comment></comment>
    <testCaseGuid>2ae99b3b-262a-4c93-be1b-f82dd68e5c02</testCaseGuid>
    <variable>
-      <defaultValue>'123'</defaultValue>
+      <defaultValue>'Cod233'</defaultValue>
       <description>Text</description>
       <id>e60e6051-7c19-4d19-8a0e-1ec061757b19</id>
       <masked>false</masked>
       <name>code</name>
    </variable>
    <variable>
-      <defaultValue>'Sociedad1'</defaultValue>
+      <defaultValue>'Sociedad Test 2'</defaultValue>
       <description>Text</description>
       <id>1003b2d0-c45f-4449-b439-6a8b3ea869b9</id>
       <masked>false</masked>
@@ -60,5 +60,33 @@
       <id>5cb6b33d-2315-4d6d-8beb-5920aad49590</id>
       <masked>false</masked>
       <name>zipcode</name>
+   </variable>
+   <variable>
+      <defaultValue>'Caracas'</defaultValue>
+      <description></description>
+      <id>c58ebd63-9047-4509-af53-8fbe8ffb54e8</id>
+      <masked>false</masked>
+      <name>townName</name>
+   </variable>
+   <variable>
+      <defaultValue>'Caracas'</defaultValue>
+      <description></description>
+      <id>103f25ee-5679-44ba-a4d0-c73ecf7074c0</id>
+      <masked>false</masked>
+      <name>fiscalAddress</name>
+   </variable>
+   <variable>
+      <defaultValue>'Caracas'</defaultValue>
+      <description></description>
+      <id>2166cbbb-4928-45ca-a42d-eb4442b88477</id>
+      <masked>false</masked>
+      <name>complementaryAddress</name>
+   </variable>
+   <variable>
+      <defaultValue>'Caracas'</defaultValue>
+      <description></description>
+      <id>25dd1d42-0086-4d7a-9b4d-95c07f3c3a75</id>
+      <masked>false</masked>
+      <name>taxAddress</name>
    </variable>
 </TestCaseEntity>

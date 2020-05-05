@@ -189,3 +189,74 @@ CustomKeywords.'jquery.jquery_generic.execJS'(attributes_bp2)
 String butonsave= '$(".pull-right").click()'
 CustomKeywords.'jquery.jquery_generic.execJS'(butonsave)
 
+//**********************Validacion********************************//
+WebUI.delay(10)
+//Si existe la tabla
+String existe = "let elemento= (jQuery('#tableWareHouse').length > 0); return elemento;"
+Boolean elemento_existe = CustomKeywords.'jquery.jquery_generic.execJS'(existe)
+
+if (elemento_existe == true)
+{
+	String validacion = '0'
+	String pagina_validacion = '0'
+	
+	String alerta = "let user= jQuery('#tableWareHouse tr').is(':contains($wareHouseCode)'); return user;"
+	Boolean bool_validate = CustomKeywords.'jquery.jquery_generic.execJS'(alerta)
+	print(bool_validate)
+	
+	if(bool_validate==true){
+		validacion = '1'
+		
+	}else{
+	
+		int pagina = 2;
+		while(bool_validate==false)
+		{
+			String siguiente = '''$('#tableWareHouse_next').click()'''
+			CustomKeywords.'jquery.jquery_generic.execJS'(siguiente)
+			WebUI.delay(10)
+			
+			String alert2 = "let user2 = jQuery('#tableWareHouse tr').is(':contains($wareHouseCode)'); return user2;"
+			Boolean bool2 = CustomKeywords.'jquery.jquery_generic.execJS'(alert2)
+			print(bool2)
+			
+			if(bool2==true){
+				bool_validate=true
+				WebUI.delay(3)
+				validacion = '2'
+				pagina_validacion=pagina
+				pagina = pagina+1
+				break;
+			}
+			else{
+				bool_validate=false
+				validacion='3'
+				break;
+			}
+		}
+	}
+	
+	WebUI.delay(5)
+	WebUI.closeBrowser()
+	
+	if (validacion == '1')
+	{
+		WebUI.comment('Automatización Exitosa: Almacen Creado en la pagina 1')
+	}
+	else if (validacion == '2')
+	{
+		
+		WebUI.comment('Automatización Exitosa: Almacen Creado en la pagina ${pagina_validacion} ') 
+	}
+	else if (validacion == '3')
+	{
+		WebUI.comment('Automatización Fallida:Almacen No Creado en el Index')
+	}
+	
+	
+}
+else{
+	
+	WebUI.comment('Automatización Fallida: Articulo No fue guardado')
+}
+

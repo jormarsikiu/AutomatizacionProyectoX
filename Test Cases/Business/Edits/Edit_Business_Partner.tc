@@ -6,35 +6,28 @@
    <comment></comment>
    <testCaseGuid>3d11450b-6d90-4b37-baf7-d252efce4f0f</testCaseGuid>
    <variable>
-      <defaultValue>'09256ed9-71b9-4ce7-99e8-bf3e88a4da33'</defaultValue>
+      <defaultValue>'2a4f5276-30be-4677-9185-08d7f0f6bdfe'</defaultValue>
       <description>Id del Socio de Negocio</description>
       <id>326e9306-a9b2-479f-8b22-c9650ab0dcd7</id>
       <masked>false</masked>
       <name>idBusinessPartner</name>
    </variable>
    <variable>
-      <defaultValue>'123'</defaultValue>
-      <description>Text</description>
-      <id>ebcc2983-827e-4085-bda9-d04e8e9ed4a2</id>
-      <masked>false</masked>
-      <name>code</name>
-   </variable>
-   <variable>
-      <defaultValue>'COD-123'</defaultValue>
+      <defaultValue>'COD-1237'</defaultValue>
       <description>Text</description>
       <id>4f23d77b-437d-41c8-94da-a43660d54655</id>
       <masked>false</masked>
       <name>taxCode</name>
    </variable>
    <variable>
-      <defaultValue>'SocioNegocio1'</defaultValue>
+      <defaultValue>'SocioNegocioEditado3'</defaultValue>
       <description>Text</description>
       <id>db308cd0-d820-49e5-a12f-798e055d6c6d</id>
       <masked>false</masked>
       <name>partnerName</name>
    </variable>
    <variable>
-      <defaultValue>'SocioNegocio1'</defaultValue>
+      <defaultValue>'SocioNegocioEditado3'</defaultValue>
       <description>Text</description>
       <id>a7897328-a183-4b8b-b842-5f07ad6ff534</id>
       <masked>false</masked>

@@ -6,7 +6,7 @@
    <comment></comment>
    <testCaseGuid>6e6fdf0b-a6ef-4c83-be65-9e2c5415f22c</testCaseGuid>
    <variable>
-      <defaultValue>'123'</defaultValue>
+      <defaultValue>'Cod233'</defaultValue>
       <description>Text</description>
       <id>68418a6e-50e0-4ec1-b83d-fcc645e8f4c8</id>
       <masked>false</masked>

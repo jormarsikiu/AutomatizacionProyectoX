@@ -35,7 +35,11 @@ CustomKeywords.'jquery.jquery_generic.execJS'(botonTransacctions)
 String createDraft = '$("a[href*=\'/Documents/TransactionInvoice/CreateInvoiceFormAsync\']")[0].click()'
 CustomKeywords.'jquery.jquery_generic.execJS'(createDraft)
 
-WebUI.waitForPageLoad(20)
+WebUI.delay(20)
+
+//Obtener id draft
+String iddraft = '''let val = $('#DraftCode').val(); return val;'''
+String IDdraft = CustomKeywords.'jquery.jquery_generic.execJS'(iddraft)
 
 //Código de cliente - Emite
 String codclient =  '''$('#GetClientCode').click()'''
@@ -103,35 +107,4 @@ CustomKeywords.'jquery.jquery_generic.execJS'(buttonsave)
 
 /*************************Validates****************************/
 
-
-//Código de cliente - Emite
-String codclient =  '''$('#GetClientCode').click()'''
-CustomKeywords.'jquery.jquery_generic.execJS'(codclient)
-String openclient = '''$(".select2-hidden-accessible").select2("open")'''
-CustomKeywords.'jquery.jquery_generic.execJS'(openclient)
-String selectclient = "jQuery('.select2-hidden-accessible').select2().val('$client').get(0)"
-CustomKeywords.'jquery.jquery_generic.execJS'(selectclient)
-
-//Código de cliente - Receptor
-String customer =  '''$('#customerDir').click()'''
-CustomKeywords.'jquery.jquery_generic.execJS'(customer)
-String opencustomer = '''$(".select2-hidden-accessible").select2("open")'''
-CustomKeywords.'jquery.jquery_generic.execJS'(opencustomer)
-String selectcustomer = "jQuery('.select2-hidden-accessible').select2().val('$customer').get(0)"
-CustomKeywords.'jquery.jquery_generic.execJS'(selectcustomer)
-
-//Fecha de borrador
-String draftdate = "jQuery('#DraftDate').val('$draft_date')"
-CustomKeywords.'jquery.jquery_generic.execJS'(draftdate)
-
-//Fecha de vencimiento del borrador
-String draftdatedue = "jQuery('#DraftDateDue').val('$draft_date_due')"
-CustomKeywords.'jquery.jquery_generic.execJS'(draftdatedue)
-
-//Boton de Agregar item
-String buttonadd = '''$('#addItem').click()'''
-CustomKeywords.'jquery.jquery_generic.execJS'(buttonadd)
-
-//Boton Guardar
-String buttonsave = '''$('.btn-outline-info').click())'''
-CustomKeywords.'jquery.jquery_generic.execJS'(buttonsave)
+///WebUI.callTestCase(findTestCase('Validates_Create'), [('test') : 'Borrador', ('seachvalue') : iddraft, ('table') : '#tableDraft', ('buttonnext') : '#tableDraft_next'],FailureHandling.STOP_ON_FAILURE)

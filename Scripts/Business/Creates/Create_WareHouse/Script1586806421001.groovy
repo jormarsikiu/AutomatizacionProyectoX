@@ -253,5 +253,5 @@ String butonsave = '$(".pull-right").click()'
 CustomKeywords.'jquery.jquery_generic.execJS'(butonsave)
 
 //**********************Validacion********************************//
-WebUI.callTestCase(findTestCase('Validates'), [('test') : 'Almacen', ('seachvalue') : wareHouseCode, ('table') : '#tableWareHouse', ('buttonnext') : '#tableWareHouse_next'],
+WebUI.callTestCase(findTestCase('Validates_Create'), [('test') : 'Almacen', ('seachvalue') : wareHouseCode, ('table') : '#tableWareHouse', ('buttonnext') : '#tableWareHouse_next'],
 	FailureHandling.STOP_ON_FAILURE)

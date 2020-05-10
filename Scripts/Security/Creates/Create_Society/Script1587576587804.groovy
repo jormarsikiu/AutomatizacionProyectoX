@@ -149,6 +149,6 @@ if (modal == 'block') {
 //**********************Validacion********************************//
 
 
-WebUI.callTestCase(findTestCase('Validates'), [('test') : 'Sociedad', ('seachvalue') : societyName, ('table') : '#SocietiesTable', ('buttonnext') : '#SocietiesTable_next'],
+WebUI.callTestCase(findTestCase('Validates_Create'), [('test') : 'Sociedad', ('seachvalue') : societyName, ('table') : '#SocietiesTable', ('buttonnext') : '#SocietiesTable_next'],
 	FailureHandling.STOP_ON_FAILURE)
 

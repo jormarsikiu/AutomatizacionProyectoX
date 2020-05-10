@@ -1,35 +1,35 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestCaseEntity>
    <description></description>
-   <name>Validates</name>
+   <name>Validate_Edits</name>
    <tag></tag>
    <comment></comment>
-   <testCaseGuid>868e28c9-cdab-453a-8051-6bd98dcd380f</testCaseGuid>
+   <testCaseGuid>29446472-e620-49dd-87e5-2f62bdeb02f1</testCaseGuid>
    <variable>
       <defaultValue>''</defaultValue>
       <description></description>
-      <id>577633a9-f979-4fd1-a94f-9a406af93c66</id>
+      <id>e0ea32fc-ee24-4ada-9187-a390529df3bd</id>
       <masked>false</masked>
       <name>test</name>
    </variable>
    <variable>
       <defaultValue>''</defaultValue>
       <description></description>
-      <id>049ae780-8114-47c6-9367-77d0d80395de</id>
+      <id>58701a2f-51f8-48f5-8c75-5f18570ab02c</id>
       <masked>false</masked>
       <name>seachvalue</name>
    </variable>
    <variable>
       <defaultValue>''</defaultValue>
       <description></description>
-      <id>ba353441-68ca-4f57-9ddf-51d116194a29</id>
+      <id>473d9001-bafe-445b-9b29-c2574d736a95</id>
       <masked>false</masked>
       <name>table</name>
    </variable>
    <variable>
       <defaultValue>''</defaultValue>
       <description></description>
-      <id>6bff1d88-f8fd-4389-b00c-cf5ec5268650</id>
+      <id>bf7404f4-6d5e-488c-be61-d76310140b14</id>
       <masked>false</masked>
       <name>buttonnext</name>
    </variable>

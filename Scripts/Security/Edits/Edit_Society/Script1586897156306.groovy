@@ -29,6 +29,7 @@ String id2 = code
 String id3 = '\"]'
 String id4 = id1 + id2 + id3 
 String edit_society= "jQuery('$id4')[0].click()"
+print(edit_society)
 CustomKeywords.'jquery.jquery_generic.execJS'(edit_society)
 
 String modal = WebUI.executeJavaScript('return document.getElementById("IdFormCreateModal").style.display;', null)
@@ -52,10 +53,8 @@ if (modal == 'block'){
 	
 	WebUI.uploadFile(findTestObject('Object Repository/Page_Panel Security/File'), rutaImage)
 	
-	String open_icon_s = '''$("#Icon").select2("open")'''
-	CustomKeywords.'jquery.jquery_generic.execJS'(open_icon_s)
-	String icon_s = "jQuery('#select2-Icon-results li').first().trigger({type:'mouseup'});"
-	CustomKeywords.'jquery.jquery_generic.execJS'(icon_s)
+    String icon_s = '$("#Icon").val($("#Icon option:eq(1)").val());'
+    CustomKeywords.'jquery.jquery_generic.execJS'(icon_s)
 	
 	
 	if (status == '0'){
@@ -124,3 +123,7 @@ if (modal == 'block'){
 	
 }
 
+/***********************Verification**************************/
+
+WebUI.callTestCase(findTestCase('Validates_Edits'), [('test') : 'Sociedad', ('seachvalue') : societyName, ('table') : '#SocietiesTable', ('buttonnext') : '#SocietiesTable_next'],
+	FailureHandling.STOP_ON_FAILURE)

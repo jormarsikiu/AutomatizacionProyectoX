@@ -6,28 +6,28 @@
    <comment></comment>
    <testCaseGuid>b51eb706-9535-4dfd-9184-9482ea1bd9ee</testCaseGuid>
    <variable>
-      <defaultValue>'COD02'</defaultValue>
+      <defaultValue>'COD024'</defaultValue>
       <description>Text</description>
       <id>c4c0a859-f020-4ca5-834b-03e3015cec89</id>
       <masked>false</masked>
       <name>code</name>
    </variable>
    <variable>
-      <defaultValue>'COD-123'</defaultValue>
+      <defaultValue>'COD-1234'</defaultValue>
       <description>Text</description>
       <id>5b8501d0-28b1-4f46-80b3-2a4df8094b5d</id>
       <masked>false</masked>
       <name>taxCode</name>
    </variable>
    <variable>
-      <defaultValue>'SocioNegocio1'</defaultValue>
+      <defaultValue>'SocioNegocioTest'</defaultValue>
       <description>Text</description>
       <id>d8bd127b-d15b-4c1a-b2b0-ea3526e8fa20</id>
       <masked>false</masked>
       <name>partnerName</name>
    </variable>
    <variable>
-      <defaultValue>'SocioNegocio1'</defaultValue>
+      <defaultValue>'SocioNegocioTest'</defaultValue>
       <description>Text</description>
       <id>afd52625-cef4-4157-a001-1fdd0fdd2f90</id>
       <masked>false</masked>

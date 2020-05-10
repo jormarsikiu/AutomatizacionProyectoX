@@ -209,7 +209,7 @@ CustomKeywords.'jquery.jquery_generic.execJS'(butonsave)
 
 //**********************Validacion********************************//
 
-WebUI.callTestCase(findTestCase('Validates'), [('test') : 'Articulo', ('seachvalue') : itemcode, ('table') : '#tableItem', ('buttonnext') : '#tableItem_next'],
+WebUI.callTestCase(findTestCase('Validates_Create'), [('test') : 'Articulo', ('seachvalue') : itemcode, ('table') : '#tableItem', ('buttonnext') : '#tableItem_next'],
 	FailureHandling.STOP_ON_FAILURE)
 
 

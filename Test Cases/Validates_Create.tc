@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>Validates_Create</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>868e28c9-cdab-453a-8051-6bd98dcd380f</testCaseGuid>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>577633a9-f979-4fd1-a94f-9a406af93c66</id>
+      <masked>false</masked>
+      <name>test</name>
+   </variable>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>049ae780-8114-47c6-9367-77d0d80395de</id>
+      <masked>false</masked>
+      <name>seachvalue</name>
+   </variable>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>ba353441-68ca-4f57-9ddf-51d116194a29</id>
+      <masked>false</masked>
+      <name>table</name>
+   </variable>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>6bff1d88-f8fd-4389-b00c-cf5ec5268650</id>
+      <masked>false</masked>
+      <name>buttonnext</name>
+   </variable>
+</TestCaseEntity>

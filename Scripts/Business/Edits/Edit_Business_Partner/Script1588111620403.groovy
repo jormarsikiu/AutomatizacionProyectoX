@@ -30,11 +30,26 @@ String botonBussiness = '$("a[href*=\'/dashboard/Business/index/MAP-003\']")[0].
 CustomKeywords.'jquery.jquery_generic.execJS'(botonBussiness)
 
 //************************Open Bussiness Partner Menu***********************************//
+
 String botonBusinessPartner = '$("a[href*=\'/Management/BusinessPartner\']")[0].click()'
 CustomKeywords.'jquery.jquery_generic.execJS'(botonBusinessPartner)
 
+//String i = "jQuery('a[href*=\"/Management/BusinessPartner/Edit?entityCode=2a4f5276-30be-4677-9185-08d7f0f6bdfe\"]')[0].click()"
+
+WebUI.delay(20)
+	
 //************************Edit Bussiness Partner Form*************************************//
-String createBusinessPartner = "jQuery('#btnEdit_'+$idBusinessPartner)[0].click()"
+	
+String id1 = 'a[href*=\"/Management/BusinessPartner/Edit?entityCode='
+String id2 = idBusinessPartner
+String id3 = '\"]'
+String id4 = id1+id2+id3
+print (id4 +'\n')
+
+String createBusinessPartner = "jQuery('$id4')[0].click()"
+print (createBusinessPartner +'\n')
+
+
 CustomKeywords.'jquery.jquery_generic.execJS'(createBusinessPartner)
 
 WebUI.waitForPageLoad(20)

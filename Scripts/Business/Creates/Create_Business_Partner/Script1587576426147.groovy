@@ -200,6 +200,7 @@ CustomKeywords.'jquery.jquery_generic.execJS'(butonacept_bp)
 //****************************Full Form 1 Contabilidad*****************************************//
 //open +
 String botonaccount = '$("a[href*=\'/Management/BusinessPartner/_Accountings\']")[0].click()'
+
 CustomKeywords.'jquery.jquery_generic.execJS'(botonaccount)
 
 WebUI.delay(3)
@@ -232,6 +233,7 @@ CustomKeywords.'jquery.jquery_generic.execJS'(butonacept_bp)
 //****************************Full Form 1 Grupos*****************************************//
 //open +
 String botongrups = '$("a[href*=\'/Management/BusinessPartner/_EntityGroups\']")[0].click()'
+
 CustomKeywords.'jquery.jquery_generic.execJS'(botongrups)
 
 WebUI.delay(3)
@@ -350,71 +352,6 @@ String butonsave = '$(".pull-right").click()'
 CustomKeywords.'jquery.jquery_generic.execJS'(butonsave)
 
 //**********************Validacion********************************//
-WebUI.delay(10)
-//Si existe la tabla
-String existe = "let elemento= (jQuery('#tablePrner').length > 0); return elemento;"
-Boolean elemento_existe = CustomKeywords.'jquery.jquery_generic.execJS'(existe)
 
-if (elemento_existe == true)
-{
-	String validacion = '0'
-	String pagina_validacion = '0'
-	
-	String alerta = "let user= jQuery('#tablePrner tr').is(':contains($code)'); return user;"
-	Boolean bool_validate = CustomKeywords.'jquery.jquery_generic.execJS'(alerta)
-	print(bool_validate)
-	
-	if(bool_validate==true){
-		validacion = '1'
-		
-	}else{
-	
-		int pagina = 2;
-		while(bool_validate==false)
-		{
-			String siguiente = '''$('#paginate_button next').click()'''
-			CustomKeywords.'jquery.jquery_generic.execJS'(siguiente)
-			WebUI.delay(20)
-			
-			String alert2 = "let user2 = jQuery('#tablePrner tr').is(':contains($code)'); return user2;"
-			Boolean bool2 = CustomKeywords.'jquery.jquery_generic.execJS'(alert2)
-			print(bool2)
-			
-			if(bool2==true){
-				bool_validate=true
-				WebUI.delay(3)
-				validacion = '2'
-				pagina_validacion=pagina
-				pagina = pagina+1
-				break;
-			}
-			else{
-				bool_validate=false
-				validacion='3'
-				break;
-			}
-		}
-	}
-	
-	WebUI.delay(5)
-	WebUI.closeBrowser()
-	
-	if (validacion == '1')
-	{
-		WebUI.comment('Automatización Exitosa: Socio de Negocio Creado en la pagina 1')
-	}
-	else if (validacion == '2')
-	{
-		
-		WebUI.comment('Automatización Exitosa: Socio de Negocio Creado en la pagina ${pagina_validacion} ') 
-	}
-	else if (validacion == '3')
-	{
-		WebUI.comment('Automatización Fallida: Socio de Negocio no encontrado en el Index')
-	}
-
-}
-else{
-	
-	WebUI.comment('Automatización Fallida: Socio de Negocios No fue guardado')
-}
+WebUI.callTestCase(findTestCase('Validates'), [('test') : 'Socio de Negocios', ('seachvalue') : code, ('table') : '#tablePrner', ('buttonnext') : '#tablePrner_next'],
+	FailureHandling.STOP_ON_FAILURE)

@@ -24,13 +24,11 @@ String menu_society = '''$("a[href*='society/Index']")[0].click()'''
 CustomKeywords.'jquery.jquery_generic.execJS'(menu_society)
 
 //********************Open Edit Society**********************//
-
-
-//String createBusinessPartner = "jQuery('#btnEdit_'+$idBusinessPartner)[0].click()"
-String idsociety = "/Settings/Society/Edit?code=" + code
-print(idsociety)
-String edit_society= '''jQuery("a[href*='$idsociety']")[0].click()''' //ERROR DAYANA
-print (edit_society)
+String id1 = 'a[href*=\"/Settings/Society/Edit?code='
+String id2 = code
+String id3 = '\"]'
+String id4 = id1 + id2 + id3 
+String edit_society= "jQuery('$id4')[0].click()"
 CustomKeywords.'jquery.jquery_generic.execJS'(edit_society)
 
 String modal = WebUI.executeJavaScript('return document.getElementById("IdFormCreateModal").style.display;', null)

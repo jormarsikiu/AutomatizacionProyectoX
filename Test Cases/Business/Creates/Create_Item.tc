@@ -34,7 +34,7 @@
       <name>SKU</name>
    </variable>
    <variable>
-      <defaultValue>'05/01/2020'</defaultValue>
+      <defaultValue>'2020-05-06'</defaultValue>
       <description>fecha</description>
       <id>7f10b6a2-08d4-4d8e-b0b7-7d2da1ebee88</id>
       <masked>false</masked>

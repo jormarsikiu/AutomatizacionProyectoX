@@ -35,7 +35,11 @@ CustomKeywords.'jquery.jquery_generic.execJS'(botonTransacctions)
 String createDraft = '$("a[href*=\'/Documents/TransactionDraft/CreateDraftFormAsync\']")[0].click()'
 CustomKeywords.'jquery.jquery_generic.execJS'(createDraft)
 
-WebUI.waitForPageLoad(20)
+WebUI.delay(20)
+
+//Obtener id draft
+String iddraft = '''let val = $('#DraftCode').val(); return val;'''
+String IDdraft = CustomKeywords.'jquery.jquery_generic.execJS'(iddraft)
 
 //Código de cliente - Emite
 String codclient =  '''$('#GetClientCode').click()'''
@@ -57,7 +61,6 @@ CustomKeywords.'jquery.jquery_generic.execJS'(selectcustomer)
 String aceptclient2 = "jQuery('.editable-submit').click()"
 CustomKeywords.'jquery.jquery_generic.execJS'(aceptclient2)
 
-
 //Fecha de borrador
 String draftdate = "jQuery('#DraftDate').val('$draft_date')"
 CustomKeywords.'jquery.jquery_generic.execJS'(draftdate)
@@ -70,16 +73,111 @@ CustomKeywords.'jquery.jquery_generic.execJS'(draftdatedue)
 String buttonadd = '''$('#addItem').click()'''
 CustomKeywords.'jquery.jquery_generic.execJS'(buttonadd)
 
+//click Elegir item
+String clickadd = '''$('.editable-empty')[0].click()'''
+CustomKeywords.'jquery.jquery_generic.execJS'(clickadd)
 
-//item
+//openitem
 String openitem = '''$('.select2-hidden-accessible').select2("open")'''
 CustomKeywords.'jquery.jquery_generic.execJS'(openitem)
 
 //additem
-String additem = '''$('.select2-results__options li:contains(Mouse)').trigger({type:'mouseup'});'''
+String additem = "jQuery('.select2-results__options li:contains($item)').trigger({type:'mouseup'});"
+CustomKeywords.'jquery.jquery_generic.execJS'(additem)
 
+//aceptitem
+String aceptitem = '''$('.editable-submit').click()'''
+CustomKeywords.'jquery.jquery_generic.execJS'(aceptitem)
 
+//click elegir cantidad
+String selectQuantity = '''$('.editable-empty')[0].click()'''
+CustomKeywords.'jquery.jquery_generic.execJS'(selectQuantity)
+
+//add cantidad
+String addQuantity = "jQuery('.input-mini').val($quantity)"
+CustomKeywords.'jquery.jquery_generic.execJS'(addQuantity)
+
+//acept cantidad
+String acepquantity = '''$('.editable-submit').click()'''
+CustomKeywords.'jquery.jquery_generic.execJS'(acepquantity)
 
 //Boton Guardar
-String buttonsave = '''$('.btn-outline-info').click())'''
+String buttonsave = '''$('.btn-outline-info')[1].click()'''
 CustomKeywords.'jquery.jquery_generic.execJS'(buttonsave)
+
+/*************************Validates****************************/
+
+WebUI.delay(20)
+//Si existe la tabla
+String existe = "let elemento= (jQuery('#tableDraft').length > 0); return elemento;"
+Boolean elemento_existe = CustomKeywords.'jquery.jquery_generic.execJS'(existe)
+String validacion = '0'
+int pagina_validacion = 0
+int pagina = 0
+
+if (elemento_existe == true)
+{
+	String alerta = "let var= jQuery('#tableDraft tr').is(':contains($iddraft)'); return var;"
+	Boolean bool_validate = CustomKeywords.'jquery.jquery_generic.execJS'(alerta)
+	
+	
+	if(bool_validate==true){
+		validacion = '1'
+		pagina = 1
+		
+		
+	}else{
+	
+		pagina = 1;
+		int i=0
+		while(bool_validate==false)
+		{
+			String siguiente = '''$('#tableDraft_next').click()'''
+			CustomKeywords.'jquery.jquery_generic.execJS'(siguiente)
+			WebUI.delay(20)
+					
+			String alert2 = "let val = jQuery('#tableDraft tr').is(':contains($IDdraft)'); return val;"
+			Boolean bool2 = CustomKeywords.'jquery.jquery_generic.execJS'(alert2)
+			
+			i=i+1
+			pagina_validacion=pagina+i
+			
+			String activenext='''let next = $('#tableDraft_next').is('.disabled'); return next;'''
+			Boolean next = CustomKeywords.'jquery.jquery_generic.execJS'(activenext)
+			
+			if(bool2==true){
+				bool_validate=true
+				WebUI.delay(3)
+				validacion = '2'
+			}
+			else if(next==true){
+				validacion = '3'
+				break;
+			}
+			
+
+		}
+		
+	}
+	
+	WebUI.delay(5)
+	WebUI.closeBrowser()
+	
+	if (validacion == '1')
+	{
+		WebUI.comment('Automatización Exitosa: Borrador Creado visible en pagina 1')
+	}
+	else if (validacion == '2')
+	{
+		WebUI.comment('Automatización Exitosa: Borrador Creado visible en pagina ' +pagina_validacion)
+	}
+	else if (validacion == '3')
+	{
+		WebUI.comment('Automatización Fallida: Borrador no encontrado en el Index')
+	}
+	
+}
+else{
+	
+	WebUI.comment('Automatización Fallida: Borrador No fue guardado')
+}

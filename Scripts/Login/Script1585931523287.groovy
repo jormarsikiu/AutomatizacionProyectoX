@@ -18,7 +18,7 @@ import org.openqa.selenium.Keys as Keys
 
 WebUI.openBrowser(GlobalVariable.web)
 
-WebUI.maximizeWindow()
+//WebUI.maximizeWindow()
 
 WebUI.click(findTestObject('Object Repository/Page_Login/lg_accept_cookies'))
 

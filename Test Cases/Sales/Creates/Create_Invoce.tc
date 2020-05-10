@@ -19,4 +19,32 @@
       <masked>false</masked>
       <name>customer</name>
    </variable>
+   <variable>
+      <defaultValue>'2020-05-14'</defaultValue>
+      <description></description>
+      <id>731012ec-bce5-4dca-b5c5-d86ea255b08e</id>
+      <masked>false</masked>
+      <name>draft_date</name>
+   </variable>
+   <variable>
+      <defaultValue>'2020-05-14'</defaultValue>
+      <description></description>
+      <id>452667cd-5eb5-41c9-863b-b43d5fbb96a5</id>
+      <masked>false</masked>
+      <name>draft_date_due</name>
+   </variable>
+   <variable>
+      <defaultValue>'PRODUCTO A'</defaultValue>
+      <description></description>
+      <id>cb52c1a6-1c99-4fa2-b631-5568234e544d</id>
+      <masked>false</masked>
+      <name>item</name>
+   </variable>
+   <variable>
+      <defaultValue>'20'</defaultValue>
+      <description></description>
+      <id>4c04ed39-9849-4f26-8f82-2cb325e3b12b</id>
+      <masked>false</masked>
+      <name>quantity</name>
+   </variable>
 </TestCaseEntity>

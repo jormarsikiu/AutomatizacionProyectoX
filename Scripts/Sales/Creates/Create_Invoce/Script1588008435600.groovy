@@ -37,6 +37,72 @@ CustomKeywords.'jquery.jquery_generic.execJS'(createDraft)
 
 WebUI.waitForPageLoad(20)
 
+//Código de cliente - Emite
+String codclient =  '''$('#GetClientCode').click()'''
+CustomKeywords.'jquery.jquery_generic.execJS'(codclient)
+String openclient = '''$(".select2-hidden-accessible").select2("open")'''
+CustomKeywords.'jquery.jquery_generic.execJS'(openclient)
+String selectclient = "jQuery('.select2-hidden-accessible').select2().val('$client').get(0)"
+CustomKeywords.'jquery.jquery_generic.execJS'(selectclient)
+String aceptclient = "jQuery('.editable-submit').click()"
+CustomKeywords.'jquery.jquery_generic.execJS'(aceptclient)
+
+//Código de cliente - Receptor
+String customer =  '''$('#customerDir').click()'''
+CustomKeywords.'jquery.jquery_generic.execJS'(customer)
+String opencustomer = '''$(".select2-hidden-accessible").select2("open")'''
+CustomKeywords.'jquery.jquery_generic.execJS'(opencustomer)
+String selectcustomer = "jQuery('.select2-hidden-accessible').select2().val('$customer').get(0)"
+CustomKeywords.'jquery.jquery_generic.execJS'(selectcustomer)
+String aceptclient2 = "jQuery('.editable-submit').click()"
+CustomKeywords.'jquery.jquery_generic.execJS'(aceptclient2)
+
+//Fecha de borrador
+String draftdate = "jQuery('#DraftDate').val('$draft_date')"
+CustomKeywords.'jquery.jquery_generic.execJS'(draftdate)
+
+//Fecha de vencimiento del borrador
+String draftdatedue = "jQuery('#DraftDateDue').val('$draft_date_due')"
+CustomKeywords.'jquery.jquery_generic.execJS'(draftdatedue)
+
+//Boton de Agregar item
+String buttonadd = '''$('#addItem').click()'''
+CustomKeywords.'jquery.jquery_generic.execJS'(buttonadd)
+
+//click Elegir item
+String clickadd = '''$('.editable-empty')[0].click()'''
+CustomKeywords.'jquery.jquery_generic.execJS'(clickadd)
+
+//openitem
+String openitem = '''$('.select2-hidden-accessible').select2("open")'''
+CustomKeywords.'jquery.jquery_generic.execJS'(openitem)
+
+//additem
+String additem = "jQuery('.select2-results__options li:contains($item)').trigger({type:'mouseup'});"
+CustomKeywords.'jquery.jquery_generic.execJS'(additem)
+
+//aceptitem
+String aceptitem = '''$('.editable-submit').click()'''
+CustomKeywords.'jquery.jquery_generic.execJS'(aceptitem)
+
+//click elegir cantidad
+String selectQuantity = '''$('.editable-empty')[0].click()'''
+CustomKeywords.'jquery.jquery_generic.execJS'(selectQuantity)
+
+//add cantidad
+String addQuantity = "jQuery('.input-mini').val($quantity)"
+CustomKeywords.'jquery.jquery_generic.execJS'(addQuantity)
+
+//acept cantidad
+String acepquantity = '''$('.editable-submit').click()'''
+CustomKeywords.'jquery.jquery_generic.execJS'(acepquantity)
+
+//Boton Guardar
+String buttonsave = '''$('.btn-outline-info')[1].click()'''
+CustomKeywords.'jquery.jquery_generic.execJS'(buttonsave)
+
+/*************************Validates****************************/
+
 
 //Código de cliente - Emite
 String codclient =  '''$('#GetClientCode').click()'''

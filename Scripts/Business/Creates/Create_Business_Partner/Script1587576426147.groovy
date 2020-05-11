@@ -353,5 +353,5 @@ CustomKeywords.'jquery.jquery_generic.execJS'(butonsave)
 
 //**********************Validacion********************************//
 
-WebUI.callTestCase(findTestCase('Validates_Create'), [('test') : 'Socio de Negocios', ('seachvalue') : code, ('table') : '#tablePrner', ('buttonnext') : '#tablePrner_next'],
+WebUI.callTestCase(findTestCase('Validates/Validate_Create'), [('test') : 'Socio de Negocios', ('seachvalue') : code, ('table') : '#tablePrner', ('buttonnext') : '#tablePrner_next'],
 	FailureHandling.STOP_ON_FAILURE)

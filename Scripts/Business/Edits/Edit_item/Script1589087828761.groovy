@@ -9,12 +9,12 @@ import com.kms.katalon.core.mobile.keyword.MobileBuiltInKeywords as Mobile
 import com.kms.katalon.core.model.FailureHandling as FailureHandling
 import com.kms.katalon.core.testcase.TestCase as TestCase
 import com.kms.katalon.core.testdata.TestData as TestData
+import com.kms.katalon.core.testng.keyword.TestNGBuiltinKeywords as TestNGKW
 import com.kms.katalon.core.testobject.TestObject as TestObject
 import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
-import com.kms.katalon.core.testng.keyword.TestNGBuiltinKeywords as TestNGKW
 
 WebUI.callTestCase(findTestCase('Login'), [:], FailureHandling.STOP_ON_FAILURE)
 
@@ -35,10 +35,11 @@ String botonItem = '$("a[href*=\'/Management/Item\']")[0].click()'
 
 CustomKeywords.'jquery.jquery_generic.execJS'(botonItem)
 
-//Open Item Form
-String botonform = '$("a[href*=\'/Management/Item/_ItemForm\']")[0].click()'
+//Open Item Edit
 
-CustomKeywords.'jquery.jquery_generic.execJS'(botonform)
+
+
+
 
 //****************************Full Form 1*****************************************//
 //Código del tipo de entidad
@@ -94,23 +95,23 @@ CustomKeywords.'jquery.jquery_generic.execJS'(reorderPoint_bi)
 
 //Status
 if (status == '0') {
-    String status_bi = '$(\'#IsActive\').click()'
+	String status_bi = '$(\'#IsActive\').click()'
 
-    CustomKeywords.'jquery.jquery_generic.execJS'(status_bi)
+	CustomKeywords.'jquery.jquery_generic.execJS'(status_bi)
 }
 
 //En venta
 if (forSale == '0') {
-    String forSale_bi = '$(\'#ForSale\').click()'
+	String forSale_bi = '$(\'#ForSale\').click()'
 
-    CustomKeywords.'jquery.jquery_generic.execJS'(forSale_bi)
+	CustomKeywords.'jquery.jquery_generic.execJS'(forSale_bi)
 }
 
-//Sujeto a impuesto 
+//Sujeto a impuesto
 if (isTaxable == '0') {
-    String isTaxable_bi = '$(\'#IsTaxable\').click()'
+	String isTaxable_bi = '$(\'#IsTaxable\').click()'
 
-    CustomKeywords.'jquery.jquery_generic.execJS'(isTaxable_bi)
+	CustomKeywords.'jquery.jquery_generic.execJS'(isTaxable_bi)
 }
 
 //****************************Full Form 1 Grups****************************************//
@@ -208,10 +209,8 @@ String butonsave = '$(".pull-right").click()'
 CustomKeywords.'jquery.jquery_generic.execJS'(butonsave)
 
 //**********************Validacion********************************//
+//Se verifica en el index si se cambio el nombre del articulo
+String elemento_a_verificar = itemName
 
-WebUI.callTestCase(findTestCase('Validates/Validate_Create'), [('test') : 'Articulo', ('seachvalue') : itemcode, ('table') : '#tableItem', ('buttonnext') : '#tableItem_next'],
+WebUI.callTestCase(findTestCase('Validates_Edits'), [('test') : 'Articulo', ('seachvalue') : elemento_a_verificar, ('table') : '#tableItem', ('buttonnext') : '#tableItem_next'],
 	FailureHandling.STOP_ON_FAILURE)
-
-
-
-

@@ -24,13 +24,17 @@ String menu_society = '''$("a[href*='society/Index']")[0].click()'''
 CustomKeywords.'jquery.jquery_generic.execJS'(menu_society)
 
 //********************Open Edit Society**********************//
+
+WebUI.delay(5)
 String id1 = 'a[href*=\"/Settings/Society/Edit?code='
 String id2 = code
 String id3 = '\"]'
-String id4 = id1 + id2 + id3 
+String id4 = (id1 + id2) + id3 
 String edit_society= "jQuery('$id4')[0].click()"
-print(edit_society)
+print(edit_society + '\n')
+
 CustomKeywords.'jquery.jquery_generic.execJS'(edit_society)
+
 
 String modal = WebUI.executeJavaScript('return document.getElementById("IdFormCreateModal").style.display;', null)
 if (modal == 'block'){
@@ -117,13 +121,11 @@ if (modal == 'block'){
 	String finish = '$("a[href*=\'finish\']")[0].click()'
 	CustomKeywords.'jquery.jquery_generic.execJS'(finish)
 	
-	WebUI.closeBrowser()
-	
-	WebUI.comment('Automatización: Sociedad Editada Exitosamente')
-	
 }
 
 /***********************Verification**************************/
+//Se verifica en el index si se cambio el nombre de la sociedad
+String elemento_a_verificar = societyName
 
-WebUI.callTestCase(findTestCase('Validates_Edits'), [('test') : 'Sociedad', ('seachvalue') : societyName, ('table') : '#SocietiesTable', ('buttonnext') : '#SocietiesTable_next'],
+WebUI.callTestCase(findTestCase('Validates_Edits'), [('test') : 'Sociedad', ('seachvalue') : elemento_a_verificar, ('table') : '#SocietiesTable', ('buttonnext') : '#SocietiesTable_next'],
 	FailureHandling.STOP_ON_FAILURE)

@@ -102,6 +102,8 @@ if (n_society == '1') {
 String finish = '$("a[href*=\'finish\']")[0].click()'
 CustomKeywords.'jquery.jquery_generic.execJS'(finish)
 
-WebUI.comment('Automatización: Usuario Editado Exitosamente')
+/***********************Verification**************************/
+//Se verifica en el index si se cambio el nombre del usuario
+String elemento_a_verificar = firstName
 
-WebUI.closeBrowser()
+WebUI.callTestCase(findTestCase('Validates_Edits'), [('test') : 'Usuario', ('seachvalue') : elemento_a_verificar, ('table') : '#tableUser', ('buttonnext') : '#tableUser_next'], FailureHandling.STOP_ON_FAILURE)

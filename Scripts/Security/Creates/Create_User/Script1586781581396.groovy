@@ -115,4 +115,4 @@ CustomKeywords.'jquery.jquery_generic.execJS'(finish)
 
 //**********************Validacion********************************//
 
-WebUI.callTestCase(findTestCase('Validates_Create'), [('test') : 'Usuario', ('seachvalue') : email, ('table') : '#tableUser', ('buttonnext') : '#tableUser_next'], FailureHandling.STOP_ON_FAILURE)
+WebUI.callTestCase(findTestCase('Validates/Validate_Create'), [('test') : 'Usuario', ('seachvalue') : email, ('table') : '#tableUser', ('buttonnext') : '#tableUser_next'], FailureHandling.STOP_ON_FAILURE)

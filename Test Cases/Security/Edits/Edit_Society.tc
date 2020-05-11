@@ -14,7 +14,7 @@
    </variable>
    <variable>
       <defaultValue>'SociedadEditable'</defaultValue>
-      <description>Text</description>
+      <description>text. Elemento a verificar</description>
       <id>b1a60711-9b0a-44d8-b631-632676e20133</id>
       <masked>false</masked>
       <name>societyName</name>

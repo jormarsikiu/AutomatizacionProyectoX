@@ -1,84 +1,84 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestCaseEntity>
    <description></description>
-   <name>Create_WareHouse</name>
+   <name>Edit_WareHouse</name>
    <tag></tag>
    <comment></comment>
-   <testCaseGuid>9d7c1915-a6f8-40ca-9f75-38e9427b8fab</testCaseGuid>
+   <testCaseGuid>56617ca6-68f2-4d5c-bf31-428e79d3b705</testCaseGuid>
    <variable>
       <defaultValue>'456'</defaultValue>
       <description>text</description>
-      <id>4870def9-d50c-48cf-a530-121871bfa7ee</id>
+      <id>962d238b-3dca-4040-8437-86383659b35a</id>
       <masked>false</masked>
       <name>wareHouseCode</name>
    </variable>
    <variable>
-      <defaultValue>'Almacen1'</defaultValue>
-      <description>text</description>
-      <id>0edd9c95-3cb0-42d7-9dda-63f7623284a6</id>
+      <defaultValue>'Almacen2'</defaultValue>
+      <description>text. Elemento a verificar</description>
+      <id>8fe1b108-a199-4ada-ba74-567af3dda2b4</id>
       <masked>false</masked>
       <name>wareHouseName</name>
    </variable>
    <variable>
-      <defaultValue>'Almacen1'</defaultValue>
+      <defaultValue>'Almacen2'</defaultValue>
       <description>text</description>
-      <id>a6d04013-f174-4d5d-99dd-5b791b20c3d0</id>
+      <id>3127dc55-f974-4791-9c1a-c55eec175e33</id>
       <masked>false</masked>
       <name>shortName</name>
    </variable>
    <variable>
-      <defaultValue>'0'</defaultValue>
+      <defaultValue>'1'</defaultValue>
       <description>Activo = 1, Inactivo = 0</description>
-      <id>05a28d3d-f120-4905-a41e-bc4d9614cec8</id>
+      <id>0dec87a6-02ae-481a-b7c9-6da3870132e6</id>
       <masked>false</masked>
       <name>status</name>
    </variable>
    <variable>
-      <defaultValue>'Street 4 -2 '</defaultValue>
+      <defaultValue>'Street 2 -2 '</defaultValue>
       <description>text</description>
-      <id>b985e357-1fa7-434f-ab65-09ea2ff7f630</id>
+      <id>cba56784-bdb9-4406-a6f0-3cbc51e91a36</id>
       <masked>false</masked>
       <name>address1</name>
    </variable>
    <variable>
-      <defaultValue>'Street 4 -2 '</defaultValue>
+      <defaultValue>'Street 2 -2 '</defaultValue>
       <description>text</description>
-      <id>6b1eead8-3906-4207-9b3d-fd6f06fba909</id>
+      <id>17b25561-2a8a-43f9-8973-26f4c4522b96</id>
       <masked>false</masked>
       <name>address2</name>
    </variable>
    <variable>
-      <defaultValue>'Street 4 -2 '</defaultValue>
+      <defaultValue>'Street 2 -2 '</defaultValue>
       <description>text</description>
-      <id>23ce6e91-9d71-4730-8150-0b5d7971610b</id>
+      <id>0751f3ad-360d-44c4-a854-ca0d9ad2b533</id>
       <masked>false</masked>
       <name>address3</name>
    </variable>
    <variable>
-      <defaultValue>'Ciudad1'</defaultValue>
+      <defaultValue>'Ciudad2'</defaultValue>
       <description>text</description>
-      <id>c8b28afa-9aa3-4f1c-841c-fc99aeb9a351</id>
+      <id>02d5a93b-18aa-4257-8dff-c73464150503</id>
       <masked>false</masked>
       <name>townName</name>
    </variable>
    <variable>
-      <defaultValue>'123'</defaultValue>
+      <defaultValue>'258'</defaultValue>
       <description>numbers</description>
-      <id>7febe149-6605-4ae1-83a8-d346672cb632</id>
+      <id>a01ddc67-75d4-4822-baac-5908c7eff319</id>
       <masked>false</masked>
       <name>latitude</name>
    </variable>
    <variable>
-      <defaultValue>'123'</defaultValue>
+      <defaultValue>'584'</defaultValue>
       <description>numbers</description>
-      <id>578f1e87-faca-47df-b670-59afdf273031</id>
+      <id>88f9cee6-ee62-4aec-9a79-ca6f1a53c2a3</id>
       <masked>false</masked>
       <name>longitud</name>
    </variable>
    <variable>
-      <defaultValue>'5101'</defaultValue>
+      <defaultValue>'5210'</defaultValue>
       <description>numbers</description>
-      <id>7222d97e-48c0-4eee-9c83-6bc00505a0a0</id>
+      <id>bdedf07a-c738-416c-ac01-2db0fba27e03</id>
       <masked>false</masked>
       <name>zipcode</name>
    </variable>

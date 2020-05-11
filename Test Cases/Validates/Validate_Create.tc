@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestCaseEntity>
    <description></description>
-   <name>Validates_Create</name>
+   <name>Validate_Create</name>
    <tag></tag>
    <comment></comment>
    <testCaseGuid>868e28c9-cdab-453a-8051-6bd98dcd380f</testCaseGuid>

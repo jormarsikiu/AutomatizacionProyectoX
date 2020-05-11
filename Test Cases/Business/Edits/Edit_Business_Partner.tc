@@ -3,7 +3,7 @@
    <description></description>
    <name>Edit_Business_Partner</name>
    <tag></tag>
-   <comment></comment>
+   <comment>Automatización: Usuario Editado Exitosamente</comment>
    <testCaseGuid>3d11450b-6d90-4b37-baf7-d252efce4f0f</testCaseGuid>
    <variable>
       <defaultValue>'2a4f5276-30be-4677-9185-08d7f0f6bdfe'</defaultValue>
@@ -21,7 +21,7 @@
    </variable>
    <variable>
       <defaultValue>'SocioNegocioEditado3'</defaultValue>
-      <description>Text</description>
+      <description>text. Elemento a verificar</description>
       <id>db308cd0-d820-49e5-a12f-798e055d6c6d</id>
       <masked>false</masked>
       <name>partnerName</name>

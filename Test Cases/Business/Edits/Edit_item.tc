@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>Edit_item</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>7c8f859a-1ab3-4c80-86fa-b4795dcc346a</testCaseGuid>
+   <variable>
+      <defaultValue>'CD-123'</defaultValue>
+      <description>text</description>
+      <id>8e4eb785-e957-46cb-a748-3f7fb83568c0</id>
+      <masked>false</masked>
+      <name>itemcode</name>
+   </variable>
+   <variable>
+      <defaultValue>'Producto2'</defaultValue>
+      <description>text. Elemento a verificar</description>
+      <id>37e47605-26b7-4f79-b27b-0fc9afec0003</id>
+      <masked>false</masked>
+      <name>itemName</name>
+   </variable>
+   <variable>
+      <defaultValue>'Producto2'</defaultValue>
+      <description>text</description>
+      <id>e966f133-45cd-4635-9418-9dc29c70c3aa</id>
+      <masked>false</masked>
+      <name>shortName</name>
+   </variable>
+   <variable>
+      <defaultValue>'456'</defaultValue>
+      <description>text</description>
+      <id>5c553c1a-9628-4727-a565-79fa89ecc50f</id>
+      <masked>false</masked>
+      <name>SKU</name>
+   </variable>
+   <variable>
+      <defaultValue>'2020-05-06'</defaultValue>
+      <description>fecha</description>
+      <id>942fb154-85e2-4ccb-9792-7a74c3eb1031</id>
+      <masked>false</masked>
+      <name>saleDate</name>
+   </variable>
+   <variable>
+      <defaultValue>'7000'</defaultValue>
+      <description>number</description>
+      <id>935cf4c8-b857-4e99-8587-ebf0ab6129b4</id>
+      <masked>false</masked>
+      <name>costPrice</name>
+   </variable>
+   <variable>
+      <defaultValue>'6000'</defaultValue>
+      <description>number</description>
+      <id>1e636e45-b349-4e32-a730-11ed2d70420c</id>
+      <masked>false</masked>
+      <name>salesPrice</name>
+   </variable>
+   <variable>
+      <defaultValue>'8000'</defaultValue>
+      <description>number</description>
+      <id>f69a5e11-2e3e-4f5b-b964-cdbd44956476</id>
+      <masked>false</masked>
+      <name>reorderPoint</name>
+   </variable>
+   <variable>
+      <defaultValue>'1'</defaultValue>
+      <description>Activo = 1, Inactivo = 0</description>
+      <id>54dec592-215b-47db-8962-959bed7fec1d</id>
+      <masked>false</masked>
+      <name>status</name>
+   </variable>
+   <variable>
+      <defaultValue>'1'</defaultValue>
+      <description>Activo = 1, Inactivo = 0</description>
+      <id>985bd9aa-46da-47d1-94b5-4053fa008aeb</id>
+      <masked>false</masked>
+      <name>forSale</name>
+   </variable>
+   <variable>
+      <defaultValue>'1'</defaultValue>
+      <description>Activo = 1, Inactivo = 0</description>
+      <id>0a686a4d-91a1-4280-8a18-e052b6b745bb</id>
+      <masked>false</masked>
+      <name>isTaxable</name>
+   </variable>
+</TestCaseEntity>

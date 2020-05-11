@@ -107,4 +107,4 @@ CustomKeywords.'jquery.jquery_generic.execJS'(buttonsave)
 
 /*************************Validates****************************/
 
-///WebUI.callTestCase(findTestCase('Validates_Create'), [('test') : 'Borrador', ('seachvalue') : iddraft, ('table') : '#tableDraft', ('buttonnext') : '#tableDraft_next'],FailureHandling.STOP_ON_FAILURE)
+///WebUI.callTestCase(findTestCase('Validates/Validate_Create'), [('test') : 'Borrador', ('seachvalue') : iddraft, ('table') : '#tableDraft', ('buttonnext') : '#tableDraft_next'],FailureHandling.STOP_ON_FAILURE)

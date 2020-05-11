@@ -6,14 +6,14 @@
    <comment></comment>
    <testCaseGuid>65f56662-bbcf-4a3c-8f0c-0696d72d04c7</testCaseGuid>
    <variable>
-      <defaultValue>'Test'</defaultValue>
+      <defaultValue>'Prueba'</defaultValue>
       <description>TEXTO</description>
       <id>8b92f940-5223-44c7-b4e1-199970a46972</id>
       <masked>false</masked>
       <name>firstName</name>
    </variable>
    <variable>
-      <defaultValue>'Automatizado'</defaultValue>
+      <defaultValue>'Automatizada'</defaultValue>
       <description>TEXTO</description>
       <id>a8fb3bf2-a5a5-4ea2-ab94-e5f119a993d4</id>
       <masked>false</masked>
@@ -27,7 +27,7 @@
       <name>avatar</name>
    </variable>
    <variable>
-      <defaultValue>'automated.test634@grupokaizen.net'</defaultValue>
+      <defaultValue>'automated.test58@grupokaizen.net'</defaultValue>
       <description>EMAIL</description>
       <id>ad4e10cd-e739-4109-b995-49b7de99bbb0</id>
       <masked>false</masked>

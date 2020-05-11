@@ -3,24 +3,24 @@
    <description></description>
    <name>Edit_User</name>
    <tag></tag>
-   <comment>Automatización: Usuario Editado Exitosamente</comment>
+   <comment></comment>
    <testCaseGuid>d8f3584c-acb7-429c-80f6-c3f0620f7eda</testCaseGuid>
    <variable>
-      <defaultValue>'5fe56a11-5650-4229-b098-7430a9519c71'</defaultValue>
+      <defaultValue>'73204444-39a6-4e21-952f-cbf4cf488a0e'</defaultValue>
       <description>Id del usuario</description>
       <id>91245490-ed47-436a-b06c-769056de7dbe</id>
       <masked>false</masked>
       <name>iduser</name>
    </variable>
    <variable>
-      <defaultValue>'Test2'</defaultValue>
-      <description>Texto</description>
+      <defaultValue>'Prueba3'</defaultValue>
+      <description>text. Elemento a verificar</description>
       <id>75bcd088-167b-4bc9-badb-d49233904992</id>
       <masked>false</masked>
       <name>firstName</name>
    </variable>
    <variable>
-      <defaultValue>'Automatizado2'</defaultValue>
+      <defaultValue>'Automatizado3'</defaultValue>
       <description>Texto</description>
       <id>4e7fddd5-36d5-4402-9894-f7454f39f4ce</id>
       <masked>false</masked>
@@ -34,7 +34,7 @@
       <name>avatar</name>
    </variable>
    <variable>
-      <defaultValue>'test2@pruebas.com'</defaultValue>
+      <defaultValue>'test333@pruebas.com'</defaultValue>
       <description>Texto Email</description>
       <id>a9bfa415-ea79-4ea5-9eab-a2118456a4f6</id>
       <masked>false</masked>

@@ -6,21 +6,21 @@
    <comment></comment>
    <testCaseGuid>2ae99b3b-262a-4c93-be1b-f82dd68e5c02</testCaseGuid>
    <variable>
-      <defaultValue>'Cod25'</defaultValue>
+      <defaultValue>'Cod254'</defaultValue>
       <description>Text</description>
       <id>e60e6051-7c19-4d19-8a0e-1ec061757b19</id>
       <masked>false</masked>
       <name>code</name>
    </variable>
    <variable>
-      <defaultValue>'Sociedad Test 4'</defaultValue>
+      <defaultValue>'Sociedad Prueba 5'</defaultValue>
       <description>Text</description>
       <id>1003b2d0-c45f-4449-b439-6a8b3ea869b9</id>
       <masked>false</masked>
       <name>societyName</name>
    </variable>
    <variable>
-      <defaultValue>'Soc1'</defaultValue>
+      <defaultValue>'Soc5'</defaultValue>
       <description>Text</description>
       <id>1fff9ead-ec41-42b1-b6c6-bf575876a534</id>
       <masked>false</masked>

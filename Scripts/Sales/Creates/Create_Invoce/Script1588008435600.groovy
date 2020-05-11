@@ -37,9 +37,9 @@ CustomKeywords.'jquery.jquery_generic.execJS'(createDraft)
 
 WebUI.delay(20)
 
-//Obtener id draft
-String iddraft = '''let val = $('#DraftCode').val(); return val;'''
-String IDdraft = CustomKeywords.'jquery.jquery_generic.execJS'(iddraft)
+//Obtener id invoce
+String idinvoce = '''let val = $('#DraftCode').val(); return val;'''
+String IDinvoce = CustomKeywords.'jquery.jquery_generic.execJS'(iddraft)
 
 //Código de cliente - Emite
 String codclient =  '''$('#GetClientCode').click()'''
@@ -107,4 +107,4 @@ CustomKeywords.'jquery.jquery_generic.execJS'(buttonsave)
 
 /*************************Validates****************************/
 
-///WebUI.callTestCase(findTestCase('Validates/Validate_Create'), [('test') : 'Borrador', ('seachvalue') : iddraft, ('table') : '#tableDraft', ('buttonnext') : '#tableDraft_next'],FailureHandling.STOP_ON_FAILURE)
+WebUI.callTestCase(findTestCase('Validates/Validate_Create'), [('test') : 'Invoce', ('seachvalue') : IDinvoce, ('table') : '#tableInvoice', ('buttonnext') : '#tableInvoice_next'],FailureHandling.STOP_ON_FAILURE)

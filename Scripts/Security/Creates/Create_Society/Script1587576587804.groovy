@@ -20,14 +20,25 @@ WebUI.callTestCase(findTestCase('Login'), [:], FailureHandling.STOP_ON_FAILURE)
 
 WebUI.waitForPageLoad(20)
 
-//**********Open Setting-Addministration-Society***********************//
-String menu_crear_society = '$("a[href*=\'society/Index\']")[0].click()'
+//**********Open Setting***********************//
+String setting = '$(".hide-menu").click()'
+CustomKeywords.'jquery.jquery_generic.execJS'(setting)
 
+//**********Open Addministration***********************//
+String administration = '$(".fa.fa-bars").click()'
+CustomKeywords.'jquery.jquery_generic.execJS'(administration)
+
+//**********Open Setting-Addministration-Society***********************//
+
+String menu_crear_society = '$(".fa.fa-home").click()'
 CustomKeywords.'jquery.jquery_generic.execJS'(menu_crear_society)
+
+
+//String menu_crear_society = '$("a[href*=\'society/Index\']")[0].click()'
+//CustomKeywords.'jquery.jquery_generic.execJS'(menu_crear_society)
 
 //********************Open form Society**********************//
 String form_crear_society = '$("a[href*=\'/Settings/Society/CreateSociety\']")[0].click()'
-
 CustomKeywords.'jquery.jquery_generic.execJS'(form_crear_society)
 
 WebUI.delay(5)

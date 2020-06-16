@@ -83,7 +83,16 @@ String botonaddress = '$("a[href*=\'/Management/Warehouse/_Address\']")[0].click
 
 CustomKeywords.'jquery.jquery_generic.execJS'(botonaddress)
 
+WebUI.delay(8)
+
+//Tipo
+String open_type_bp = '$("#AddressEntityTypeCode").select2("open")'
+CustomKeywords.'jquery.jquery_generic.execJS'(open_type_bp)
 WebUI.delay(3)
+
+String type_bp = 'jQuery(\'#select2-AddressEntityTypeCode-results li\').first().trigger({type:\'mouseup\'});'
+
+CustomKeywords.'jquery.jquery_generic.execJS'(type_bp)
 
 //Pais
 String open_country = '$("#CountryCode").select2("open")'
@@ -199,10 +208,9 @@ String childrenGroups_bp = 'jQuery(\'#select2-selectChildrenGroups-results li\')
 
 CustomKeywords.'jquery.jquery_generic.execJS'(childrenGroups_bp)
 
+WebUI.delay(3)
 //Aceptar
-String butonacept_bp2 = '$(".btn-success")[0].click()'
-
-CustomKeywords.'jquery.jquery_generic.execJS'(butonacept_bp2)
+CustomKeywords.'jquery.jquery_generic.execJS'(butonacept_bp1)
 
 //****************************Full Form 1 Adicionales*****************************************//
 //Condicion Comercial (1)

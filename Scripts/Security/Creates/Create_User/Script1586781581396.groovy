@@ -19,19 +19,31 @@ import com.kms.katalon.core.logging.KeywordLogger as KeywordLogger
 
 WebUI.callTestCase(findTestCase('Login'), [:], FailureHandling.STOP_ON_FAILURE)
 
+//WebUI.delay(40)
 WebUI.waitForPageLoad(20)
 
-//**********Open Setting-Addministration-User***********************//
-String menu_crear_user = '$("a[href*=\'user/Index\']")[0].click()'
+//**********Open Setting***********************//
+String setting = '$(".hide-menu").click()'
+CustomKeywords.'jquery.jquery_generic.execJS'(setting)
 
-CustomKeywords.'jquery.jquery_generic.execJS'(menu_crear_user)
+//**********Open Addministration***********************//
+String administration = '$(".fa.fa-bars").click()'
+CustomKeywords.'jquery.jquery_generic.execJS'(administration)
+
+
+//**********Open Setting-Addministration-User***********************//
+String user = '$(".fa.fa-user").click()'
+CustomKeywords.'jquery.jquery_generic.execJS'(user)
+
+//String menu_crear_user = '$("a[href*=\'user/Index\']")[0].click()'
+//CustomKeywords.'jquery.jquery_generic.execJS'(menu_crear_user)
 
 //********************Open form User**********************//
 String form_crear_user = 'jQuery(\'#IdFormCreateUser\').click()'
 
 CustomKeywords.'jquery.jquery_generic.execJS'(form_crear_user)
 
-WebUI.delay(3)
+WebUI.delay(20)
 
 //****************************Full Form 1*****************************************//
 String firstName_u = "jQuery('#FirstName').val('$firstName')"

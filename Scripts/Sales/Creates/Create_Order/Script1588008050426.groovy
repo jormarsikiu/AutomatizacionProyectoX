@@ -27,8 +27,17 @@ CustomKeywords.'jquery.jquery_generic.execJS'(botonmenu)
 String botonSales = '$("a[href*=\'/dashboard/Sales/index/SAL-002\']")[0].click()'
 CustomKeywords.'jquery.jquery_generic.execJS'(botonSales)
 
+//************************Select Documents Menu*************************************//
+String openDocuments = '$(".fa.fa-book").click()'
+CustomKeywords.'jquery.jquery_generic.execJS'(openDocuments)
+
+//************************Select Transactions Menu*************************************//
+String openTransaction = '$(".fa.fa-credit-card").click()'
+CustomKeywords.'jquery.jquery_generic.execJS'(openTransaction)
+
+
 //************************Open Transacctions Order Menu***********************************//
-String botonTransacctions = '$("a[href*=\'/documents/transactionorder/index\']")[0].click()'
+String botonTransacctions = '$("a[href*=\'/documents/transactionorder\']")[0].click()'
 CustomKeywords.'jquery.jquery_generic.execJS'(botonTransacctions)
 
 //************************Create Order Form*************************************//

@@ -27,15 +27,24 @@ CustomKeywords.'jquery.jquery_generic.execJS'(botonmenu)
 String botonSales = '$("a[href*=\'/dashboard/Sales/index/SAL-002\']")[0].click()'
 CustomKeywords.'jquery.jquery_generic.execJS'(botonSales)
 
-//************************Open Transacctions Draft Menu***********************************//
-String botonTransacctions = '$("a[href*=\'/documents/transactioninvoice/index\']")[0].click()'
+//************************Select Documents Menu*************************************//
+String openDocuments = '$(".fa.fa-book").click()'
+CustomKeywords.'jquery.jquery_generic.execJS'(openDocuments)
+
+//************************Select Transactions Menu*************************************//
+String openTransaction = '$(".fa.fa-credit-card").click()'
+CustomKeywords.'jquery.jquery_generic.execJS'(openTransaction)
+
+
+//************************Open Transacctions invoice Menu***********************************//
+String botonTransacctions = '$("a[href*=\'/documents/transactioninvoice\']")[0].click()'
 CustomKeywords.'jquery.jquery_generic.execJS'(botonTransacctions)
 
 //************************Create Draft Form*************************************//
 String createDraft = '$("a[href*=\'/Documents/TransactionInvoice/CreateInvoiceFormAsync\']")[0].click()'
 CustomKeywords.'jquery.jquery_generic.execJS'(createDraft)
 
-WebUI.delay(20)
+WebUI.delay(10)
 
 //Obtener id invoce
 String idinvoce = '''let val = $('#DraftCode').val(); return val;'''
@@ -52,8 +61,8 @@ String aceptclient = "jQuery('.editable-submit').click()"
 CustomKeywords.'jquery.jquery_generic.execJS'(aceptclient)
 
 //Código de cliente - Receptor
-String customer =  '''$('#customerDir').click()'''
-CustomKeywords.'jquery.jquery_generic.execJS'(customer)
+String codcustomer =  '''$('#customerDir').click()'''
+CustomKeywords.'jquery.jquery_generic.execJS'(codcustomer)
 String opencustomer = '''$(".select2-hidden-accessible").select2("open")'''
 CustomKeywords.'jquery.jquery_generic.execJS'(opencustomer)
 String selectcustomer = "jQuery('.select2-hidden-accessible').select2().val('$customer').get(0)"

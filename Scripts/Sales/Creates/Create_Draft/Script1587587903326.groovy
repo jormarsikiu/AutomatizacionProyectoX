@@ -27,15 +27,23 @@ CustomKeywords.'jquery.jquery_generic.execJS'(botonmenu)
 String botonSales = '$("a[href*=\'/dashboard/Sales/index/SAL-002\']")[0].click()'
 CustomKeywords.'jquery.jquery_generic.execJS'(botonSales)
 
+//************************Select Documents Menu*************************************//
+String openDocuments = '$(".fa.fa-book").click()'
+CustomKeywords.'jquery.jquery_generic.execJS'(openDocuments)
+
+//************************Select Transactions Menu*************************************//
+String openTransaction = '$(".fa.fa-credit-card").click()'
+CustomKeywords.'jquery.jquery_generic.execJS'(openTransaction)
+
 //************************Open Transacctions Draft Menu***********************************//
-String botonTransacctions = '$("a[href*=\'/documents/transactiondraft/index\']")[0].click()'
+String botonTransacctions = '$("a[href*=\'/documents/transactiondraft\']")[0].click()'
 CustomKeywords.'jquery.jquery_generic.execJS'(botonTransacctions)
 
 //************************Create Draft Form*************************************//
 String createDraft = '$("a[href*=\'/Documents/TransactionDraft/CreateDraftFormAsync\']")[0].click()'
 CustomKeywords.'jquery.jquery_generic.execJS'(createDraft)
 
-WebUI.delay(20)
+WebUI.delay(10)
 
 //Obtener id draft
 String iddraft = '''let val = $('#DraftCode').val(); return val;'''
@@ -51,9 +59,11 @@ CustomKeywords.'jquery.jquery_generic.execJS'(selectclient)
 String aceptclient = "jQuery('.editable-submit').click()"
 CustomKeywords.'jquery.jquery_generic.execJS'(aceptclient)
 
+WebUI.delay(3)
+
 //Código de cliente - Receptor
-String customer =  '''$('#customerDir').click()'''
-CustomKeywords.'jquery.jquery_generic.execJS'(customer)
+String codcustomer =  '''$('#customerDir').click()'''
+CustomKeywords.'jquery.jquery_generic.execJS'(codcustomer)
 String opencustomer = '''$(".select2-hidden-accessible").select2("open")'''
 CustomKeywords.'jquery.jquery_generic.execJS'(opencustomer)
 String selectcustomer = "jQuery('.select2-hidden-accessible').select2().val('$customer').get(0)"
@@ -107,6 +117,6 @@ CustomKeywords.'jquery.jquery_generic.execJS'(buttonsave)
 
 /*************************Validates****************************/
 
-WebUI.callTestCase(findTestCase('Validates/Validate_Create'), [('test') : 'Borrador', ('seachvalue') : iDdraft, ('table') : '#tableDraft', ('buttonnext') : '#tableDraft_next'],
+WebUI.callTestCase(findTestCase('Validates/Validate_Create'), [('test') : 'Borrador', ('seachvalue') : IDdraft, ('table') : '#tableDraft', ('buttonnext') : '#tableDraft_next'],
 	FailureHandling.STOP_ON_FAILURE)
 
